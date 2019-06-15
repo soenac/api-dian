@@ -1,0 +1,111 @@
+1	Ingresos y patrimonio	O-06
+2	Retención en la fuente a título de renta	O-07
+3	Retención timbre nacional	O-08
+4	Retención en la fuente en el impuesto sobre las ventas	O-09
+5	Ventas régimen común	O-11
+6	Ventas régimen simplificado	O-12
+7	Gran contribuyente	O-13
+8	Informante de exógena	O-14
+9	Autorretenedor	O-15
+10	Obligación de facturar por ingresos de bienes y/o servicios excluidos	O-16
+11	Profesionales de compra y venta de divisas	O-17
+12	Productor y/o exportador de bienes exentos	O-19
+13	Obligado a cumplir deberes formales a nombre de terceros	O-22
+14	Agente de retención en el impuesto sobre las ventas	O-23
+15	Impuesto Nacional a la Gasolina y al ACPM	O-32
+16	Impuesto Nacional al consumo	O-33
+17	Régimen simplificado impuesto nacional consumo rest y bares	O-34
+18	Establecimiento Permanente	O-36
+19	Obligado a Facturar Electrónicamente Modelo 2242	O-37
+20	Facturación Electrónica Voluntaria Modelo 2242	O-38
+21	Proveedor de Servicios Tecnológicos PST Modelo 2242	O-39
+22	Otro tipo de obligado	O-99
+23	Factor PN	R-12-PN
+24	Mandatario PN	R-16-PN
+25	Agente Interventor PN	R-25-PN
+26	Apoderado especial PJ	R-06-PJ
+27	Apoderado general PJ	R-07-PJ
+28	Factor PJ	R-12-PJ
+29	Mandatario PJ	R-16-PJ
+30	Otro tipo de responsable PJ	R-99-PJ
+31	Agente de carga internacional	A-01
+32	Agente marítimo	A-02
+33	Almacén general de depósito	A-03
+34	Comercializadora internacional (C.I.)	A-04
+35	Comerciante de la zona aduanera especial de Inírida, Puerto Carreño, Cumaribo y Primavera	A-05
+36	Comerciantes de la zona de régimen aduanero especial de Leticia	A-06
+37	Comerciantes de la zona de régimen aduanero especial de Maicao, Uribia y Manaure	A-07
+38	Comerciantes de la zona de régimen aduanero especial de Urabá, Tumaco y Guapí	A-08
+39	Comerciantes del puerto libre de San Andrés, Providencia y Santa Catalina	A-09
+40	Depósito público de apoyo logístico internacional	A-10
+41	Depósito privado para procesamiento industrial	A-11
+42	Depósito privado de transformación o ensamble	A-12
+43	Depósito franco	A-13
+44	Depósito privado aeronáutico	A-14
+45	Depósito privado para distribución internacional	A-15
+46	Depósito privado de provisiones de a bordo para consumo y para llevar	A-16
+47	Depósito privado para envíos urgentes	A-17
+48	Depósito privado	A-18
+49	Depósito público	A-19
+50	Depósito público para distribución internacional	A-20
+51	Exportador de café	A-21
+52	Exportador	A-22
+53	Importador	A-23
+54	Intermediario de tráfico postal y envíos urgentes	A-24
+55	Operador de transporte multimodal	A-25
+56	Sociedad de intermediación aduanera	A-26
+57	Titular de puertos y muelles de servicio público o privado	A-27
+58	Transportador nfor régimen de importación y/o exportación	A-28
+59	Transportista nacional para operaciones del régimen de tránsito aduanero	A-29
+60	Usuario comercial zona franca	A-30
+61	Usuario industrial de bienes zona franca	A-32
+62	Usuario industrial de servicios zona franca	A-34
+63	Usuario operador de zona franca	A-36
+64	Usuario aduanero permanente	A-37
+65	Usuario altamente exportador	A-38
+66	Usuario de zonas económicas especiales de exportación	A-39
+67	Deposito privado de instalaciones industriales	A-40
+68	Beneficiarios de programas especiales de exportación PEX	A-41
+69	Depósitos privados para mercancías en tránsito San Andrés	A-42
+70	Observadores de las operaciones de importación	A-43
+71	Usuarios sistemas especiales Importación exportación	A-44
+72	Transportador nformac régimen de importación y/o exportación	A-46
+73	Transportador terrestre régimen de importación y/o exportación	A-47
+74	Aeropuerto de servicio publico o privado	A-48
+75	Transportador fluvial régimen de importación	A-49
+76	Usuario industrial zona franca especial	A-50
+77	Agencias de aduanas 1	A-53
+78	Usuario Operador Zona Franca Especial	A-54
+79	Agencias de aduanas 2	A-55
+80	Agencias de aduanas 3	A-56
+81	Agencias de aduanas 4	A-57
+82	Transportador aéreo nacional	A-58
+83	Transportador aéreo, marítimo o fluvial modalidad Cabotaje	A-60
+84	Importador de alimentos de consumo humano y animal	A-61
+85	Importador Ocasional	A-62
+86	Importador de maquinaría y sus partes Decreto 2261 de 2012	A-63
+87	Beneficiario Programa de Fomento Industria Automotriz-PROFIA	A-64
+88	Otro tipo de agente aduanero	A-99
+89	Agencia	E-01
+90	Establecimiento de comercio	E-02
+91	Centro de explotación agrícola	E-03
+92	Centro de explotación animal	E-04
+93	Centro de explotación minera	E-05
+94	Centro de explotación de transformación	E-06
+95	Centro de explotación de servicios	E-07
+96	Oficina	E-08
+97	Sede	E-09
+98	Sucursal	E-10
+99	Consultorio	E-11
+100	Administraciones	E-12
+101	Seccionales	E-13
+102	Regionales	E-14
+103	Intendencias	E-15
+104	Local o negocio	E-16
+105	Punto de venta	E-17
+106	Fábrica	E-18
+107	Taller	E-19
+108	Cantera	E-20
+109	Pozo de Petróleo y Gas	E-21
+110	Otro lug de tipo de extrac explotación de recursos naturales	E-22
+111	Otro tipo de establecimiento	E-99

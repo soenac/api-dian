@@ -1,0 +1,1093 @@
+1	spray pequeño	04
+2	levantar	05
+3	Lote calor	08
+4	grupo	10
+5	equipar	11
+6	ración	13
+7	Disparo	14
+8	palo	15
+9	tambor de ciento quince kg	16
+10	tambor de cien libras	17
+11	tambor de cincuenta y cinco galones (US)	18
+12	camión cisterna	19
+13	contenedor de veinte pies	20
+14	contenedor de cuarenta pies	21
+15	decilitro por gramo	22
+16	gramo por centímetro cúbico	23
+17	libra teórica	24
+18	gramo por centímetro cuadrado	25
+19	tonelada real	26
+20	tonelada teórica	27
+21	kilogramo por metro cuadrado	28
+22	libra por mil pies cuadrados	29
+23	Día de potencia del caballo por tonelada métrica seca al aire.	30
+24	coger peso	31
+25	kilogramo por aire seco tonelada métrica	32
+26	kilopascales metros cuadrados por gramo	33
+27	kilopascales por milímetro	34
+28	mililitros por centímetro cuadrado segundo	35
+29	pies cúbicos por minuto por pie cuadrado	36
+30	onza por pie cuadrado	37
+31	onzas por pie cuadrado por 0,01 pulgadas	38
+32	mililitro por segundo	40
+33	mililitro por minuto	41
+34	bolsa súper a granel	43
+35	bolsa a granel de quinientos kg	44
+36	bolsa a granel de trescientos kg	45
+37	bolsa a granel de cincuenta libras	46
+38	bolsa de cincuenta libras	47
+39	carga de automóviles a granel	48
+40	kilogramos teóricos	53
+41	tonelada teórica	54
+42	sitas	56
+43	malla	57
+44	kilogramo neto	58
+45	parte por millón	59
+46	porcentaje de peso	60
+47	parte por billón (US)	61
+48	porcentaje por 1000 horas	62
+49	tasa de fracaso en el tiempo	63
+50	libra por pulgada cuadrada, calibre	64
+51	Oersted	66
+52	prueba de escala específica	69
+53	voltio amperio por libra	71
+54	vatio por libra	72
+55	amperio tum por centímetro	73
+56	milipascal	74
+57	gauss	76
+58	mili pulgadas	77
+59	kilogauss	78
+60	libras por pulgada cuadrada absoluta	80
+61	Enrique	81
+62	kilopound por pulgada cuadrada	84
+63	fuerza libra pie	85
+64	libra por pie cúbico	87
+65	equilibrio	89
+66	Saybold segundo universal	90
+67	alimenta	91
+68	calorías por centímetro cúbico	92
+69	calorías por gramo	93
+70	unidad	94
+71	veinte mil galones (US) de carros	95
+72	diez mil galones (US) de carros	96
+73	tambor de diez kg	97
+74	tambor de quince kg	98
+75	milla de coche	1ª
+76	recuento de coches	1B
+77	recuento de locomotoras	1C
+78	recuento de cabos	1D
+79	carro vacio	1E
+80	millas de tren	1F
+81	uso de combustible galón (US)	1G
+82	milla del caboose	1H
+83	tipo de interés fijo	1I
+84	tonelada milla	1J
+85	milla locomotora	1K
+86	recuento total de coches	1L
+87	milla de coche total	1M
+88	cuarto de milla	1X
+89	radianes por segundo	2ª
+90	radianes por segundo al cuadrado	2B
+91	Röntgen	2C
+92	Unidad térmica británica por hora.	2I
+93	centímetro cúbico por segundo	2J
+94	pie cúbico por hora	2K
+95	pie cúbico por minuto	2L
+96	centímetro por segundo	2M
+97	decibel	2N
+98	kilobyte	2P
+99	kilobecquerel	2Q
+100	kilocurie	2R
+101	megagramo	2U
+102	megagramo por hora	2V
+103	compartimiento	2W
+104	metro por minuto	2X
+105	milliröntgen	2Y
+106	milivoltios	2Z
+107	megajulio	3B
+108	manmonth	3C
+109	libra por libra de producto	3E
+110	libra por pieza de producto	3G
+111	kilogramo por kilogramo de producto	3H
+112	kilogramo por pieza de producto	3I
+113	bobina	4ª
+114	gorra	4B
+115	centistokes	4C
+116	paquete de veinte	4E
+117	microlitro	4G
+118	micrometro	4H
+119	miliamperio	4K
+120	megabyte	4L
+121	miligramo por hora	4M
+122	megabecquerel	4N
+123	microfarad	4º
+124	newton por metro	4P
+125	onza pulgada	4Q
+126	pie onza	4R
+127	picofarad	4T
+128	libra por hora	4U
+129	tonelada (US) por hora	4W
+130	kilolitro por hora	4X
+131	barril por minuto	5ª
+132	lote	5B
+133	galón (US) por mil	5C
+134	MMSCF / día	5E
+135	libras por mil	5F
+136	bomba	5G
+137	escenario	5H
+138	pie cúbico estándar	5I
+139	potencia hidráulica de caballos	5J
+140	contar por minuto	5K
+141	nivel sismico	5P
+142	nfor sismica	5Q
+143	15 calorías C	A1
+144	amperio metro cuadrado por joule segundo	A10
+145	Ã ¥ ngström	A11
+146	unidad astronómica	A12
+147	attojoule	A13
+148	granero	A14
+149	granero por electrón voltio	A15
+150	granero por voltio de electrones esteradiano,	A16
+151	granero por sterdian	A17
+152	becquerel por kilogramo	A18
+153	becquerel por metro cúbico	A19
+154	amperio por centímetro	A2
+155	Unidad térmica británica por segundo pie cuadrado grado Rankin	A20
+156	Unidad térmica británica por libra grado Rankin	A21
+157	Unidad térmica británica por segundo pie grado Rankin	A22
+158	Unidad térmica británica por hora pie cuadrado grado Rankin	A23
+159	candela por metro cuadrado	A24
+160	cheval vapeur	A25
+161	medidor de culombio	A26
+162	medidor de culombio al cuadrado por voltio	A27
+163	Coulomb por centímetro cúbico	A28
+164	Coulomb por metro cúbico	A29
+165	amperio por milímetro	A3
+166	Coulomb por milímetro cúbico	A30
+167	Coulomb por kilogramo segundo	A31
+168	Coulomb por mol	A32
+169	Coulomb por centímetro cuadrado	A33
+170	Coulomb por metro cuadrado	A34
+171	Coulomb por milímetro cuadrado	A35
+172	centímetro cúbico por mol	A36
+173	nformaci cúbico por mol	A37
+174	metro cúbico por coulomb	A38
+175	metro cúbico por kilogramo	A39
+176	amperio por centímetro cuadrado	A4
+177	metro cúbico por mol	A40
+178	amperio por metro cuadrado	A41
+179	curie por kilogramo	A42
+180	tonelaje de peso muerto	A43
+181	decalitro	A44
+182	decámetro	A45
+183	decitex	A47
+184	grado Rankin	A48
+185	negador	A49
+186	amperio metro cuadrado	A5
+187	dyn segundo por centímetro cúbico	A50
+188	dina segundo por centímetro	A51
+189	dina segundo por centímetro al quinto	A52
+190	electronvolt	A53
+191	electronvoltio por metro	A54
+192	metro electronvolt cuadrado	A55
+193	electronvoltio de metro cuadrado por kilogramo	A56
+194	ergio	A57
+195	erg por centímetro	A58
+196	amperio por metro cuadrado kelvin al cuadrado	A6
+197	erg por centímetro cúbico	A60
+198	erg por gramo	A61
+199	erg por gramo de segundo	A62
+200	erg por segundo	A63
+201	erg por segundo centímetro cuadrado	A64
+202	erg por centímetro cuadrado segundo	A65
+203	erg centímetro cuadrado	A66
+204	ergímetro cuadrado por gramo	A67
+205	exajulio	A68
+206	faradio por metro	A69
+207	amperio por milímetro cuadrado	A7
+208	femtojoule	A70
+209	femtometro	A71
+210	pie por segundo al cuadrado	A73
+211	pie-fuerza de la libra por segundo	A74
+212	tonelada de carga	A75
+213	galón	A76
+214	Unidad de desplazamiento CGS gaussiana	A77
+215	Unidad gaussiana CGS de corriente eléctrica.	A78
+216	Unidad Gaussian CGS de carga eléctrica.	A79
+217	amperio segundo	A8
+218	Unidad Gaussian CGS de intensidad de campo eléctrico.	A80
+219	Unidad Gaussian CGS de polarización eléctrica.	A81
+220	Unidad Gaussian CGS de potencial eléctrico.	A82
+221	Unidad Gaussiana CGS de magnetización.	A83
+222	gigacoulomb por metro cúbico	A84
+223	Gigaelectronvolt	A85
+224	gigahercios	A86
+225	gigaohm	A87
+226	medidor de gigaohm	A88
+227	gigapascal	A89
+228	tarifa	A9
+229	gigavatios	A90
+230	gon	A91
+231	gramo por metro cúbico	A93
+232	gramo por mol	A94
+233	gris	A95
+234	gris por segundo	A96
+235	hectopascal	A97
+236	Henry por metro	A98
+237	bola	AA
+238	paquete a granel	AB
+239	acre	ACR
+240	byte	AD
+241	amperio por metro	AE
+242	minuto adicional	AH
+243	minuto promedio por llamada	AI
+244	policía	AJ
+245	braza	AK
+246	nfor de acceso	AL
+247	ampolla	AM
+248	hora amperio	AMH
+249	amperio	AMP
+250	año	ANA
+251	solo libra de aluminio	AP
+252	onza troy o onza de boticarios	APZ
+253	Unidad de factor antihemofílico (AHF)	AQ
+254	supositorio	AR
+255	son	SON
+256	surtido	COMO
+257	fuerza alcohólica en masa	ASM
+258	fuerza alcohólica por volumen	ASU
+259	ambiente estándar	ATM
+260	ambiente técnico	ATT
+261	cápsula	AV
+262	vial lleno de polvo	AW
+263	montaje	SÍ
+264	Unidad térmica británica por libra	AZ
+265	Btu por pie cúbico	B0
+266	barril (US) por día	B1
+267	julios por kilogramo kelvin	B11
+268	julios por metro	B12
+269	julios por metro cuadrado	B13
+270	julios por metro a la cuarta potencia	B14
+271	julios por mol	B15
+272	julios por mol kelvin	B16
+273	joule segundo	B18
+274	litera	B2
+275	joule metro cuadrado por kilogramo	B20
+276	kelvin por vatio	B21
+277	Kiloampere	B22
+278	kiloampere por metro cuadrado	B23
+279	kiloampere por metro	B24
+280	kilobecquerel por kilogramo	B25
+281	kilocoulomb	B26
+282	kilocoulomb por metro cúbico	B27
+283	kilocoulomb por metro cuadrado	B28
+284	kiloelectronvolt	B29
+285	libra de bateo	B3
+286	kilogramo metro por segundo	B31
+287	kilogramo metro cuadrado	B32
+288	kilogramo metro cuadrado por segundo	B33
+289	kilogramo por decímetro cúbico	B34
+290	kilogramo por litro	B35
+291	caloría termoquímica por gramo	B36
+292	kilogramo de fuerza	B37
+293	metro de fuerza de kilogramo	B38
+294	metro de fuerza de kilogramo por segundo	B39
+295	barril, imperial	B4
+296	kilogramo de fuerza por metro cuadrado	B40
+297	kilojoule per kelvin	B41
+298	kilojoule por kilogramo	B42
+299	kilojoule por kilogramo kelvin	B43
+300	kilojoule por mol	B44
+301	kilomol	B45
+302	kilomol por metro cúbico	B46
+303	Kilonewton	B47
+304	medidor de kilonewton	B48
+305	kiloohm	B49
+306	palanquilla	B5
+307	medidor de kiloohm	B50
+308	kilopond	B51
+309	kilosegundo	B52
+310	kilosiemens	B53
+311	kilosiemens por metro	B54
+312	kilovoltios por metro	B55
+313	kiloveber por metro	B56
+314	año luz	B57
+315	litro por mol	B58
+316	hora lumen	B59
+317	bollo	B6
+318	lumen por metro cuadrado	B60
+319	lumen por vatio	B61
+320	lumen segundo	B62
+321	hora de lux	B63
+322	lux segundo	B64
+323	Maxwell	B65
+324	megaamperios por metro cuadrado	B66
+325	megabecquerel por kilogramo	B67
+326	megacoulomb por metro cúbico	B69
+327	ciclo	B7
+328	megacoulomb por metro cuadrado	B70
+329	megaelectronvolt	B71
+330	megagramo por metro cúbico	B72
+331	meganewton	B73
+332	medidor de meganewton	B74
+333	megaohm	B75
+334	metro megaohm	B76
+335	megasiemens por metro	B77
+336	megavoltio	B78
+337	megavolt por metro	B79
+338	julios por metro cúbico	B8
+339	metro recíproco cuadrado recíproco segundo	B81
+340	metro a la cuarta potencia	B83
+341	microamperios	B84
+342	microbar	B85
+343	microcoulomb	B86
+344	microcoulomb por metro cúbico	B87
+345	microcoulomb por metro cuadrado	B88
+346	microfarada por metro	B89
+347	batt	B9
+348	microhenry	B90
+349	microhenry por metro	B91
+350	micronewton	B92
+351	medidor de micronewton	B93
+352	microohm	B94
+353	medidor de microohmios	B95
+354	micropascal	B96
+355	microradiano	B97
+356	microsegundo	B98
+357	microsiemens	B99
+358	bar	BAR
+359	caja base	BB
+360	tablero	BD
+361	haz	SER
+362	pie de tabla	BFT
+363	bolso	BG
+364	cepillo	BH
+365	potencia al freno	BHP
+366	trillón de dólares	BIL
+367	cangilón	BJ
+368	cesta	BK
+369	bala	BL
+370	barril seco	BLD
+371	barril (EE. UU.) (petróleo, etc.)	BLL
+372	botella	BO
+373	cien pies de tabla	BP
+374	becquerel	BQL
+375	bar	BR
+376	tornillo	BT
+377	Unidad Térmica Británica	BTU
+378	bushel (EE. UU.)	BUA
+379	bushel (Reino Unido)	BUI
+380	peso base	BW
+381	caja	BX
+382	millones de BTUs	BZ
+383	llamada	C0
+384	producto compuesto libra (peso total)	C1
+385	millifarad	C10
+386	miligal	C11
+387	miligramo por metro	C12
+388	miligray	C13
+389	milihenry	C14
+390	milijoule	C15
+391	milímetro por segundo	C16
+392	milímetro cuadrado por segundo	C17
+393	milimol	C18
+394	mol por kilogramo	C19
+395	carset	C2
+396	millinewton	C20
+397	millinewton por metro	C22
+398	medidor de miliohm	C23
+399	segundo milipascal	C24
+400	miliradian	C25
+401	milisegundo	C26
+402	milisiemens	C27
+403	milisievert	C28
+404	millitesla	C29
+405	microvoltios por metro	C3
+406	milivoltios por metro	C30
+407	milivatios	C31
+408	milivatios por metro cuadrado	C32
+409	milliweber	C33
+410	Topo	C34
+411	mol por decímetro cúbico	C35
+412	mol por metro cúbico	C36
+413	mol por litro	C38
+414	Nanoampere	C39
+415	partido de carga	C4
+416	nanocoulomb	C40
+417	nanofarad	C41
+418	nanofarad por metro	C42
+419	nanohenry	C43
+420	nanohenry por metro	C44
+421	nanometro	C45
+422	medidor de nanoohm	C46
+423	nanosegundo	C47
+424	nanotesla	C48
+425	nanovatio	C49
+426	costo	C5
+427	neper	C50
+428	neper por segundo	C51
+429	picometro	C52
+430	metro de newton segundo	C53
+431	newton metro cuadrado kilogramo cuadrado	C54
+432	newton por metro cuadrado	C55
+433	newton por milímetro cuadrado	C56
+434	newton segundo	C57
+435	newton segundo por metro	C58
+436	octava	C59
+437	célula	C6
+438	ohm centímetro	C60
+439	ohm metro	C61
+440	uno	C62
+441	parsec	C63
+442	pascal por kelvin	C64
+443	segundo pascal	C65
+444	segundo pascal por metro cúbico	C66
+445	segundo pascal por metro	C67
+446	petajoule	C68
+447	telefono	C69
+448	centipoise	C7
+449	picoampere	C70
+450	picocoulomb	C71
+451	picofarad por metro	C72
+452	picohenry	C73
+453	picowatt	C75
+454	picowatt por metro cuadrado	C76
+455	medidor de libras	C77
+456	fuerza de libra	C78
+457	Millicoulomb por kilogramo	C8
+458	rad	C80
+459	radián	C81
+460	medidor de radianes al cuadrado por mol	C82
+461	medidor de radianes al cuadrado por kilogramo	C83
+462	radian por metro	C84
+463	â € ngstr recíproco “m	C85
+464	metro cúbico recíproco	C86
+465	metro cúbico recíproco por segundo	C87
+466	voltios de electrones recíprocos por metro cúbico	C88
+467	Henry Recíproco	C89
+468	grupo de bobina	C9
+469	Joule recíproco por metro cúbico	C90
+470	kelvin recíproco o kelvin al poder menos uno	C91
+471	medidor recíproco	C92
+472	metro cuadrado recíproco	C93
+473	minuto recíproco	C94
+474	mole recíproco	C95
+475	Pascal recíproco o pascal a la potencia menos uno.	C96
+476	segundo recíproco	C97
+477	segundo recíproco por metro cúbico	C98
+478	segundo recíproco por metro cuadrado	C99
+479	Caja	CA
+480	Capacidad de carga en toneladas métricas.	CCT
+481	candela	CDL
+482	grado Celsius	CEL
+483	cien	CEN
+484	tarjeta	CG
+485	centigramo	CGM
+486	envase	CH
+487	cono	CJ
+488	conector	CK
+489	Coulomb por kilogramo	CKG
+490	bobina	CL
+491	cientos de licencia	CLF
+492	centilitro	CLT
+493	centímetro cuadrado	CMK
+494	centímetro cúbico	CMQ
+495	centímetro	CMT
+496	paquete de cien	CNP
+497	Cental (Reino Unido)	CNT
+498	garrafón	CO
+499	culombio	COU
+500	cartucho	CQ
+501	caja	CR
+502	caso	CS
+503	caja de cartón	CT
+504	quilate métrico	CTM
+505	vaso	CU
+506	curie	CUR
+507	cubrir	CV
+508	cien libras (quintales) / cien pesos (US)	CWA
+509	cien pesos (Reino Unido)	CWI
+510	cilindro	CY
+511	combo	CZ
+512	segundo recíproco por esteradiano	D1
+513	siemens por metro	D10
+514	siemens metro cuadrado por mol	D12
+515	sievert	D13
+516	mil yardas lineales	D14
+517	sone	D15
+518	centímetro cuadrado por ergio	D16
+519	centímetro cuadrado por erg esterlina	D17
+520	metro kelvin	D18
+521	kelvin metro cuadrado por vatio	D19
+522	segundo recíproco por metros cuadrados esteradianos	D2
+523	metro cuadrado por julio	D20
+524	metro cuadrado por kilogramo	D21
+525	metro cuadrado por mol	D22
+526	pluma gramo (proteína)	D23
+527	metro cuadrado por esterilizador	D24
+528	metro cuadrado por julios esteradianos	D25
+529	metro cuadrado por voltio segundo	D26
+530	esteradiano	D27
+531	sifón	D28
+532	terahercios	D29
+533	terajulio	D30
+534	teravatio	D31
+535	hora de teravatio	D32
+536	tesla	D33
+537	Texas	D34
+538	caloría termoquímica	D35
+539	caloría termoquímica por gramo kelvin	D37
+540	calorías termoquímicas por segundo centímetro kelvin	D38
+541	calorías termoquímicas por segundo centímetro cuadrado kelvin	D39
+542	mil litros	D40
+543	tonelada por metro cúbico	D41
+544	año tropical	D42
+545	unidad de masa atómica unificada	D43
+546	var	D44
+547	voltios al cuadrado por kelvin al cuadrado	D45
+548	voltio – amperio	D46
+549	voltio por centímetro	D47
+550	voltio por kelvin	D48
+551	milivoltios por kelvin	D49
+552	kilogramo por centímetro cuadrado	D5
+553	voltios por metro	D50
+554	voltios por milímetro	D51
+555	vatios por kelvin	D52
+556	vatios por metro kelvin	D53
+557	vatios por metro cuadrado	D54
+558	vatios por metro cuadrado kelvin	D55
+559	vatios por metro cuadrado de kelvin a la cuarta potencia	D56
+560	vatios por steradian	D57
+561	vatios por metro cuadrado esterlino	D58
+562	weber por metro	D59
+563	röntgen por segundo	D6
+564	weber por milímetro	D60
+565	minuto	D61
+566	segundo	D62
+567	libro	D63
+568	bloquear	D64
+569	redondo	D65
+570	casete	D66
+571	dólar por hora	D67
+572	pulgada a la cuarta potencia	D69
+573	Sandwich	D7
+574	Tabla Internacional (IT) caloría	D70
+575	Tabla Internacional (IT) calorías por segundo centímetro kelvin	D71
+576	Tabla Internacional (IT) calorías por segundo centímetro cuadrado kelvin	D72
+577	joule metro cuadrado	D73
+578	kilogramo por mol	D74
+579	Tabla Internacional (IT) calorías por gramo	D75
+580	Tabla Internacional (IT) calorías por gramo kelvin	D76
+581	megacoulomb	D77
+582	haz	D79
+583	puntaje de drenaje	D8
+584	microwatt	D80
+585	microtesla	D81
+586	microvoltio	D82
+587	medidor de millinewton	D83
+588	microwatt por metro cuadrado	D85
+589	Millicoulomb	D86
+590	milimol por kilogramo	D87
+591	millicoulomb por metro cúbico	D88
+592	millicoulomb por metro cuadrado	D89
+593	dina por centímetro cuadrado	D9
+594	metro cúbico (neto)	D90
+595	movimiento rápido del ojo	D91
+596	banda	D92
+597	segundo por metro cúbico	D93
+598	segundo por metro cúbico radianes	D94
+599	julios por gramo	D95
+600	libra bruta	D96
+601	carga de palet / unidad	D97
+602	libra de masa	D98
+603	manga	D99
+604	despreciar	DAA
+605	diez dias	DAD
+606	día	DAY
+607	libra seca	DB
+608	disco	DC
+609	la licenciatura	DD
+610	acuerdo	DE
+611	década	DEC
+612	decigramo	DG
+613	dispensador	DI
+614	decagramo	DJ
+615	decilitro	DLT
+616	nformaci cuadrado	DMK
+617	decímetro cúbico	DMQ
+618	decímetro	DMT
+619	medidor de decinewton	DN
+620	docena pieza	DPC
+621	docena par	DPR
+622	tonelaje de desplazamiento	DPT
+623	registro de datos	DQ
+624	tambor	DR
+625	dram (US)	DRA
+626	dram (Reino Unido)	DRI
+627	docena rollo	DRL
+628	dracma (Reino Unido)	DRM
+629	monitor	DS
+630	tonelada seca	DT
+631	Decitonne	DTN
+632	dina	DU
+633	pennyweight	DWT
+634	dina por centímetro	DX
+635	libro de directorio	DY
+636	docena	DZN
+637	paquete de doce	DZP
+638	cinturón	E2
+639	remolque	E3
+640	kilogramo bruto	E4
+641	tonelada métrica larga	E5
+642	cada	EA
+643	casilla de correo electrónico	EB
+644	cada uno por mes	CE
+645	paquete de once	EP
+646	galón equivalente	EQ
+647	sobre	EV
+648	mil pies cúbicos por día	F1
+649	Fibra por centímetro cúbico de aire	F9
+650	grado Fahrenheit	FAH
+651	faradio	FAR
+652	campo	FB
+653	mil pies cúbicos	FC
+654	millón de partículas por pie cúbico	FD
+655	pie de pista	FE
+656	cien metros cúbicos	FF
+657	parche transdérmico	FG
+658	micromol	FH
+659	tonelada en escamas	FL
+660	millones de pies cúbicos	FM
+661	pie	FOT
+662	libra por pie cuadrado	FP
+663	pie por minuto	FR
+664	pie por segundo	FS
+665	pie cuadrado	FTK
+666	pie cubico	FTQ
+667	US galones por minuto	G2
+668	Galon imperial por minuto	G3
+669	hoja de microficha	G7
+670	galón (US) por día	GB
+671	gigabecquerel	GBQ
+672	gramo por 100 gramo	GC
+673	barril bruto	GD
+674	libra por galón (US)	GE
+675	gramo por metro (gramo por 100 centímetros)	GF
+676	gramo de isótopo fisionable	GFI
+677	gramo	GGR
+678	medio galón (EE. UU.)	GH
+679	branquias	GIA
+680	Gill (Reino Unido)	GII
+681	gramo por mililitro	GJ
+682	gramo por kilogramo	G K
+683	gramo por litro	GL
+684	galón seco (EE. UU.)	GLD
+685	galón (Reino Unido)	GLI
+686	galón	GLL
+687	gramo por metro cuadrado	GM
+688	galón bruto	GN
+689	miligramos por metro cuadrado	GO
+690	miligramo por metro cúbico	GP
+691	microgramos por metro cúbico	GQ
+692	gramo	GRM
+693	grano	GRN
+694	bruto	GRO
+695	tonelada de registro bruto	GRT
+696	tonelada bruta	GT
+697	gigajoule	GV
+698	galón por mil pies cúbicos	GW
+699	hora de gigavatios	GWH
+700	patio bruto	GY
+701	sistema de medición	GZ
+702	media página – electrónica	H1
+703	medio litro	H2
+704	madeja	HA
+705	hectárea	HAR
+706	hectobar	HBA
+707	cien cajas	HBX
+708	cien cuentas	HC
+709	media docena	HD
+710	centésima de quilate	ÉL
+711	cien pies	HF
+712	hectogramo	HGM
+713	cien pies cúbicos	HH
+714	cien hojas	HI
+715	cien unidades internacionales	HIU
+716	caballo métrico	HJ
+717	cien kilogramos	HK
+718	cien pies (lineales)	HL
+719	hectolitro	HLT
+720	milla por hora	HM
+721	millones de metros cúbicos	HMQ
+722	hectómetro	HMT
+723	milímetro convencional de mercurio	HN
+724	cien onzas troy	HO
+725	milímetro convencional de agua	HP
+726	hectolitro de alcohol puro	HPA
+727	cien pies cuadrados	HS
+728	media hora	HT
+729	hertz	HTZ
+730	hora	HUR
+731	cien yardas	HY
+732	pulgada libra	IA
+733	contar por pulgada	IC
+734	persona	IE
+735	pulgadas de agua	IF
+736	columna pulgada	II
+737	pulgada por minuto	IL
+738	impresión	IM
+739	pulgada	INH
+740	pulgada cuadrada	INK
+741	pulgada en cubos	INQ
+742	póliza de seguros	IP
+743	conteo por centímetro	IT
+744	pulgada por segundo (velocidad lineal)	IU
+745	pulgada por segundo al cuadrado (aceleración)	IV
+746	julios por kilogramo	J2
+747	jumbo	JB
+748	joule por kelvin	JE
+749	jarra	JG
+750	megajulio por kilogramo	JK
+751	megajulio por metro cúbico	JM
+752	articulación	JO
+753	joule	JOU
+754	tarro	JR
+755	demanda de kilovatios	K1
+756	kilovoltios amperios reactivos de demanda	K2
+757	kilovoltio amperio hora reactiva	K3
+758	amperios kilovoltios (reactivos)	K5
+759	kilolitro	K6
+760	pastel	KA
+761	kilocharacter	KB
+762	kilobar	KBA
+763	kilogramo decimal	KD
+764	kelvin	KEL
+765	kilopacket	KF
+766	barrilete	KG
+767	kilogramo	KGM
+768	kilogramo por segundo	KGS
+769	kilohercio	KHZ
+770	Kilogramo por milímetro de ancho	KI
+771	kilosegmento	KJ
+772	kilojoule	KJO
+773	kilogramo por metro	KL
+774	kilómetro por hora	KMH
+775	kilometro cuadrado	KMK
+776	kilogramo por metro cúbico	KMQ
+777	kilogramo de nitrógeno	KNI
+778	kilogramo de sustancia nombrada	KNS
+779	nudo	KNT
+780	Milliequivalencia de potasa cáustica por gramo de producto.	KO
+781	kilopascal	KPA
+782	kilogramo de hidróxido de potasio (potasa cáustica)	KPH
+783	kilogramo de óxido de potasio	KPO
+784	kilogramo de pentóxido de fósforo (anhídrido fosfórico)	KPP
+785	KilorÃ¶ntgen	KR
+786	mil libras por pulgada cuadrada	KS
+787	kilogramo de sustancia 90% seca	KSD
+788	kilogramo de hidróxido de sodio (soda cáustica)	KSH
+789	equipo	KT
+790	kilómetro	KTM
+791	kilotonne	KTN
+792	kilogramo de uranio	KUR
+793	kilovoltio – ampere	KVA
+794	kilovar	KVR
+795	kilovoltio	KVT
+796	kilogramos por milímetro	KW
+797	kilovatios hora	KWH
+798	kilovatio	KWT
+799	mililitro por kilogramo	KX
+800	litro por minuto	L2
+801	libra por pulgada cúbica	LA
+802	libra	LBR
+803	libra troy	LBT
+804	centímetro lineal	LC
+805	litro por día	LD
+806	lite	LE
+807	hoja	LEF
+808	pie lineal	LF
+809	hora de trabajo	LH
+810	pulgada lineal	LI
+811	spray grande	LJ
+812	enlazar	LK
+813	metro lineal	LM
+814	longitud	LN
+815	mucho	LO
+816	libra liquida	LP
+817	litro de alcohol puro	LPA
+818	capa	LR
+819	Suma global	LS
+820	ton (Reino Unido) o longton (EE. UU.)	LTN
+821	litro	LTR
+822	lumen	LUM
+823	lux	LUX
+824	yarda lineal por libra	LX
+825	yarda lineal	LY
+826	cinta magnética	M0
+827	miligramos por litro	M1
+828	valor monetario	M4
+829	microcurie	M5
+830	micropulgada	M7
+831	millones de Btu por 1000 pies cúbicos	M9
+832	máquina por unidad	MA
+833	mega litro	MAL
+834	megametro	MAM
+835	megavatio	MAW
+836	mil equivalentes de ladrillo estándar	MBE
+837	mil pies de tabla	MBF
+838	milibar	MBR
+839	microgramo	MC
+840	milicurie	MCU
+841	aire seco tonelada métrica	MD
+842	miligramo por pie cuadrado por lado	MF
+843	miligramo	MGM
+844	megahercio	MGM
+845	milla cuadrada	MIK
+846	mil	MIL
+847	minuto	MIN
+848	millón	MIO
+849	millones de unidades internacionales	MIU
+850	miligramo por pulgada cuadrada	MK
+851	mil millones	MLD
+852	mililitro	MLT
+853	milímetro cuadrado	MMK
+854	milímetro cúbico	MMQ
+855	milímetro	MMT
+856	mes	LUN
+857	megapascal	MPA
+858	mil metros	MQ
+859	metro cúbico por hora	MQH
+860	metro cúbico por segundo	MQS
+861	metro por segundo al cuadrado	MSK
+862	estera	MT
+863	metro cuadrado	MTK
+864	Metro cúbico	MTQ
+865	metro	MTR
+866	metro por segundo	MTS
+867	numero de mults	MV
+868	megavolt – ampere	MVA
+869	megavatios hora (1000 kW.h)	MWH
+870	calorías de la pluma	N1
+871	número de líneas	N2
+872	punto de impresión	N3
+873	miligramo por kilogramo	NA
+874	número de artículos	NAR
+875	barcaza	NB
+876	número de bobinas	NBB
+877	coche	NC
+878	número de celdas	NCL
+879	barril neto	ND
+880	litro neto	NE
+881	newton	NEW
+882	mensaje	NF
+883	galón neto (nosotros)	NG
+884	hora del mensaje	NH
+885	galón imperial neto	NI
+886	número de unidades internacionales	NIU
+887	número de pantallas	NJ
+888	carga	NL
+889	milla nautica	MNI
+890	número de paquetes	NMP
+891	entrenar	NN
+892	número de parcelas	NPL
+893	numero de pares	NPR
+894	numero de partes	TNP
+895	mho	NQ
+896	micromho	NR
+897	número de rollos	NRL
+898	tonelada neta	NT
+899	registro neto de toneladas	NTT
+900	medidor de newton	NU
+901	vehículo	NV
+902	parte por mil	NX
+903	libra por aire seco tonelada métrica	NY
+904	panel	OA
+905	ohm	OHM
+906	onza por yarda cuadrada	EN
+907	onza	ONZ
+908	Dos paquetes	OP
+909	hora extra	OT
+910	onza av	ONZ
+911	onza líquida (US)	OZA
+912	onza líquida (Reino Unido)	OZI
+913	pagina – electronica	P0
+914	por ciento	P1
+915	libra por pie	P2
+916	paquete de tres	P3
+917	paquete de cuatro	P4
+918	paquete de cinco	P5
+919	paquete de seis	P6
+920	paquete de siete	P7
+921	paquete de ocho	P8
+922	paquete de nueve	P9
+923	paquete	PA
+924	pascal	PAL
+925	par de pulgadas	PB
+926	almohadilla	PD
+927	equivalente en libras	PE
+928	palet (ascensor)	PF
+929	plato	PG
+930	galón de prueba	PGL
+931	tono	Pi
+932	paquete	PK
+933	cubo	PL
+934	porcentaje de libra	PM
+935	libra neta	PN
+936	libra por pulgada de longitud	PO
+937	página por pulgada	PQ
+938	par	PR
+939	fuerza de libra por pulgada cuadrada	PD
+940	pinta	PT
+941	pinta seca	PTD
+942	pinta (Reino Unido)	PTI
+943	pinta liquida (US)	PTL
+944	bandeja / paquete de bandeja	PU
+945	media pinta (US)	PV
+946	libra por pulgada de ancho	PW
+947	Peck Dry (US)	PY
+948	Peck Dry (Reino Unido)	PZ
+949	comida	Q3
+950	página – facsímil	QA
+951	cuarto (de un año)	QAN
+952	página – copia impresa	QB
+953	cuarto de docena	QD
+954	un cuarto de hora	QH
+955	cuarto de kilogramo	QK
+956	mano de papel	QR
+957	cuarto de galón (US)	QT
+958	cuarto seco (EE. UU.)	QTD
+959	cuarto de galón (Reino Unido)	QTI
+960	cuarto líquido (US)	QTL
+961	cuarto (UK)	QTR
+962	pica	R1
+963	caloría	R4
+964	mil metros cúbicos	R9
+965	estante	RA
+966	barra	RD
+967	anillo	RG
+968	hora de funcionamiento o de funcionamiento	RH
+969	medida métrica rollo	RK
+970	carrete	RL
+971	resma	RM
+972	medida métrica de resma	RN
+973	rodar	RO
+974	libra por resma	RP
+975	revoluciones por minuto	RPM
+976	revoluciones por segundo	RPS
+977	Reiniciar	RS
+978	ingreso tonelada milla	RT
+979	correr	RU
+980	pie cuadrado por segundo	S3
+981	metro cuadrado por segundo	S4
+982	sesenta cuartos de pulgada	S5
+983	sesión	S6
+984	unidad de almacenamiento	S7
+985	unidad de publicidad estándar	S8
+986	saco	SA
+987	medio año (6 meses)	SAN
+988	Puntuación	OCS
+989	escrúpulo	SCR
+990	libra solida	SD
+991	sección	SE
+992	segundo	SEC
+993	conjunto	SET
+994	segmento	SG
+995	tonelada de envío	SHT
+996	siemens	SIE
+997	camión cisterna dividido	SK
+998	hoja de deslizamiento	SL
+999	milla (milla estatutaria)	SMI
+1000	varilla cuadrada	SN
+1001	carrete	SO
+1002	paquete de estante	SP
+1003	cuadrado	SQ
+1004	tira	SR
+1005	hoja métrica medida	SS
+1006	corto estándar (7200 partidos)	SST
+1007	hoja	ST
+1008	piedra (Reino Unido)	ITS
+1009	tonelada (US) o tonelada corta (UK / US)	STN
+1010	patinar	SV
+1011	madeja	SO
+1012	envío	SX
+1013	Línea de telecomunicaciones en servicio.	T0
+1014	mil libras brutas	T1
+1015	mil piezas	T3
+1016	bolsa de mil	T4
+1017	caja de mil	T5
+1018	mil galones (US)	T6
+1019	mil impresiones	T7
+1020	mil pulgadas lineales	T8
+1021	décimo pie cúbico	TA
+1022	Kiloampere hora (mil amperios hora)	TAH
+1023	camion	TC
+1024	termia	TD
+1025	totalizador	TE
+1026	diez metros cuadrados	TF
+1027	mil pulgadas cuadradas	TI
+1028	mil centímetros cuadrados	TJ
+1029	tanque, rectangular	TK
+1030	mil pies (lineales)	TL
+1031	estaño	TN
+1032	tonelada (tonelada métrica)	TNE
+1033	paquete de diez	TP
+1034	diez pares	TPR
+1035	mil pies	TQ
+1036	mil metros cúbicos por día	TQD
+1037	diez pies cuadrados	TR
+1038	trillón (EUR)	TRL
+1039	mil pies cuadrados	TS
+1040	tonelada de sustancia 90% seca	TSD
+1041	tonelada de vapor por hora	TSH
+1042	mil metros lineales	TT
+1043	tubo	TU
+1044	mil kilogramos	TV
+1045	mil hojas	TW
+1046	tanque, cilíndrico	TY
+1047	tratamiento	U1
+1048	tableta	U2
+1049	torr	UA
+1050	Línea de telecomunicaciones en servicio promedio.	UB
+1051	puerto de telecomunicaciones	UC
+1052	décimo minuto	UD
+1053	décima hora	UE
+1054	uso por línea de telecomunicación promedio	UF
+1055	diez mil yardas	UH
+1056	millones de unidades	UM
+1057	voltio amperio por kilogramo	VA
+1058	frasco	VI
+1059	voltio	VLT
+1060	abultar	VQ
+1061	visitar	VS
+1062	kilo mojado	W2
+1063	dos semanas	W4
+1064	vatio por kilogramo	WA
+1065	libra mojada	WB
+1066	cable	WCD
+1067	tonelada mojada	WE
+1068	weber	WEB
+1069	semana	WEE
+1070	galon de vino	WG
+1071	rueda	WH
+1072	vatios hora	WHR
+1073	peso por pulgada cuadrada	WI
+1074	mes de trabajo	WM
+1075	envolver	WR
+1076	estándar	WSD
+1077	vatio	WTT
+1078	mililitro de agua	WW
+1079	cadena	X1
+1080	yarda cuadrada	YDK
+1081	Yarda cúbica	YDQ
+1082	cien yardas lineales	YL
+1083	yarda	YRD
+1084	diez yardas	YT
+1085	van de elevación	Z1
+1086	pecho	Z2
+1087	barril	Z3
+1088	pipa	Z4
+1089	arrastrar	Z5
+1090	punto de conferencia	Z6
+1091	línea de noticias de ágata	Z8
+1092	página	ZP
+1093	mutuamente definido	ZZ

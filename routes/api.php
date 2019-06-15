@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api')->group(function() {
+    // UBL 2.1
+    Route::prefix('/v2.1')->group(function() {
+        // Configuration
+        Route::prefix('/config')->group(function() {
+            Route::post('/company/{nit}/{dv}', 'Api\ConfigurationController@index');
+        });
+    });
 });

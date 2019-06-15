@@ -1,0 +1,179 @@
+1	Dírham de los Emiratos Árabes Unidos	AED
+2	Afgani	AFN
+3	Lek	ALL
+4	Dram armenio	AMD
+5	Florín antillano neerlandés	ANG
+6	Kwanza	AOA
+7	Peso argentino	ARS
+8	Dólar australiano	AUD
+9	Florín arubeño	AWG
+10	Manat azerbaiyano	AZN
+11	Marco convertible	BAM
+12	Dólar de Barbados	BBD
+13	Taka	BDT
+14	Lev búlgaro	BGN
+15	Dinar bareiní	BHD
+16	Franco de Burundi	BIF
+17	Dólar bermudeño	BMD
+18	Dólar de Brunéi	BND
+19	Boliviano	BOB
+20	MVDOL	BOV
+21	Real brasileño	BRL
+22	Dólar bahameño	BSD
+23	Ngultrum	BTN
+24	Pula	BWP
+25	Rublo bielorruso	BYR
+26	Dólar beliceño	BZD
+27	Dólar canadiense	CAD
+28	Franco congoleño	CDF
+29	Euro WIR	CHE
+30	Franco suizo	CHF
+31	Franco WIR	CHW
+32	Unidad de fomento	CLF
+33	Peso chileno	CLP
+34	Yuan chino	CNY
+35	Peso colombiano	COP
+36	Unidad de valor real	COU
+37	Colón costarricense	CRC
+38	Peso convertible	CUC
+39	Peso cubano	CUP
+40	Escudo caboverdiano	CVE
+41	Corona checa	CZK
+42	Franco yibutiano	DJF
+43	Corona danesa	DKK
+44	Peso dominicano	DOP
+45	Dinar argelino	DZD
+46	Libra egipcia	EGP
+47	Nakfa	ERN
+48	Birr etíope	ETB
+49	Euro	EUR
+50	Dólar fiyiano	FJD
+51	Libra malvinense	FKP
+52	Libra esterlina	GBP
+53	Lari	GEL
+54	Cedi ghanés	GHS
+55	Libra de Gibraltar	GIP
+56	Dalasi	GMD
+57	Franco guineano	GNF
+58	Quetzal	GTQ
+59	Dólar guyanés	GYD
+60	Dólar de Hong Kong	HKD
+61	Lempira	HNL
+62	Kuna	HRK
+63	Gourde	HTG
+64	Forinto	HUF
+65	Rupia indonesia	IDR
+66	Nuevo shéquel israelí	ILS
+67	Rupia india	INR
+68	Dinar iraquí	IQD
+69	Rial iraní	IRR
+70	Corona islandesa	ISK
+71	Dólar jamaiquino	JMD
+72	Dinar jordano	JOD
+73	Yen	JPY
+74	Chelín keniano	KES
+75	Som	KGS
+76	Riel	KHR
+77	Franco comorense	KMF
+78	Won norcoreano	KPW
+79	Won	KRW
+80	Dinar kuwaití	KWD
+81	Dólar de las Islas Caimán	KYD
+82	Tenge	KZT
+83	Kip	LAK
+84	Libra libanesa	LBP
+85	Rupia de Sri Lanka	LKR
+86	Dólar liberiano	LRD
+87	Loti	LSL
+88	Dinar libio	LYD
+89	Dírham marroquí	MAD
+90	Leu moldavo	MDL
+91	Ariary malgache	MGA
+92	Denar	MKD
+93	Kyat	MMK
+94	Tugrik	MNT
+95	Pataca	MOP
+96	Uguiya	MRO
+97	Rupia de Mauricio	MUR
+98	Rufiyaa	MVR
+99	Kwacha	MWK
+100	Peso mexicano	MXN
+101	Unidad de Inversión (UDI) mexicana	MXV
+102	Ringgit malayo	MYR
+103	Metical mozambiqueño	MZN
+104	Dólar namibio	NAD
+105	Naira	NGN
+106	Córdoba	NIO
+107	Corona noruega	NOK
+108	Rupia nepalí	NPR
+109	Dólar neozelandés	NZD
+110	Rial omaní	OMR
+111	Balboa	PAB
+112	Sol	PEN
+113	Kina	PGK
+114	Peso filipino	PHP
+115	Rupia pakistaní	PKR
+116	Złoty	PLN
+117	Guaraní	PYG
+118	Riyal qatarí	QAR
+119	Leu rumano	RON
+120	Dinar serbio	RSD
+121	Rublo ruso	RUB
+122	Franco ruandés	RWF
+123	Riyal saudí	SAR
+124	Dólar de las Islas Salomón	SBD
+125	Rupia seychelense	SCR
+126	Dinar sudanés	SDG
+127	Corona sueca	SEK
+128	Dólar de Singapur	SGD
+129	Libra de Santa Elena	SHP
+130	Leone	SLL
+131	Chelín somalí	SOS
+132	Dólar surinamés	SRD
+133	Libra sursudanesa	SSP
+134	Dobra	STD
+135	Colon Salvadoreño	SVC
+136	Libra siria	SYP
+137	Lilangeni	SZL
+138	Baht	THB
+139	Somoni tayiko	TJS
+140	Manat turcomano	TMT
+141	Dinar tunecino	TND
+142	Paʻanga	TOP
+143	Lira turca	TRY
+144	Dólar de Trinidad y Tobago	TTD
+145	Nuevo dólar taiwanés	TWD
+146	Chelín tanzano	TZS
+147	Grivna	UAH
+148	Chelín ugandés	UGX
+149	Dólar estadounidense	USD
+150	Dólar estadounidense (Siguiente día)	USN
+151	Peso en Unidades Indexadas (Uruguay)	UYI
+152	Peso uruguayo	UYU
+153	Som uzbeko	UZS
+154	Bolívar	VEF
+155	Bolívar soberano	VES7
+156	Dong vietnamita	VND
+157	Vatu	VUV
+158	Tala	WST
+159	Franco CFA de África Central	XAF
+160	Plata (una onza troy)	XAG
+161	Oro (una onza troy)	XAU
+162	Unidad compuesta europea (EURCO) (Unidad del mercado de bonos)	XBA
+163	Unidad Monetaria europea (E.M.U.-6) (Unidad del mercado de bonos)	XBB
+164	Unidad europea de cuenta 9 (E.U.A.-9) (Unidad del mercado de bonos)	XBC
+165	Unidad europea de cuenta 17 (E.U.A.-17) (Unidad del mercado de bonos)	XBD
+166	Dólar del Caribe Oriental	XCD
+167	Derechos especiales de giro	XDR
+168	Franco CFA de África Occidental	XOF
+169	Paladio (una onza troy)	XPD
+170	Franco CFP	XPF
+171	Platino (una onza troy)	XPT
+172	SUCRE	XSU
+173	Reservado para pruebas	XTS
+174	Unidad de cuenta BAD	XUA
+175	Sin divisa	XXX
+176	Rial yemení	YER
+177	Rand	ZAR
+178	Kwacha zambiano	ZMW
+179	Dólar zimbabuense	ZWL

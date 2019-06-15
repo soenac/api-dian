@@ -1,0 +1,1122 @@
+1	2	Medellín	05001
+2	2	Abejorral	05002
+3	2	Abriaquí	05004
+4	2	Alejandría	05021
+5	2	Amagá	05030
+6	2	Amalfi	05031
+7	2	Andes	05034
+8	2	Angelópolis	05036
+9	2	Angostura	05038
+10	2	Anorí	05040
+11	2	Santa Fé De Antioquia	05042
+12	2	Anzá	05044
+13	2	Apartadó	05045
+14	2	Arboletes	05051
+15	2	Argelia	05055
+16	2	Armenia	05059
+17	2	Barbosa	05079
+18	2	Belmira	05086
+19	2	Bello	05088
+20	2	Betania	05091
+21	2	Betulia	05093
+22	2	Ciudad Bolívar 	05101
+23	2	Briceño	05107
+24	2	Buriticá	05113
+25	2	Cáceres	05120
+26	2	Caicedo	05125
+27	2	Caldas	05129
+28	2	Campamento	05134
+29	2	Cañasgordas	05138
+30	2	Caracolí	05142
+31	2	Caramanta	05145
+32	2	Carepa	05147
+33	2	El Carmen De Viboral	05148
+34	2	Carolina	05150
+35	2	Caucasia	05154
+36	2	Chigorodó	05172
+37	2	Cisneros	05190
+38	2	Cocorná	05197
+39	2	Concepción	05206
+40	2	Concordia	05209
+41	2	Copacabana	05212
+42	2	Dabeiba	05234
+43	2	Donmatías	05237
+44	2	Ebéjico	05240
+45	2	El Bagre 	05250
+46	2	Entrerríos	05264
+47	2	Envigado	05266
+48	2	Fredonia	05282
+49	2	Frontino	05284
+50	2	Giraldo	05306
+51	2	Girardota	05308
+52	2	Gómez Plata 	05310
+53	2	Granada	05313
+54	2	Guadalupe	05315
+55	2	Guarne	05318
+56	2	Guatapé	05321
+57	2	Heliconia	05347
+58	2	Hispania	05353
+59	2	Itagüí	05360
+60	2	Ituango	05361
+61	2	Jardín	05364
+62	2	Jericó	05368
+63	2	La Ceja 	05376
+64	2	La Estrella 	05380
+65	2	La Pintada 	05390
+66	2	La Unión 	05400
+67	2	Liborina	05411
+68	2	Maceo	05425
+69	2	Marinilla	05440
+70	2	Montebello	05467
+71	2	Murindó	05475
+72	2	Mutatá	05480
+73	2	Nariño	05483
+74	2	Necoclí	05490
+75	2	Nechí	05495
+76	2	Olaya	05501
+77	2	Peñol	05541
+78	2	Peque	05543
+79	2	Pueblorrico	05576
+80	2	Puerto Berrío 	05579
+81	2	Puerto Nare 	05585
+82	2	Puerto Triunfo 	05591
+83	2	Remedios	05604
+84	2	Retiro	05607
+85	2	Rionegro	05615
+86	2	Sabanalarga	05628
+87	2	Sabaneta	05631
+88	2	Salgar	05642
+89	2	San Andrés De Cuerquía	05647
+90	2	San Carlos 	05649
+91	2	San Francisco 	05652
+92	2	San Jerónimo 	05656
+93	2	San José De La Montaña 	05658
+94	2	San Juan De Urabá	05659
+95	2	San Luis 	05660
+96	2	San Pedro De Los Milagros 	05664
+97	2	San Pedro De Urabá	05665
+98	2	San Rafael 	05667
+99	2	San Roque 	05670
+100	2	San Vicente Ferrer	05674
+101	2	Santa Bárbara 	05679
+102	2	Santa Rosa De Osos	05686
+103	2	Santo Domingo 	05690
+104	2	El Santuario 	05697
+105	2	Segovia	05736
+106	2	Sonsón	05756
+107	2	Sopetrán	05761
+108	2	Támesis	05789
+109	2	Tarazá	05790
+110	2	Tarso	05792
+111	2	Titiribí	05809
+112	2	Toledo	05819
+113	2	Turbo	05837
+114	2	Uramita	05842
+115	2	Urrao	05847
+116	2	Valdivia	05854
+117	2	Valparaíso	05856
+118	2	Vegachí	05858
+119	2	Venecia	05861
+120	2	Vigía Del Fuerte	05873
+121	2	Yalí	05885
+122	2	Yarumal	05887
+123	2	Yolombó	05890
+124	2	Yondó	05893
+125	2	Zaragoza	05895
+126	4	Barranquilla	08001
+127	4	Baranoa	08078
+128	4	Campo De La Cruz	08137
+129	4	Candelaria	08141
+130	4	Galapa	08296
+131	4	Juan De Acosta	08372
+132	4	Luruaco	08421
+133	4	Malambo	08433
+134	4	Manatí	08436
+135	4	Palmar De Varela	08520
+136	4	Piojó	08549
+137	4	Polonuevo	08558
+138	4	Ponedera	08560
+139	4	Puerto Colombia 	08573
+140	4	Repelón	08606
+141	4	Sabanagrande	08634
+142	4	Sabanalarga	08638
+143	4	Santa Lucía 	08675
+144	4	Santo Tomás 	08685
+145	4	Soledad	08758
+146	4	Suan	08770
+147	4	Tubará	08832
+148	4	Usiacurí	08849
+149	5	Bogotá, D.c. 	11001
+150	6	Cartagena De Indias	13001
+151	6	Achí	13006
+152	6	Altos Del Rosario	13030
+153	6	Arenal	13042
+154	6	Arjona	13052
+155	6	Arroyohondo	13062
+156	6	Barranco De Loba	13074
+157	6	Calamar	13140
+158	6	Cantagallo	13160
+159	6	Cicuco	13188
+160	6	Córdoba	13212
+161	6	Clemencia	13222
+162	6	El Carmen De Bolívar	13244
+163	6	El Guamo 	13248
+164	6	El Peñón 	13268
+165	6	Hatillo De Loba	13300
+166	6	Magangué	13430
+167	6	Mahates	13433
+168	6	Margarita	13440
+169	6	María La Baja	13442
+170	6	Montecristo	13458
+171	6	Mompós	13468
+172	6	Morales	13473
+173	6	Norosí	13490
+174	6	Pinillos	13549
+175	6	Regidor	13580
+176	6	Río Viejo 	13600
+177	6	San Cristóbal 	13620
+178	6	San Estanislao 	13647
+179	6	San Fernando 	13650
+180	6	San Jacinto 	13654
+181	6	San Jacinto Del Cauca	13655
+182	6	San Juan Nepomuceno	13657
+183	6	San Martín De Loba	13667
+184	6	San Pablo 	13670
+185	6	Santa Catalina 	13673
+186	6	Santa Rosa 	13683
+187	6	Santa Rosa Del Sur	13688
+188	6	Simití	13744
+189	6	Soplaviento	13760
+190	6	Talaigua Nuevo 	13780
+191	6	Tiquisio	13810
+192	6	Turbaco	13836
+193	6	Turbaná	13838
+194	6	Villanueva	13873
+195	6	Zambrano	13894
+196	7	Tunja	15001
+197	7	Almeida	15022
+198	7	Aquitania	15047
+199	7	Arcabuco	15051
+200	7	Belén	15087
+201	7	Berbeo	15090
+202	7	Betéitiva	15092
+203	7	Boavita	15097
+204	7	Boyacá	15104
+205	7	Briceño	15106
+206	7	Buenavista	15109
+207	7	Busbanzá	15114
+208	7	Caldas	15131
+209	7	Campohermoso	15135
+210	7	Cerinza	15162
+211	7	Chinavita	15172
+212	7	Chiquinquirá	15176
+213	7	Chiscas	15180
+214	7	Chita	15183
+215	7	Chitaraque	15185
+216	7	Chivatá	15187
+217	7	Ciénega	15189
+218	7	Cómbita	15204
+219	7	Coper	15212
+220	7	Corrales	15215
+221	7	Covarachía	15218
+222	7	Cubará	15223
+223	7	Cucaita	15224
+224	7	Cuítiva	15226
+225	7	Chíquiza	15232
+226	7	Chivor	15236
+227	7	Duitama	15238
+228	7	El Cocuy 	15244
+229	7	El Espino 	15248
+230	7	Firavitoba	15272
+231	7	Floresta	15276
+232	7	Gachantivá	15293
+233	7	Gámeza	15296
+234	7	Garagoa	15299
+235	7	Guacamayas	15317
+236	7	Guateque	15322
+237	7	Guayatá	15325
+238	7	Güicán De La Sierra	15332
+239	7	Iza	15362
+240	7	Jenesano	15367
+241	7	Jericó	15368
+242	7	Labranzagrande	15377
+243	7	La Capilla 	15380
+244	7	La Victoria 	15401
+245	7	La Uvita 	15403
+246	7	Villa De Leyva	15407
+247	7	Macanal	15425
+248	7	Maripí	15442
+249	7	Miraflores	15455
+250	7	Mongua	15464
+251	7	Monguí	15466
+252	7	Moniquirá	15469
+253	7	Motavita	15476
+254	7	Muzo	15480
+255	7	Nobsa	15491
+256	7	Nuevo Colón 	15494
+257	7	Oicatá	15500
+258	7	Otanche	15507
+259	7	Pachavita	15511
+260	7	Páez	15514
+261	7	Paipa	15516
+262	7	Pajarito	15518
+263	7	Panqueba	15522
+264	7	Pauna	15531
+265	7	Paya	15533
+266	7	Paz De Río	15537
+267	7	Pesca	15542
+268	7	Pisba	15550
+269	7	Puerto Boyacá 	15572
+270	7	Quípama	15580
+271	7	Ramiriquí	15599
+272	7	Ráquira	15600
+273	7	Rondón	15621
+274	7	Saboyá	15632
+275	7	Sáchica	15638
+276	7	Samacá	15646
+277	7	San Eduardo 	15660
+278	7	San José De Pare	15664
+279	7	San Luis De Gaceno	15667
+280	7	San Mateo 	15673
+281	7	San Miguel De Sema	15676
+282	7	San Pablo De Borbur	15681
+283	7	Santana	15686
+284	7	Santa María 	15690
+285	7	Santa Rosa De Viterbo	15693
+286	7	Santa Sofía 	15696
+287	7	Sativanorte	15720
+288	7	Sativasur	15723
+289	7	Siachoque	15740
+290	7	Soatá	15753
+291	7	Socotá	15755
+292	7	Socha	15757
+293	7	Sogamoso	15759
+294	7	Somondoco	15761
+295	7	Sora	15762
+296	7	Sotaquirá	15763
+297	7	Soracá	15764
+298	7	Susacón	15774
+299	7	Sutamarchán	15776
+300	7	Sutatenza	15778
+301	7	Tasco	15790
+302	7	Tenza	15798
+303	7	Tibaná	15804
+304	7	Tibasosa	15806
+305	7	Tinjacá	15808
+306	7	Tipacoque	15810
+307	7	Toca	15814
+308	7	Togüí	15816
+309	7	Tópaga	15820
+310	7	Tota	15822
+311	7	Tununguá	15832
+312	7	Turmequé	15835
+313	7	Tuta	15837
+314	7	Tutazá	15839
+315	7	Úmbita	15842
+316	7	Ventaquemada	15861
+317	7	Viracachá	15879
+318	7	Zetaquira	15897
+319	8	Manizales	17001
+320	8	Aguadas	17013
+321	8	Anserma	17042
+322	8	Aranzazu	17050
+323	8	Belalcázar	17088
+324	8	Chinchiná	17174
+325	8	Filadelfia	17272
+326	8	La Dorada 	17380
+327	8	La Merced 	17388
+328	8	Manzanares	17433
+329	8	Marmato	17442
+330	8	Marquetalia	17444
+331	8	Marulanda	17446
+332	8	Neira	17486
+333	8	Norcasia	17495
+334	8	Pácora	17513
+335	8	Palestina	17524
+336	8	Pensilvania	17541
+337	8	Riosucio	17614
+338	8	Risaralda	17616
+339	8	Salamina	17653
+340	8	Samaná	17662
+341	8	San José 	17665
+342	8	Supía	17777
+343	8	Victoria	17867
+344	8	Villamaría	17873
+345	8	Viterbo	17877
+346	9	Florencia	18001
+347	9	Albania	18029
+348	9	Belén De Los Andaquíes	18094
+349	9	Cartagena Del Chairá	18150
+350	9	Curillo	18205
+351	9	El Doncello 	18247
+352	9	El Paujíl 	18256
+353	9	La Montañita 	18410
+354	9	Milán	18460
+355	9	Morelia	18479
+356	9	Puerto Rico 	18592
+357	9	San José Del Fragua	18610
+358	9	San Vicente Del Caguán	18753
+359	9	Solano	18756
+360	9	Solita	18785
+361	9	Valparaíso	18860
+362	11	Popayán	19001
+363	11	Almaguer	19022
+364	11	Argelia	19050
+365	11	Balboa	19075
+366	11	Bolívar	19100
+367	11	Buenos Aires 	19110
+368	11	Cajibío	19130
+369	11	Caldono	19137
+370	11	Caloto	19142
+371	11	Corinto	19212
+372	11	El Tambo 	19256
+373	11	Florencia	19290
+374	11	Guachené	19300
+375	11	Guapí	19318
+376	11	Inzá	19355
+377	11	Jambaló	19364
+378	11	La Sierra 	19392
+379	11	La Vega 	19397
+380	11	López De Micay	19418
+381	11	Mercaderes	19450
+382	11	Miranda	19455
+383	11	Morales	19473
+384	11	Padilla	19513
+385	11	Páez	19517
+386	11	Patía	19532
+387	11	Piamonte	19533
+388	11	Piendamó - Tunía	19548
+389	11	Puerto Tejada 	19573
+390	11	Puracé	19585
+391	11	Rosas	19622
+392	11	San Sebastián 	19693
+393	11	Santander De Quilichao	19698
+394	11	Santa Rosa 	19701
+395	11	Silvia	19743
+396	11	Sotara	19760
+397	11	Suárez	19780
+398	11	Sucre	19785
+399	11	Timbío	19807
+400	11	Timbiquí	19809
+401	11	Toribío	19821
+402	11	Totoró	19824
+403	11	Villa Rica 	19845
+404	12	Valledupar	20001
+405	12	Aguachica	20011
+406	12	Agustín Codazzi 	20013
+407	12	Astrea	20032
+408	12	Becerril	20045
+409	12	Bosconia	20060
+410	12	Chimichagua	20175
+411	12	Chiriguaná	20178
+412	12	Curumaní	20228
+413	12	El Copey 	20238
+414	12	El Paso 	20250
+415	12	Gamarra	20295
+416	12	González	20310
+417	12	La Gloria 	20383
+418	12	La Jagua De Ibirico	20400
+419	12	Manaure Balcón Del Cesar	20443
+420	12	Pailitas	20517
+421	12	Pelaya	20550
+422	12	Pueblo Bello 	20570
+423	12	Río De Oro	20614
+424	12	La Paz 	20621
+425	12	San Alberto 	20710
+426	12	San Diego 	20750
+427	12	San Martín 	20770
+428	12	Tamalameque	20787
+429	14	Montería	23001
+430	14	Ayapel	23068
+431	14	Buenavista	23079
+432	14	Canalete	23090
+433	14	Cereté	23162
+434	14	Chimá	23168
+435	14	Chinú	23182
+436	14	Ciénaga De Oro	23189
+437	14	Cotorra	23300
+438	14	La Apartada 	23350
+439	14	Lorica	23417
+440	14	Los Córdobas 	23419
+441	14	Momil	23464
+442	14	Montelíbano	23466
+443	14	Moñitos	23500
+444	14	Planeta Rica 	23555
+445	14	Pueblo Nuevo 	23570
+446	14	Puerto Escondido 	23574
+447	14	Puerto Libertador 	23580
+448	14	Purísima De La Concepción	23586
+449	14	Sahagún	23660
+450	14	San Andrés De Sotavento	23670
+451	14	San Antero 	23672
+452	14	San Bernardo Del Viento	23675
+453	14	San Carlos 	23678
+454	14	San José De Uré	23682
+455	14	San Pelayo 	23686
+456	14	Tierralta	23807
+457	14	Tuchín	23815
+458	14	Valencia	23855
+459	15	Agua De Dios	25001
+460	15	Albán	25019
+461	15	Anapoima	25035
+462	15	Anolaima	25040
+463	15	Arbeláez	25053
+464	15	Beltrán	25086
+465	15	Bituima	25095
+466	15	Bojacá	25099
+467	15	Cabrera	25120
+468	15	Cachipay	25123
+469	15	Cajicá	25126
+470	15	Caparrapí	25148
+471	15	Cáqueza	25151
+472	15	Carmen De Carupa	25154
+473	15	Chaguaní	25168
+474	15	Chía	25175
+475	15	Chipaque	25178
+476	15	Choachí	25181
+477	15	Chocontá	25183
+478	15	Cogua	25200
+479	15	Cota	25214
+480	15	Cucunubá	25224
+481	15	El Colegio 	25245
+482	15	El Peñón 	25258
+483	15	El Rosal 	25260
+484	15	Facatativá	25269
+485	15	Fómeque	25279
+486	15	Fosca	25281
+487	15	Funza	25286
+488	15	Fúquene	25288
+489	15	Fusagasugá	25290
+490	15	Gachalá	25293
+491	15	Gachancipá	25295
+492	15	Gachetá	25297
+493	15	Gama	25299
+494	15	Girardot	25307
+495	15	Granada	25312
+496	15	Guachetá	25317
+497	15	Guaduas	25320
+498	15	Guasca	25322
+499	15	Guataquí	25324
+500	15	Guatavita	25326
+501	15	Guayabal De Síquima	25328
+502	15	Guayabetal	25335
+503	15	Gutiérrez	25339
+504	15	Jerusalén	25368
+505	15	Junín	25372
+506	15	La Calera 	25377
+507	15	La Mesa 	25386
+508	15	La Palma 	25394
+509	15	La Peña 	25398
+510	15	La Vega 	25402
+511	15	Lenguazaque	25407
+512	15	Machetá	25426
+513	15	Madrid	25430
+514	15	Manta	25436
+515	15	Medina	25438
+516	15	Mosquera	25473
+517	15	Nariño	25483
+518	15	Nemocón	25486
+519	15	Nilo	25488
+520	15	Nimaima	25489
+521	15	Nocaima	25491
+522	15	Venecia	25506
+523	15	Pacho	25513
+524	15	Paime	25518
+525	15	Pandi	25524
+526	15	Paratebueno	25530
+527	15	Pasca	25535
+528	15	Puerto Salgar 	25572
+529	15	Pulí	25580
+530	15	Quebradanegra	25592
+531	15	Quetame	25594
+532	15	Quipile	25596
+533	15	Apulo	25599
+534	15	Ricaurte	25612
+535	15	San Antonio Del Tequendama	25645
+536	15	San Bernardo 	25649
+537	15	San Cayetano 	25653
+538	15	San Francisco 	25658
+539	15	San Juan De Rioseco	25662
+540	15	Sasaima	25718
+541	15	Sesquilé	25736
+542	15	Sibaté	25740
+543	15	Silvania	25743
+544	15	Simijaca	25745
+545	15	Soacha	25754
+546	15	Sopó	25758
+547	15	Subachoque	25769
+548	15	Suesca	25772
+549	15	Supatá	25777
+550	15	Susa	25779
+551	15	Sutatausa	25781
+552	15	Tabio	25785
+553	15	Tausa	25793
+554	15	Tena	25797
+555	15	Tenjo	25799
+556	15	Tibacuy	25805
+557	15	Tibirita	25807
+558	15	Tocaima	25815
+559	15	Tocancipá	25817
+560	15	Topaipí	25823
+561	15	Ubalá	25839
+562	15	Ubaque	25841
+563	15	Villa De San Diego De Ubaté	25843
+564	15	Une	25845
+565	15	Útica	25851
+566	15	Vergara	25862
+567	15	Vianí	25867
+568	15	Villagómez	25871
+569	15	Villapinzón	25873
+570	15	Villeta	25875
+571	15	Viotá	25878
+572	15	Yacopí	25885
+573	15	Zipacón	25898
+574	15	Zipaquirá	25899
+575	13	Quibdó	27001
+576	13	Acandí	27006
+577	13	Alto Baudó 	27025
+578	13	Atrato	27050
+579	13	Bagadó	27073
+580	13	Bahía Solano 	27075
+581	13	Bajo Baudó 	27077
+582	13	Bojayá	27099
+583	13	El Cantón Del San Pablo 	27135
+584	13	Carmen Del Darién	27150
+585	13	Cértegui	27160
+586	13	Condoto	27205
+587	13	El Carmen De Atrato	27245
+588	13	El Litoral Del San Juan 	27250
+589	13	Istmina	27361
+590	13	Juradó	27372
+591	13	Lloró	27413
+592	13	Medio Atrato 	27425
+593	13	Medio Baudó 	27430
+594	13	Medio San Juan	27450
+595	13	Nóvita	27491
+596	13	Nuquí	27495
+597	13	Río Iró 	27580
+598	13	Río Quito 	27600
+599	13	Riosucio	27615
+600	13	San José Del Palmar	27660
+601	13	Sipí	27745
+602	13	Tadó	27787
+603	13	Unguía	27800
+604	13	Unión Panamericana 	27810
+605	18	Neiva	41001
+606	18	Acevedo	41006
+607	18	Agrado	41013
+608	18	Aipe	41016
+609	18	Algeciras	41020
+610	18	Altamira	41026
+611	18	Baraya	41078
+612	18	Campoalegre	41132
+613	18	Colombia	41206
+614	18	Elías	41244
+615	18	Garzón	41298
+616	18	Gigante	41306
+617	18	Guadalupe	41319
+618	18	Hobo	41349
+619	18	Íquira	41357
+620	18	Isnos	41359
+621	18	La Argentina 	41378
+622	18	La Plata 	41396
+623	18	Nátaga	41483
+624	18	Oporapa	41503
+625	18	Paicol	41518
+626	18	Palermo	41524
+627	18	Palestina	41530
+628	18	Pital	41548
+629	18	Pitalito	41551
+630	18	Rivera	41615
+631	18	Saladoblanco	41660
+632	18	San Agustín 	41668
+633	18	Santa María 	41676
+634	18	Suaza	41770
+635	18	Tarqui	41791
+636	18	Tesalia	41797
+637	18	Tello	41799
+638	18	Teruel	41801
+639	18	Timaná	41807
+640	18	Villavieja	41872
+641	18	Yaguará	41885
+642	19	Riohacha	44001
+643	19	Albania	44035
+644	19	Barrancas	44078
+645	19	Dibulla	44090
+646	19	Distracción	44098
+647	19	El Molino 	44110
+648	19	Fonseca	44279
+649	19	Hatonuevo	44378
+650	19	La Jagua Del Pilar	44420
+651	19	Maicao	44430
+652	19	Manaure	44560
+653	19	San Juan Del Cesar	44650
+654	19	Uribia	44847
+655	19	Urumita	44855
+656	19	Villanueva	44874
+657	20	Santa Marta 	47001
+658	20	Algarrobo	47030
+659	20	Aracataca	47053
+660	20	Ariguaní	47058
+661	20	Cerro De San Antonio	47161
+662	20	Chivolo	47170
+663	20	Ciénaga	47189
+664	20	Concordia	47205
+665	20	El Banco 	47245
+666	20	El Piñón 	47258
+667	20	El Retén 	47268
+668	20	Fundación	47288
+669	20	Guamal	47318
+670	20	Nueva Granada 	47460
+671	20	Pedraza	47541
+672	20	Pijiño Del Carmen	47545
+673	20	Pivijay	47551
+674	20	Plato	47555
+675	20	Puebloviejo	47570
+676	20	Remolino	47605
+677	20	Sabanas De San Ángel	47660
+678	20	Salamina	47675
+679	20	San Sebastián De Buenavista	47692
+680	20	San Zenón 	47703
+681	20	Santa Ana 	47707
+682	20	Santa Bárbara De Pinto	47720
+683	20	Sitionuevo	47745
+684	20	Tenerife	47798
+685	20	Zapayán	47960
+686	20	Zona Bananera 	47980
+687	21	Villavicencio	50001
+688	21	Acacías	50006
+689	21	Barranca De Upía	50110
+690	21	Cabuyaro	50124
+691	21	Castilla La Nueva	50150
+692	21	Cubarral	50223
+693	21	Cumaral	50226
+694	21	El Calvario 	50245
+695	21	El Castillo 	50251
+696	21	El Dorado 	50270
+697	21	Fuente De Oro	50287
+698	21	Granada	50313
+699	21	Guamal	50318
+700	21	Mapiripán	50325
+701	21	Mesetas	50330
+702	21	La Macarena 	50350
+703	21	Uribe	50370
+704	21	Lejanías	50400
+705	21	Puerto Concordia 	50450
+706	21	Puerto Gaitán 	50568
+707	21	Puerto López 	50573
+708	21	Puerto Lleras 	50577
+709	21	Puerto Rico 	50590
+710	21	Restrepo	50606
+711	21	San Carlos De Guaroa	50680
+712	21	San Juan De Arama	50683
+713	21	San Juanito 	50686
+714	21	San Martín 	50689
+715	21	Vistahermosa	50711
+716	22	Pasto	52001
+717	22	Albán	52019
+718	22	Aldana	52022
+719	22	Ancuyá	52036
+720	22	Arboleda	52051
+721	22	Barbacoas	52079
+722	22	Belén	52083
+723	22	Buesaco	52110
+724	22	Colón	52203
+725	22	Consacá	52207
+726	22	Contadero	52210
+727	22	Córdoba	52215
+728	22	Cuaspúd	52224
+729	22	Cumbal	52227
+730	22	Cumbitara	52233
+731	22	Chachagüí	52240
+732	22	El Charco 	52250
+733	22	El Peñol 	52254
+734	22	El Rosario 	52256
+735	22	El Tablón De Gómez	52258
+736	22	El Tambo 	52260
+737	22	Funes	52287
+738	22	Guachucal	52317
+739	22	Guaitarilla	52320
+740	22	Gualmatán	52323
+741	22	Iles	52352
+742	22	Imués	52354
+743	22	Ipiales	52356
+744	22	La Cruz 	52378
+745	22	La Florida 	52381
+746	22	La Llanada 	52385
+747	22	La Tola 	52390
+748	22	La Unión 	52399
+749	22	Leiva	52405
+750	22	Linares	52411
+751	22	Los Andes 	52418
+752	22	Magüí	52427
+753	22	Mallama	52435
+754	22	Mosquera	52473
+755	22	Nariño	52480
+756	22	Olaya Herrera 	52490
+757	22	Ospina	52506
+758	22	Francisco Pizarro 	52520
+759	22	Policarpa	52540
+760	22	Potosí	52560
+761	22	Providencia	52565
+762	22	Puerres	52573
+763	22	Pupiales	52585
+764	22	Ricaurte	52612
+765	22	Roberto Payán 	52621
+766	22	Samaniego	52678
+767	22	Sandoná	52683
+768	22	San Bernardo 	52685
+769	22	San Lorenzo 	52687
+770	22	San Pablo 	52693
+771	22	San Pedro De Cartago	52694
+772	22	Santa Bárbara 	52696
+773	22	Santacruz	52699
+774	22	Sapuyes	52720
+775	22	Taminango	52786
+776	22	Tangua	52788
+777	22	San Andrés De Tumaco	52835
+778	22	Túquerres	52838
+779	22	Yacuanquer	52885
+780	23	San José De Cúcuta	54001
+781	23	Ábrego	54003
+782	23	Arboledas	54051
+783	23	Bochalema	54099
+784	23	Bucarasica	54109
+785	23	Cácota	54125
+786	23	Cáchira	54128
+787	23	Chinácota	54172
+788	23	Chitagá	54174
+789	23	Convención	54206
+790	23	Cucutilla	54223
+791	23	Durania	54239
+792	23	El Carmen 	54245
+793	23	El Tarra 	54250
+794	23	El Zulia 	54261
+795	23	Gramalote	54313
+796	23	Hacarí	54344
+797	23	Herrán	54347
+798	23	Labateca	54377
+799	23	La Esperanza 	54385
+800	23	La Playa 	54398
+801	23	Los Patios 	54405
+802	23	Lourdes	54418
+803	23	Mutiscua	54480
+804	23	Ocaña	54498
+805	23	Pamplona	54518
+806	23	Pamplonita	54520
+807	23	Puerto Santander 	54553
+808	23	Ragonvalia	54599
+809	23	Salazar	54660
+810	23	San Calixto 	54670
+811	23	San Cayetano 	54673
+812	23	Santiago	54680
+813	23	Sardinata	54720
+814	23	Silos	54743
+815	23	Teorama	54800
+816	23	Tibú	54810
+817	23	Toledo	54820
+818	23	Villa Caro 	54871
+819	23	Villa Del Rosario	54874
+820	25	Armenia	63001
+821	25	Buenavista	63111
+822	25	Calarcá	63130
+823	25	Circasia	63190
+824	25	Córdoba	63212
+825	25	Filandia	63272
+826	25	Génova	63302
+827	25	La Tebaida 	63401
+828	25	Montenegro	63470
+829	25	Pijao	63548
+830	25	Quimbaya	63594
+831	25	Salento	63690
+832	26	Pereira	66001
+833	26	Apía	66045
+834	26	Balboa	66075
+835	26	Belén De Umbría	66088
+836	26	Dosquebradas	66170
+837	26	Guática	66318
+838	26	La Celia 	66383
+839	26	La Virginia 	66400
+840	26	Marsella	66440
+841	26	Mistrató	66456
+842	26	Pueblo Rico 	66572
+843	26	Quinchía	66594
+844	26	Santa Rosa De Cabal	66682
+845	26	Santuario	66687
+846	28	Bucaramanga	68001
+847	28	Aguada	68013
+848	28	Albania	68020
+849	28	Aratoca	68051
+850	28	Barbosa	68077
+851	28	Barichara	68079
+852	28	Barrancabermeja	68081
+853	28	Betulia	68092
+854	28	Bolívar	68101
+855	28	Cabrera	68121
+856	28	California	68132
+857	28	Capitanejo	68147
+858	28	Carcasí	68152
+859	28	Cepitá	68160
+860	28	Cerrito	68162
+861	28	Charalá	68167
+862	28	Charta	68169
+863	28	Chima	68176
+864	28	Chipatá	68179
+865	28	Cimitarra	68190
+866	28	Concepción	68207
+867	28	Confines	68209
+868	28	Contratación	68211
+869	28	Coromoro	68217
+870	28	Curití	68229
+871	28	El Carmen De Chucurí	68235
+872	28	El Guacamayo 	68245
+873	28	El Peñón 	68250
+874	28	El Playón 	68255
+875	28	Encino	68264
+876	28	Enciso	68266
+877	28	Florián	68271
+878	28	Floridablanca	68276
+879	28	Galán	68296
+880	28	Gámbita	68298
+881	28	Girón	68307
+882	28	Guaca	68318
+883	28	Guadalupe	68320
+884	28	Guapotá	68322
+885	28	Guavatá	68324
+886	28	Güepsa	68327
+887	28	Hato	68344
+888	28	Jesús María 	68368
+889	28	Jordán	68370
+890	28	La Belleza 	68377
+891	28	Landázuri	68385
+892	28	La Paz 	68397
+893	28	Lebrija	68406
+894	28	Los Santos 	68418
+895	28	Macaravita	68425
+896	28	Málaga	68432
+897	28	Matanza	68444
+898	28	Mogotes	68464
+899	28	Molagavita	68468
+900	28	Ocamonte	68498
+901	28	Oiba	68500
+902	28	Onzaga	68502
+903	28	Palmar	68522
+904	28	Palmas Del Socorro	68524
+905	28	Páramo	68533
+906	28	Piedecuesta	68547
+907	28	Pinchote	68549
+908	28	Puente Nacional 	68572
+909	28	Puerto Parra 	68573
+910	28	Puerto Wilches 	68575
+911	28	Rionegro	68615
+912	28	Sabana De Torres	68655
+913	28	San Andrés 	68669
+914	28	San Benito 	68673
+915	28	San Gil 	68679
+916	28	San Joaquín 	68682
+917	28	San José De Miranda	68684
+918	28	San Miguel 	68686
+919	28	San Vicente De Chucurí	68689
+920	28	Santa Bárbara 	68705
+921	28	Santa Helena Del Opón	68720
+922	28	Simacota	68745
+923	28	Socorro	68755
+924	28	Suaita	68770
+925	28	Sucre	68773
+926	28	Suratá	68780
+927	28	Tona	68820
+928	28	Valle De San José	68855
+929	28	Vélez	68861
+930	28	Vetas	68867
+931	28	Villanueva	68872
+932	28	Zapatoca	68895
+933	29	Sincelejo	70001
+934	29	Buenavista	70110
+935	29	Caimito	70124
+936	29	Colosó	70204
+937	29	Corozal	70215
+938	29	Coveñas	70221
+939	29	Chalán	70230
+940	29	El Roble 	70233
+941	29	Galeras	70235
+942	29	Guaranda	70265
+943	29	La Unión 	70400
+944	29	Los Palmitos 	70418
+945	29	Majagual	70429
+946	29	Morroa	70473
+947	29	Ovejas	70508
+948	29	Palmito	70523
+949	29	Sampués	70670
+950	29	San Benito Abad	70678
+951	29	San Juan De Betulia	70702
+952	29	San Marcos 	70708
+953	29	San Onofre 	70713
+954	29	San Pedro 	70717
+955	29	San Luis De Sincé	70742
+956	29	Sucre	70771
+957	29	Santiago De Tolú	70820
+958	29	Tolú Viejo 	70823
+959	30	Ibagué	73001
+960	30	Alpujarra	73024
+961	30	Alvarado	73026
+962	30	Ambalema	73030
+963	30	Anzoátegui	73043
+964	30	Armero	73055
+965	30	Ataco	73067
+966	30	Cajamarca	73124
+967	30	Carmen De Apicalá	73148
+968	30	Casabianca	73152
+969	30	Chaparral	73168
+970	30	Coello	73200
+971	30	Coyaima	73217
+972	30	Cunday	73226
+973	30	Dolores	73236
+974	30	Espinal	73268
+975	30	Falan	73270
+976	30	Flandes	73275
+977	30	Fresno	73283
+978	30	Guamo	73319
+979	30	Herveo	73347
+980	30	Honda	73349
+981	30	Icononzo	73352
+982	30	Lérida	73408
+983	30	Líbano	73411
+984	30	San Sebastián De Mariquita	73443
+985	30	Melgar	73449
+986	30	Murillo	73461
+987	30	Natagaima	73483
+988	30	Ortega	73504
+989	30	Palocabildo	73520
+990	30	Piedras	73547
+991	30	Planadas	73555
+992	30	Prado	73563
+993	30	Purificación	73585
+994	30	Rioblanco	73616
+995	30	Roncesvalles	73622
+996	30	Rovira	73624
+997	30	Saldaña	73671
+998	30	San Antonio 	73675
+999	30	San Luis 	73678
+1000	30	Santa Isabel 	73686
+1001	30	Suárez	73770
+1002	30	Valle De San Juan	73854
+1003	30	Venadillo	73861
+1004	30	Villahermosa	73870
+1005	30	Villarrica	73873
+1006	31	Cali	76001
+1007	31	Alcalá	76020
+1008	31	Andalucía	76036
+1009	31	Ansermanuevo	76041
+1010	31	Argelia	76054
+1011	31	Bolívar	76100
+1012	31	Buenaventura	76109
+1013	31	Guadalajara De Buga	76111
+1014	31	Bugalagrande	76113
+1015	31	Caicedonia	76122
+1016	31	Calima	76126
+1017	31	Candelaria	76130
+1018	31	Cartago	76147
+1019	31	Dagua	76233
+1020	31	El Águila 	76243
+1021	31	El Cairo 	76246
+1022	31	El Cerrito 	76248
+1023	31	El Dovio 	76250
+1024	31	Florida	76275
+1025	31	Ginebra	76306
+1026	31	Guacarí	76318
+1027	31	Jamundí	76364
+1028	31	La Cumbre 	76377
+1029	31	La Unión 	76400
+1030	31	La Victoria 	76403
+1031	31	Obando	76497
+1032	31	Palmira	76520
+1033	31	Pradera	76563
+1034	31	Restrepo	76606
+1035	31	Riofrío	76616
+1036	31	Roldanillo	76622
+1037	31	San Pedro 	76670
+1038	31	Sevilla	76736
+1039	31	Toro	76823
+1040	31	Trujillo	76828
+1041	31	Tuluá	76834
+1042	31	Ulloa	76845
+1043	31	Versalles	76863
+1044	31	Vijes	76869
+1045	31	Yotoco	76890
+1046	31	Yumbo	76892
+1047	31	Zarzal	76895
+1048	3	Arauca	81001
+1049	3	Arauquita	81065
+1050	3	Cravo Norte 	81220
+1051	3	Fortul	81300
+1052	3	Puerto Rondón 	81591
+1053	3	Saravena	81736
+1054	3	Tame	81794
+1055	10	Yopal	85001
+1056	10	Aguazul	85010
+1057	10	Chámeza	85015
+1058	10	Hato Corozal 	85125
+1059	10	La Salina 	85136
+1060	10	Maní	85139
+1061	10	Monterrey	85162
+1062	10	Nunchía	85225
+1063	10	Orocué	85230
+1064	10	Paz De Ariporo	85250
+1065	10	Pore	85263
+1066	10	Recetor	85279
+1067	10	Sabanalarga	85300
+1068	10	Sácama	85315
+1069	10	San Luis De Palenque	85325
+1070	10	Támara	85400
+1071	10	Tauramena	85410
+1072	10	Trinidad	85430
+1073	10	Villanueva	85440
+1074	24	Mocoa	86001
+1075	24	Colón	86219
+1076	24	Orito	86320
+1077	24	Puerto Asís 	86568
+1078	24	Puerto Caicedo 	86569
+1079	24	Puerto Guzmán 	86571
+1080	24	Puerto Leguízamo 	86573
+1081	24	Sibundoy	86749
+1082	24	San Francisco 	86755
+1083	24	San Miguel 	86757
+1084	24	Santiago	86760
+1085	24	Valle Del Guamuez	86865
+1086	24	Villagarzón	86885
+1087	27	San Andrés 	88001
+1088	27	Providencia	88564
+1089	1	Leticia	91001
+1090	1	El Encanto 	91263
+1091	1	La Chorrera 	91405
+1092	1	La Pedrera 	91407
+1093	1	La Victoria 	91430
+1094	1	Mirití - Paraná	91460
+1095	1	Puerto Alegría 	91530
+1096	1	Puerto Arica 	91536
+1097	1	Puerto Nariño 	91540
+1098	1	Puerto Santander 	91669
+1099	1	Tarapacá	91798
+1100	16	Inírida	94001
+1101	16	Barranco Minas 	94343
+1102	16	Mapiripana	94663
+1103	16	San Felipe 	94883
+1104	16	Puerto Colombia 	94884
+1105	16	La Guadalupe 	94885
+1106	16	Cacahual	94886
+1107	16	Pana Pana 	94887
+1108	16	Morichal	94888
+1109	17	San José Del Guaviare	95001
+1110	17	Calamar	95015
+1111	17	El Retorno 	95025
+1112	17	Miraflores	95200
+1113	32	Mitú	97001
+1114	32	Carurú	97161
+1115	32	Pacoa	97511
+1116	32	Taraira	97666
+1117	32	Papunahua	97777
+1118	32	Yavaraté	97889
+1119	33	Puerto Carreño 	99001
+1120	33	La Primavera 	99524
+1121	33	Santa Rosalía 	99624
+1122	33	Cumaribo	99773

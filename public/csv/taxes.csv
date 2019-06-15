@@ -1,0 +1,15 @@
+1	IVA	Impuesto de Valor Agregado	01
+2	IC	Impuesto al Consumo	02
+3	ICA	Impuesto de Industria, Comercio y Aviso	03
+4	INC	Impuesto Nacional al Consumo	04
+5	ReteIVA	Retención sobre el IVA	05
+6	ReteFuente	Retención sobre Renta	06
+7	ReteICA	Retención sobre el ICA	07
+8	FtoHorticultura	Cuota de Fomento Hortifrutícula	20
+9	Timbre	Impuesto de Timbre	21
+10	Bolsas	Impuesto al Consumo de Bolsa Plástica	22
+11	INCarbono	Impuesto Nacional al Carbono	23
+12	INCombustibles	Impuesto Nacional a los Combustibles	24
+13	Sobretasa Combustibles	Sobretasa a los combustibles	25
+14	Sordicom	Contribución minoristas (Combustibles)	26
+15	Nombre de la figura tributaria	Otros tributos, tasas, contribuciones, y similares	ZZ

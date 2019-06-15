@@ -1,0 +1,75 @@
+1	Instrumento no definido	1
+2	Crédito ACH	2
+3	Débito ACH	3
+4	Reversión débito de demanda ACH	4
+5	Reversión crédito de demanda ACH 	5
+6	Crédito de demanda ACH	6
+7	Débito de demanda ACH	7
+8	Mantener	8
+9	Clearing Nacional o Regional	9
+10	Efectivo	10
+11	Reversión Crédito Ahorro	11
+12	Reversión Débito Ahorro	12
+13	Crédito Ahorro	13
+14	Débito Ahorro	14
+15	Bookentry Crédito	15
+16	Bookentry Débito	16
+17	Concentración de la demanda en efectivo /Desembolso Crédito (CCD)	17
+18	Concentración de la demanda en efectivo / Desembolso (CCD) débito	18
+19	Crédito Pago negocio corporativo (CTP)	19
+20	Cheque	20
+21	Poyecto bancario	21
+22	Proyecto bancario certificado	22
+23	Cheque bancario	23
+24	Nota cambiaria esperando aceptación	24
+25	Cheque certificado	25
+26	Cheque Local	26
+27	Débito Pago Neogcio Corporativo (CTP)	27
+28	Crédito Negocio Intercambio Corporativo (CTX)	28
+29	Débito Negocio Intercambio Corporativo (CTX)	29
+30	Transferecia Crédito	30
+31	Transferencia Débito	31
+32	Concentración Efectivo / Desembolso Crédito plus (CCD+)	32
+33	Concentración Efectivo / Desembolso Débito plus (CCD+)	33
+34	Pago y depósito pre acordado (PPD)	34
+35	Concentración efectivo ahorros / Desembolso Crédito (CCD)	35
+36	Concentración efectivo ahorros / Desembolso Drédito (CCD)	36
+37	Pago Negocio Corporativo Ahorros Crédito (CTP)	37
+38	Pago Neogcio Corporativo Ahorros Débito (CTP)	38
+39	Crédito Negocio Intercambio Corporativo (CTX)	39
+40	Débito Negocio Intercambio Corporativo (CTX)	40
+41	Concentración efectivo/Desembolso Crédito plus (CCD+) 	41
+42	Consiganción bancaria	42
+43	Concentración efectivo / Desembolso Débito plus (CCD+)	43
+44	Nota cambiaria	44
+45	Transferencia Crédito Bancario	45
+46	Transferencia Débito Interbancario	46
+47	Transferencia Débito Bancaria	47
+48	Tarjeta Crédito	48
+49	Tarjeta Débito	49
+50	Postgiro	50
+51	Telex estándar bancario francés	51
+52	Pago comercial urgente	52
+53	Pago Tesorería Urgente	53
+54	Nota promisoria	60
+55	Nota promisoria firmada por el acreedor	61
+56	Nota promisoria firmada por el acreedor, avalada por el banco	62
+57	Nota promisoria firmada por el acreedor, avalada por un tercero	63
+58	Nota promisoria firmada pro el banco	64
+59	Nota promisoria firmada por un banco avalada por otro banco	65
+60	Nota promisoria firmada 	66
+61	Nota promisoria firmada por un tercero avalada por un banco	67
+62	Retiro de nota por el por el acreedor	70
+63	Retiro de nota por el por el acreedor sobre un banco	74
+64	Retiro de nota por el acreedor, avalada por otro banco	75
+65	Retiro de nota por el acreedor, sobre un banco avalada por un tercero	76
+66	Retiro de una nota por el acreedor sobre un tercero	77
+67	Retiro de una nota por el acreedor sobre un tercero avalada por un banco	78
+68	Nota bancaria tranferible	91
+69	Cheque local traferible	92
+70	Giro referenciado	93
+71	Giro urgente	94
+72	Giro formato abierto	95
+73	Método de pago solicitado no usuado	96
+74	Clearing entre partners	97
+75	Acuerdo mutuo	ZZZ

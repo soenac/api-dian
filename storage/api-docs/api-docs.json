@@ -1,0 +1,173 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Facturación Electronica Validación Previa DIAN",
+        "description": "Documentación API Facturación Electronica Validación Previa DIAN.",
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000",
+            "description": "Server"
+        }
+    ],
+    "paths": {
+        "/api/v2.1/config/company/{nit}/{dv}": {
+            "post": {
+                "tags": [
+                    "Configuración"
+                ],
+                "summary": "Datos de la empresa, resolucion, certificado dígita, etc.",
+                "operationId": "App\\Http\\Controllers\\Api\\ConfigurationController::index",
+                "parameters": [
+                    {
+                        "name": "nit",
+                        "in": "path",
+                        "description": "Número de Identificación Tributaria RUT",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "dv",
+                        "in": "path",
+                        "description": "Dígito de verificación RUT",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "type_document_identification_id": {
+                                        "description": "Tipo de identificación del documento",
+                                        "type": "integer"
+                                    },
+                                    "country_id": {
+                                        "description": "Código del pais",
+                                        "type": "integer"
+                                    },
+                                    "type_organization_id": {
+                                        "description": "Tipo de organización",
+                                        "type": "integer"
+                                    },
+                                    "razon_social": {
+                                        "description": "Razón social",
+                                        "type": "integer"
+                                    },
+                                    "municipality_id": {
+                                        "description": "Código del municipio",
+                                        "type": "integer"
+                                    },
+                                    "direccion": {
+                                        "description": "Dirección",
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "description": "Teléfono",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "api_token": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "api_token": {
+                "type": "apiKey",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Configuración",
+            "description": "Configuración inicial del API."
+        }
+    ]
+}
