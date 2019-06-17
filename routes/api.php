@@ -21,6 +21,7 @@ Route::middleware('auth:api')->group(function() {
             Route::post('/{nit}/{dv?}', 'Api\ConfigurationController@store');
             Route::put('/software', 'Api\ConfigurationController@storeSoftware');
             Route::put('/certificate', 'Api\ConfigurationController@storeCertificate');
+            Route::put('/resolution', 'Api\ConfigurationController@storeResolution');
         });
     });
 });

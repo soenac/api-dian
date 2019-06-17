@@ -28,4 +28,11 @@ class Company extends Model
     public function certificate() {
         return $this->hasOne(Certificate::class);
     }
+    
+    /**
+     * Get the resolutions record associated with the company.
+     */
+    public function resolutions() {
+        return $this->hasMany(Resolution::class);
+    }
 }

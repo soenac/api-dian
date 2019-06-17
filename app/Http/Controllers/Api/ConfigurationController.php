@@ -9,6 +9,7 @@ use Exception;
 use App\Http\Requests\Api\{
     ConfigurationRequest,
     ConfigurationSoftwareRequest,
+    ConfigurationResolutionRequest,
     ConfigurationCertificateRequest
 };
 use Illuminate\Support\Str;
@@ -261,7 +262,7 @@ class ConfigurationController extends Controller
         }
     }
     
-    // Bearer xPlPAE1AmsM4xVoijA8C7nw2lfSPC1lIuO8w9OhD8JC4xFEHGknn3KTtvFtngquLrFcSVoFtw0oPiMrC
+    // Bearer cbAZzFu5TfYMsZFdB4PVgfpLGfL2jp8JcE5OKM5XZjX1BYh604z3eGKyNj3x28RUBUiRcPrOJUVTRgxu
     /**
      * @OA\Put(
      *    tags={"Configuración"},
@@ -380,7 +381,7 @@ class ConfigurationController extends Controller
         }
     }
     
-    // Bearer xPlPAE1AmsM4xVoijA8C7nw2lfSPC1lIuO8w9OhD8JC4xFEHGknn3KTtvFtngquLrFcSVoFtw0oPiMrC
+    // Bearer cbAZzFu5TfYMsZFdB4PVgfpLGfL2jp8JcE5OKM5XZjX1BYh604z3eGKyNj3x28RUBUiRcPrOJUVTRgxu
     /**
      * @OA\Put(
      *    tags={"Configuración"},
@@ -509,6 +510,166 @@ class ConfigurationController extends Controller
             return [
                 'message' => 'Certificado creado con éxito',
                 'certificado' => $certificate,
+            ];
+        }
+        catch (Exception $e) {
+            DB::rollBack();
+            
+            return response([
+                'message' => 'Internal Server Error',
+                'payload' => $e->getMessage()
+            ], 500);
+        }
+    }
+    
+    // Bearer cbAZzFu5TfYMsZFdB4PVgfpLGfL2jp8JcE5OKM5XZjX1BYh604z3eGKyNj3x28RUBUiRcPrOJUVTRgxu
+    /**
+     * @OA\Put(
+     *    tags={"Configuración"},
+     *    path="/api/v2.1/config/resolution",
+     *    summary="Datos de la resolución",
+     *    security={{"api_token":{}}},
+     *    @OA\RequestBody(
+     *        required=true,
+     *        description="Objeto para la configuración de la resolución.",
+     *        @OA\MediaType(
+     *            mediaType="application/json",
+     *            @OA\Schema(
+     *                required={
+     *                    "type_document_id",
+     *                    "prefix",
+     *                    "from",
+     *                    "to"
+     *                },
+     *                @OA\Property(
+     *                    property="type_document_id",
+     *                    description="Código de tipo de documento",
+     *                    type="integer"
+     *                ),
+     *                @OA\Property(
+     *                    property="prefix",
+     *                    description="Prefijo",
+     *                    type="string"
+     *                ),
+     *                @OA\Property(
+     *                    property="resolution",
+     *                    description="Resolución",
+     *                    type="integer"
+     *                ),
+     *                @OA\Property(
+     *                    property="resolution_date",
+     *                    description="Fecha de resolución",
+     *                    type="string",
+     *                    format="date"
+     *                ),
+     *                @OA\Property(
+     *                    property="technical_key",
+     *                    description="Llave técnica",
+     *                    type="string"
+     *                ),
+     *                @OA\Property(
+     *                    property="from",
+     *                    description="Desde",
+     *                    type="integer"
+     *                ),
+     *                @OA\Property(
+     *                    property="to",
+     *                    description="Hasta",
+     *                    type="integer"
+     *                ),
+     *                @OA\Property(
+     *                    property="date_from",
+     *                    description="Fecha desde",
+     *                    type="string",
+     *                    format="date"
+     *                ),
+     *                @OA\Property(
+     *                    property="date_to",
+     *                    description="Fecha hasta",
+     *                    type="string",
+     *                    format="date"
+     *                ),
+     *                example={
+     *                    "type_document_id": 4,
+     *                    "prefix": "TEST",
+     *                    "from": 0,
+     *                    "to": 0
+     *                }
+     *            )
+     *        )
+     *    ),
+     *    @OA\Response(
+     *        response=200,
+     *        description="OK",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    ),
+     *    @OA\Response(
+     *        response=422,
+     *        description="Unprocessable Entity",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    ),
+     *    @OA\Response(
+     *        response=400,
+     *        description="Bad Request",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    ),
+     *    @OA\Response(
+     *        response=401,
+     *        description="Unauthorized",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    ),
+     *    @OA\Response(
+     *        response=404,
+     *        description="Not Found",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    ),
+     *    @OA\Response(
+     *        response=500,
+     *        description="Internal Server Error",
+     *        @OA\JsonContent(
+     *            type="object",
+     *            @OA\Items()
+     *        ),
+     *    )
+     * )
+     */
+    public function storeResolution(ConfigurationResolutionRequest $request) {
+        DB::beginTransaction();
+        
+        try {
+            $resolution = auth()->user()->company->resolutions()->updateOrCreate([
+                'type_document_id' => $request->type_document_id
+            ], [
+                'prefix' => $request->prefix,
+                'resolution' => $request->resolution,
+                'resolution_date' => $request->resolution_date,
+                'technical_key' => $request->technical_key,
+                'from' => $request->from,
+                'to' => $request->to,
+                'date_from' => $request->date_from,
+                'date_to' => $request->date_to
+            ]);
+            
+            DB::commit();
+            
+            return [
+                'message' => 'Resolución creada con éxito',
+                'resolution' => $resolution,
             ];
         }
         catch (Exception $e) {

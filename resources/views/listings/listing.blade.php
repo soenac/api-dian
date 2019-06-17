@@ -41,6 +41,29 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
+                    <h4>Tipos de documentos</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (App\TypeDocument::all() as $key => $value)
+                                <tr>
+                                    <td>{{$value->id}}</td>
+                                    <td>{{$value->name}}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
                     <h4>Tipos de identificaciones</h4>
                 </div>
                 <div class="table-responsive">
