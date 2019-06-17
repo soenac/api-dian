@@ -16,19 +16,42 @@ class ConfigurationRequest extends FormRequest
     }
     
     /**
+     * Get data to be validated from the request. From Route URL
+     *
+     * @return array
+     */
+    protected function validationData() {
+        if (method_exists($this->route(), 'parameters')) {
+            $this->request->add($this->route()->parameters());
+            $this->query->add($this->route()->parameters());
+            
+            return array_merge($this->route()->parameters(), $this->all());
+        }
+        
+        return $this->all();
+    }
+    
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
     public function rules() {
         return [
+            'nit' => 'required|numeric|digits_between:1,15|unique:companies,identification_number',
+            'dv' => 'nullable|numeric|digits:1',
+            'type_environment_id' => 'nullable|exists:type_environments,id',
             'type_document_identification_id' => 'required|exists:type_document_identifications,id',
-            'country_id' => 'required|exists:countries,id',
+            'country_id' => 'nullable|exists:countries,id',
             'type_organization_id' => 'required|exists:type_organizations,id',
-            'razon_social' => 'required|string',
+            'type_regime_id' => 'required|exists:type_regimes,id',
+            'type_liability_id' => 'required|exists:type_liabilities,id',
+            'business_name' => 'required|string',
             'municipality_id' => 'required|exists:municipalities,id',
-            'direccion' => 'required|string',
-            'phone' => 'required|string'
+            'address' => 'required|string',
+            'phone' => 'required|numeric|digits_between:7,10',
+            'type_currency_id' => 'nullable|exists:type_currencies,id',
+            'email' => 'required|string|email|unique:users,email'
         ];
     }
 }

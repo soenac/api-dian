@@ -18,7 +18,9 @@ Route::middleware('auth:api')->group(function() {
     Route::prefix('/v2.1')->group(function() {
         // Configuration
         Route::prefix('/config')->group(function() {
-            Route::post('/company/{nit}/{dv}', 'Api\ConfigurationController@index');
+            Route::post('/{nit}/{dv?}', 'Api\ConfigurationController@store');
+            Route::put('/software', 'Api\ConfigurationController@storeSoftware');
+            Route::put('/certificate', 'Api\ConfigurationController@storeCertificate');
         });
     });
 });

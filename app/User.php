@@ -36,4 +36,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    /**
+     * Get the company record associated with the user.
+     */
+    public function company() {
+        return $this->hasOne(Company::class);
+    }
 }

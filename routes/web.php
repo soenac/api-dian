@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return redirect('/api/documentation');
 });
+
+Route::get('/listings', 'ListingController@index');
