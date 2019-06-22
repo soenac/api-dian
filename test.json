@@ -1,0 +1,193 @@
+{
+    "type_document_id": 1,
+    "customer": {
+        "identification_number": 1234567890,
+        "name": "Customer Test",
+        "phone": 1234567,
+        "address": "CALLE 0 0C 0",
+        "email": "test@test.com",
+        "merchant_registration": "No tiene"
+    },
+    "allowance_charges": [{
+            "charge_indicator": false,
+            "discount_id": 12,
+            "allowance_charge_reason": "Descuento cliente frecuente",
+            "amount": "10000.00",
+            "base_amount": "1720000.00"
+        },
+        {
+            "charge_indicator": false,
+            "discount_id": 8,
+            "allowance_charge_reason": "Descuento por IVA asumido",
+            "amount": "19000.00",
+            "base_amount": "1720000.00"
+        },
+        {
+            "charge_indicator": false,
+            "discount_id": 8,
+            "allowance_charge_reason": "Descuento por temporada",
+            "amount": "30000.00",
+            "base_amount": "1720000.00"
+        },
+        {
+            "charge_indicator": true,
+            "allowance_charge_reason": "Cargo financiero pago 30d",
+            "amount": "15000.00",
+            "base_amount": "1720000.00"
+        },
+        {
+            "charge_indicator": true,
+            "allowance_charge_reason": "Cargo financiero estudio de crédito",
+            "amount": "5000.00",
+            "base_amount": "1720000.00"
+        }
+    ],
+    "tax_totals": [{
+            "tax_id": 1,
+            "percent": "19.00",
+            "tax_amount": "342000.00",
+            "taxable_amount": "1800000.00"
+        },
+        {
+            "tax_id": 2,
+            "percent": "0.00",
+            "tax_amount": "0.00",
+            "taxable_amount": "0.00"
+        },
+        {
+            "tax_id": 3,
+            "percent": "0.00",
+            "tax_amount": "0.00",
+            "taxable_amount": "0.00"
+        },
+        {
+            "tax_id": 10,
+            "tax_amount": "60.00",
+            "taxable_amount": "0.00",
+            "unit_measure_id": 886,
+            "per_unit_amount": "30.00",
+            "base_unit_measure": "1.000000"
+        }
+    ],
+    "legal_monetary_totals": {
+        "line_extension_amount": "1720000.00",
+        "tax_exclusive_amount": "1800000.00",
+        "tax_inclusive_amount": "2062060.00",
+        "allowance_total_amount": "59000.00",
+        "charge_total_amount": "20000.00",
+        "payable_amount": "2023060.00"
+    },
+    "invoice_lines": [{
+            "unit_measure_id": 642,
+            "invoiced_quantity": "1.000000",
+            "line_extension_amount": "250000.00",
+            "free_of_charge_indicator": false,
+            "allowance_charges": [{
+                "charge_indicator": false,
+                "allowance_charge_reason": "Discount",
+                "amount": "50000.00",
+                "base_amount": "300000.00"
+            }],
+            "tax_totals": [{
+                "tax_id": 1,
+                "tax_amount": "47500.00",
+                "taxable_amount": "250000.00",
+                "percent": "19.00"
+            }],
+            "description": "Base para TV",
+            "code": "6543542313534",
+            "type_item_identification_id": 3,
+            "price_amount": "300000.00",
+            "base_quantity": "1.000000"
+        },
+        {
+            "unit_measure_id": 642,
+            "invoiced_quantity": "1.000000",
+            "line_extension_amount": "0.00",
+            "free_of_charge_indicator": true,
+            "reference_price_id": 3,
+            "tax_totals": [{
+                "tax_id": 1,
+                "tax_amount": "19000.00",
+                "taxable_amount": "100000.00",
+                "percent": "19.00"
+            }],
+            "description": "Antena (regalo)",
+            "code": "3543542234414",
+            "type_item_identification_id": 4,
+            "price_amount": "100000.00",
+            "base_quantity": "1.000000"
+        },
+        {
+            "unit_measure_id": 642,
+            "invoiced_quantity": "1.000000",
+            "line_extension_amount": "1410000.00",
+            "free_of_charge_indicator": false,
+            "allowance_charges": [{
+                "charge_indicator": true,
+                "allowance_charge_reason": "Cargo",
+                "amount": "10000.00",
+                "multiplier_factor_numeric": "10.00"
+            }],
+            "tax_totals": [{
+                "tax_id": 1,
+                "tax_amount": "267900.00",
+                "taxable_amount": "1410000.00",
+                "percent": "19.00"
+            }],
+            "description": "TV",
+            "code": "12435423151234",
+            "type_item_identification_id": 4,
+            "price_amount": "1400000.00",
+            "base_quantity": "1.000000"
+        },
+        {
+            "unit_measure_id": 642,
+            "invoiced_quantity": "1.000000",
+            "line_extension_amount": "20000.00",
+            "free_of_charge_indicator": false,
+            "description": "Servicio (excluido)",
+            "code": "6543542313534",
+            "type_item_identification_id": 3,
+            "price_amount": "20000.00",
+            "base_quantity": "1.000000"
+        },
+        {
+            "unit_measure_id": 642,
+            "invoiced_quantity": "1.000000",
+            "line_extension_amount": "40000.00",
+            "free_of_charge_indicator": false,
+            "tax_totals": [{
+                "tax_id": 1,
+                "tax_amount": "7600.00",
+                "taxable_amount": "40000.00",
+                "percent": "19.00"
+            }],
+            "description": "Acarreo",
+            "code": "6543542313534",
+            "type_item_identification_id": 3,
+            "price_amount": "40000.00",
+            "base_quantity": "1.000000"
+        },
+        {
+            "unit_measure_id": 886,
+            "invoiced_quantity": "2.000000",
+            "line_extension_amount": "0.00",
+            "free_of_charge_indicator": true,
+            "reference_price_id": 3,
+            "tax_totals": [{
+                "tax_id": 10,
+                "tax_amount": "60.00",
+                "taxable_amount": "0.00",
+                "unit_measure_id": 886,
+                "per_unit_amount": "30.00",
+                "base_unit_measure": "1.000000"
+            }],
+            "description": "Bolsas",
+            "code": "18937100-7",
+            "type_item_identification_id": 3,
+            "price_amount": "200.00",
+            "base_quantity": "1.000000"
+        }
+    ]
+}

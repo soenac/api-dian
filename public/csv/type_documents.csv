@@ -1,5 +1,5 @@
-1	Factura de Venta Nacional	01
-2	Factura de Exportación	02
-3	Factura de Contingencia	03
-4	Nota Crédito	91
-5	Nota Débito	92
+1	Factura de Venta Nacional	01	CUFE-SHA384
+2	Factura de Exportación	02	CUFE-SHA384
+3	Factura de Contingencia	03	CUFE-SHA384
+4	Nota Crédito	91	CUDE-SHA384
+5	Nota Débito	92	CUDE-SHA384

@@ -23,7 +23,7 @@ class ConfigurationResolutionRequest extends FormRequest
     public function rules() {
         return [
             'type_document_id' => 'required|exists:type_documents,id',
-            'prefix' => 'required|string|max:4',
+            'prefix' => 'nullable|string|max:4',
             'resolution' => 'nullable|required_if:type_document_id,=,1|integer',
             'resolution_date' => 'nullable|required_if:type_document_id,=,1|date_format:Y-m-d',
             'technical_key' => 'nullable|required_if:type_document_id,=,1|string',

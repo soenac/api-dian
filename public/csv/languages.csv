@@ -1,0 +1,370 @@
+1	Afar	aa
+2	Afar	AA
+3	Abkhazian	ab
+4	Abkhazian	AB
+5	Avestan	ae
+6	Avestan	AE
+7	Afrikaans	af
+8	Afrikaans	AF
+9	Akan	ak
+10	Akan	AK
+11	Amharic	am
+12	Amharic	AM
+13	Aragonese	an
+14	Aragonese	AN
+15	Arabic	ar
+16	Arabic	AR
+17	Assamese	as
+18	Assamese	AS
+19	Avaric	av
+20	Avaric	AV
+21	Aymara	ay
+22	Aymara	AY
+23	Azerbaijani	az
+24	Azerbaijani	AZ
+25	Bashkir	ba
+26	Bashkir	BA
+27	Belarusian	be
+28	Belarusian	BE
+29	Bulgarian	bg
+30	Bulgarian	BG
+31	Bihari languages	bh
+32	Bihari languages	BH
+33	Bislama	bi
+34	Bislama	BI
+35	Bambara	bm
+36	Bambara	BM
+37	Bengali	bn
+38	Bengali	BN
+39	Tibetan	bo
+40	Tibetan	BO
+41	Breton	br
+42	Breton	BR
+43	Bosnian	bs
+44	Bosnian	BS
+45	Catalan; Valencian	ca
+46	Catalan; Valencian	CA
+47	Chechen	ce
+48	Chechen	CE
+49	Chamorro	ch
+50	Chamorro	CH
+51	Corsican	co
+52	Corsican	CO
+53	Cree	cr
+54	Cree	CR
+55	Czech	cs
+56	Czech	CS
+57	Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic	cu
+58	Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic	CU
+59	Chuvash	cv
+60	Chuvash	CV
+61	Welsh	cy
+62	Welsh	CY
+63	Danish	da
+64	Danish	DA
+65	German	de
+66	German	DE
+67	Divehi; Dhivehi; Maldivian	dv
+68	Divehi; Dhivehi; Maldivian	DV
+69	Dzongkha	dz
+70	Dzongkha	DZ
+71	Ewe	ee
+72	Ewe	EE
+73	Greek; Modern (1453-)	el
+74	Greek; Modern (1453-)	EL
+75	English	en
+76	English	EN
+77	Esperanto	eo
+78	Esperanto	EO
+79	Spanish; Castilian	es
+80	Spanish; Castilian	ES
+81	Estonian	et
+82	Estonian	ET
+83	Basque	eu
+84	Basque	EU
+85	Persian	fa
+86	Persian	FA
+87	Fulah	ff
+88	Fulah	FF
+89	Finnish	fi
+90	Finnish	FI
+91	Fijian	fj
+92	Fijian	FJ
+93	Faroese	fo
+94	Faroese	FO
+95	French	fr
+96	French	FR
+97	Western Frisian	fy
+98	Western Frisian	FY
+99	Irish	ga
+100	Irish	GA
+101	Gaelic; Scottish Gaelic	gd
+102	Gaelic; Scottish Gaelic	GD
+103	Galician	gl
+104	Galician	GL
+105	Guarani	gn
+106	Guarani	GN
+107	Gujarati	gu
+108	Gujarati	GU
+109	Manx	gv
+110	Manx	GV
+111	Hausa	ha
+112	Hausa	HA
+113	Hebrew	he
+114	Hebrew	HE
+115	Hindi	hi
+116	Hindi	HI
+117	Hiri Motu	ho
+118	Hiri Motu	HO
+119	Croatian	hr
+120	Croatian	HR
+121	Haitian; Haitian Creole	ht
+122	Haitian; Haitian Creole	HT
+123	Hungarian	hu
+124	Hungarian	HU
+125	Armenian	hy
+126	Armenian	HY
+127	Herero	hz
+128	Herero	HZ
+129	Interlingua (International Auxiliary Language Association)	ia
+130	Interlingua (International Auxiliary Language Association)	IA
+131	Indonesian	id
+132	Indonesian	ID
+133	Interlingue; Occidental	ie
+134	Interlingue; Occidental	IE
+135	Igbo	ig
+136	Igbo	IG
+137	Sichuan Yi; Nuosu	ii
+138	Sichuan Yi; Nuosu	II
+139	Inupiaq	ik
+140	Inupiaq	IK
+141	Ido	io
+142	Ido	IO
+143	Icelandic	is
+144	Icelandic	IS
+145	Italian	it
+146	Italian	IT
+147	Inuktiut	iu
+148	Inuktiut	IU
+149	Japanese	ja
+150	Japanese	JA
+151	Javanese	jv
+152	Javanese	JV
+153	Georgian	ka
+154	Georgian	KA
+155	Kongo	kg
+156	Kongo	KG
+157	Kikuyu; Gikuyu	ki
+158	Kikuyu; Gikuyu	KI
+159	Kuanyama; Kwanyama	kj
+160	Kuanyama; Kwanyama	KJ
+161	Kazakh	kk
+162	Kazakh	KK
+163	Kalaallisut; Greenlandic	kl
+164	Kalaallisut; Greenlandic	KL
+165	Central Khmer	km
+166	Central Khmer	KM
+167	Kannada	kn
+168	Kannada	KN
+169	Korean	ko
+170	Korean	KO
+171	Kanuri	kr
+172	Kanuri	KR
+173	Kashmiri	ks
+174	Kashmiri	KS
+175	Kurdish	ku
+176	Kurdish	KU
+177	Komi	kv
+178	Komi	KV
+179	Cornish	kw
+180	Cornish	KW
+181	Kirghiz; Kyrgyz	ky
+182	Kirghiz; Kyrgyz	KY
+183	Latin	la
+184	Latin	LA
+185	Luxembourgish; Letzeburgesch	lb
+186	Luxembourgish; Letzeburgesch	LB
+187	Ganda	lg
+188	Ganda	LG
+189	Limburgan; Limburger; Limburgish	li
+190	Limburgan; Limburger; Limburgish	LI
+191	Lingala	ln
+192	Lingala	LN
+193	Lao	lo
+194	Lao	LO
+195	Lithuanian	lt
+196	Lithuanian	LT
+197	Luba-Katanga	lu
+198	Luba-Katanga	LU
+199	Latvian	lv
+200	Latvian	LV
+201	Malagasy	mg
+202	Malagasy	MG
+203	Marshallese	mh
+204	Marshallese	MH
+205	Maori	mi
+206	Maori	MI
+207	Macedonian	mk
+208	Macedonian	MK
+209	Malayalam	ml
+210	Malayalam	ML
+211	Mongolian	mn
+212	Mongolian	MN
+213	Moldavian; Moldovan	mo
+214	Moldavian; Moldovan	MO
+215	Marathi	mr
+216	Marathi	MR
+217	Malay	ms
+218	Malay	MS
+219	Maltese	mt
+220	Maltese	MT
+221	Burmese	my
+222	Burmese	MY
+223	Nauru	na
+224	Nauru	NA
+225	Bokmal Norwegian; Norwegian Bokmal	nb
+226	Bokmal Norwegian; Norwegian Bokmal	NB
+227	Ndebele; North; North Ndebele	nd
+228	Ndebele; North; North Ndebele	ND
+229	Nepali	ne
+230	Nepali	NE
+231	Ndonga	ng
+232	Ndonga	NG
+233	Dutch; Flemish	nl
+234	Dutch; Flemish	NL
+235	Norwegian Nynorsk; Nynorsk, Norwegian	nn
+236	Norwegian Nynorsk; Nynorsk, Norwegian	NN
+237	Norwegian	no
+238	Norwegian	NO
+239	Ndebele; South; South Ndebele	nr
+240	Ndebele; South; South Ndebele	NR
+241	Navajo; Navaho	nv
+242	Navajo; Navaho	NV
+243	Chichewa; Chewa; Nyanja	ny
+244	Chichewa; Chewa; Nyanja	NY
+245	Occitan (post 1500)	oc
+246	Occitan (post 1500)	OC
+247	Ojibwa	oj
+248	Ojibwa	OJ
+249	Oromo	om
+250	Oromo	OM
+251	Oriya	or
+252	Oriya	OR
+253	Ossetian; Ossetic	os
+254	Ossetian; Ossetic	OS
+255	Panjabi; Punjabi	pa
+256	Panjabi; Punjabi	PA
+257	Pali	pi
+258	Pali	PI
+259	Polish	pl
+260	Polish	PL
+261	Pushto; Pashto	ps
+262	Pushto; Pashto	PS
+263	Portuguese	pt
+264	Portuguese	PT
+265	Quechua	qu
+266	Quechua	QU
+267	Romansh	rm
+268	Romansh	RM
+269	Rundi	rn
+270	Rundi	RN
+271	Romanian	ro
+272	Romanian	RO
+273	Russian	ru
+274	Russian	RU
+275	Kinyarwanda	rw
+276	Kinyarwanda	RW
+277	Sanskrit	sa
+278	Sanskrit	SA
+279	Sardinian	sc
+280	Sardinian	SC
+281	Sindhi	sd
+282	Sindhi	SD
+283	Northern Sami	se
+284	Northern Sami	SE
+285	Sango	sg
+286	Sango	SG
+287	Sinhala; Sinhalese	si
+288	Sinhala; Sinhalese	SI
+289	Slovak	sk
+290	Slovak	SK
+291	Slovenian	sl
+292	Slovenian	SL
+293	Samoan	sm
+294	Samoan	SM
+295	Shona	sn
+296	Shona	SN
+297	Somali	so
+298	Somali	SO
+299	Albanian	sq
+300	Albanian	SQ
+301	Serbian	sr
+302	Serbian	SR
+303	Swati	ss
+304	Swati	SS
+305	Sotho, Southern	st
+306	Sotho, Southern	ST
+307	Sundanese	su
+308	Sundanese	SU
+309	Swedish	sv
+310	Swedish	SV
+311	Swahili	sw
+312	Swahili	SW
+313	Tamil	ta
+314	Tamil	TA
+315	Telugu	te
+316	Telugu	TE
+317	Tajik	tg
+318	Tajik	TG
+319	Thai	th
+320	Thai	TH
+321	Tigrinya	ti
+322	Tigrinya	TI
+323	Turkmen	tk
+324	Turkmen	TK
+325	Tagalog	tl
+326	Tagalog	TL
+327	Tswana	tn
+328	Tswana	TN
+329	Tonga (Tonga Islands)	to
+330	Tonga (Tonga Islands)	TO
+331	Turkish	tr
+332	Turkish	TR
+333	Tsonga	ts
+334	Tsonga	TS
+335	Tatar	tt
+336	Tatar	TT
+337	Twi	tw
+338	Twi	TW
+339	Tahitian	ty
+340	Tahitian	TY
+341	Uighur; Uyghur	ug
+342	Uighur; Uyghur	UG
+343	Ukrainian	uk
+344	Ukrainian	UK
+345	Urdu	ur
+346	Urdu	UR
+347	Uzbek	uz
+348	Uzbek	UZ
+349	Venda	ve
+350	Venda	VE
+351	Vietnamese	vi
+352	Vietnamese	VI
+353	Volapük	vo
+354	Volapük	VO
+355	Walloon	wa
+356	Walloon	WA
+357	Wolof	wo
+358	Wolof	WO
+359	Xhosa	xh
+360	Xhosa	XH
+361	Yiddish	yi
+362	Yiddish	YI
+363	Yoruba	yo
+364	Yoruba	YO
+365	Zhuang; Chuang	za
+366	Zhuang; Chuang	ZA
+367	Chinese	zh
+368	Chinese	ZH
+369	Zulu	zu
+370	Zulu	ZU

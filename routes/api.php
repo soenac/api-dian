@@ -13,15 +13,35 @@ use Illuminate\Http\Request;
 |
 */
 
+// UBL 2.1
+Route::prefix('/ubl2.1')->group(function() {
+    // Configuration
+    Route::prefix('/config')->group(function() {
+        Route::post('/{nit}/{dv?}', 'Api\ConfigurationController@store');
+    });
+});
+
 Route::middleware('auth:api')->group(function() {
     // UBL 2.1
-    Route::prefix('/v2.1')->group(function() {
+    Route::prefix('/ubl2.1')->group(function() {
         // Configuration
         Route::prefix('/config')->group(function() {
-            Route::post('/{nit}/{dv?}', 'Api\ConfigurationController@store');
             Route::put('/software', 'Api\ConfigurationController@storeSoftware');
             Route::put('/certificate', 'Api\ConfigurationController@storeCertificate');
             Route::put('/resolution', 'Api\ConfigurationController@storeResolution');
+            Route::post('/document', 'Api\ConfigurationController@storeDocument');
+        });
+        
+        // Invoice
+        Route::prefix('/invoice')->group(function() {
+            Route::post('/{testSetId}', 'Api\InvoiceController@testSetStore');
+            Route::post('/', 'Api\InvoiceController@store');
+        });
+        
+        // Status
+        Route::prefix('/status')->group(function() {
+            Route::post('/zip/{trackId}', 'Api\StateController@zip');
+            Route::post('/document/{trackId}', 'Api\StateController@document');
         });
     });
 });

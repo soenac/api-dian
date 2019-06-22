@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypeDocumentsTable extends Migration
+class CreateLanguagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,10 @@ class CreateTypeDocumentsTable extends Migration
      * @return void
      */
     public function up() {
-        Schema::create('type_documents', function(Blueprint $table) {
+        Schema::create('languages', function(Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->char('code');
-            $table->char('cufe_algorithm');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ class CreateTypeDocumentsTable extends Migration
      * @return void
      */
     public function down() {
-        Schema::dropIfExists('type_documents');
+        Schema::dropIfExists('languages');
     }
 }

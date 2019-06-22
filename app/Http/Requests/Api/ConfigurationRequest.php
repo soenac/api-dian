@@ -39,18 +39,22 @@ class ConfigurationRequest extends FormRequest
     public function rules() {
         return [
             'nit' => 'required|numeric|digits_between:1,15|unique:companies,identification_number',
-            'dv' => 'nullable|numeric|digits:1',
+            'dv' => 'required|numeric|digits:1',
+            'language_id' => 'nullable|exists:languages,id',
+            'tax_id' => 'nullable|exists:taxes,id',
             'type_environment_id' => 'nullable|exists:type_environments,id',
+            'type_operation_id' => 'nullable|exists:type_operations,id',
             'type_document_identification_id' => 'required|exists:type_document_identifications,id',
             'country_id' => 'nullable|exists:countries,id',
+            'type_currency_id' => 'nullable|exists:type_currencies,id',
             'type_organization_id' => 'required|exists:type_organizations,id',
             'type_regime_id' => 'required|exists:type_regimes,id',
             'type_liability_id' => 'required|exists:type_liabilities,id',
             'business_name' => 'required|string',
             'municipality_id' => 'required|exists:municipalities,id',
+            'merchant_registration' => 'required|string',
             'address' => 'required|string',
             'phone' => 'required|numeric|digits_between:7,10',
-            'type_currency_id' => 'nullable|exists:type_currencies,id',
             'email' => 'required|string|email|unique:users,email'
         ];
     }

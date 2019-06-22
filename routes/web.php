@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('/api/documentation');
+Route::get('/', function() {
+    return redirect('/api/ubl2.1/documentation');
 });
 
 Route::get('/listings', 'ListingController@index');

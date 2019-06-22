@@ -21,6 +21,24 @@ class Certificate extends Model
      * @var array
      */
     protected $hidden = [
-        'company_id',
+        'company_id', 'path',
     ];
+    
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = [
+        'path',
+    ];
+    
+    /**
+     * Get the invoice line allowance charges.
+     *
+     * @return string
+     */
+    public function getPathAttribute() {
+        return storage_path("app/certificates/{$this->name}");
+    }
 }

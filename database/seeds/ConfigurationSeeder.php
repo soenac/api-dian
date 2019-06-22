@@ -58,7 +58,7 @@ class ConfigurationSeeder extends Seeder
             'columns' => 'id, name, code, @created_at, @updated_at'
         ],
         'type_documents' => [
-            'columns' => 'id, name, code, @created_at, @updated_at'
+            'columns' => 'id, name, code, cufe_algorithm, @created_at, @updated_at'
         ],
         'type_item_identifications' => [
             'columns' => 'id, name, code, code_agency, @created_at, @updated_at'
@@ -67,6 +67,9 @@ class ConfigurationSeeder extends Seeder
             'columns' => 'id, name, code, @created_at, @updated_at'
         ],
         'type_environments' => [
+            'columns' => 'id, name, code, @created_at, @updated_at'
+        ],
+        'languages' => [
             'columns' => 'id, name, code, @created_at, @updated_at'
         ],
     ];
