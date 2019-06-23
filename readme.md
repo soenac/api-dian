@@ -20,7 +20,7 @@ SOENAC es un equipo de profesionales diseñado para atender cada una de sus nece
 
 ## Acerca del API
 
-Desarrollada para poder integrarse con cualquier lenguaje de programación documentada con [Swagger UI](https://swagger.io/tools/swagger-ui/).
+Desarrollada de forma que pueda integrarse con cualquier lenguaje de programación, documentada con [Swagger UI](https://swagger.io/tools/swagger-ui/).
 
 ##### Configuraciones
 - Empresa (Configuración de la empresa a facturar).
@@ -42,13 +42,69 @@ Desarrollada para poder integrarse con cualquier lenguaje de programación docum
 ##### Parametros IDS
 [https://api.soenac.com/listings](https://api.soenac.com/listings)
 
+## Instalación
+
+##### Instalación con [composer](http://getcomposer.org).
+
+```sh
+composer create-project --prefer-dist soenac/api-dian
+```
+
+Permisos de directorio
+
+```sh
+chmod -Rv 777 storage bootstrap
+```
+
+Configure el archivo .env (DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME y DB_PASSWORD).
+
+Ejecute las migraciones y los sembradoras.
+
+```php
+php artisan migrate --seed
+```
+
+Servidor de desarrollo local.
+
+```php
+php artisan serve
+```
+
+Acceda a la url [http://localhost:8000](http://localhost:8000).
+
+##### [Docker](https://www.docker.com/).
+
+```sh
+composer create-project --prefer-dist soenac/api-dian
+```
+
+Permisos de directorio
+
+```sh
+chmod -Rv 777 storage bootstrap
+```
+
+Ejecutar docker-composer
+
+```sh
+docker-compose up -d
+```
+
+Ejecute las migraciones y los sembradoras.
+
+```php
+docker exec -ti api-dian_php_1 php artisan migrate --seed
+```
+
+Acceda a la url [http://localhost:8000](http://localhost:8000).
+
 ## Soporte
 
-Si tienes dudas sobre el API o requieres soporte puedes escribirnos un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com) o nos puedes escribir a nuestra pagina de Facebook [https://www.facebook.com/soenacinfo](https://www.facebook.com/soenacinfo).
+Si tienes dudas sobre el API o requieres soporte, puedes escribirnos un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com) o nos puedes escribir a nuestra pagina de Facebook [https://www.facebook.com/soenacinfo](https://www.facebook.com/soenacinfo).
 
 ## Vulnerabilidades de seguridad
 
-Si descubre una vulnerabilidad de seguridad dentro del API, envíe un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com). Todas las vulnerabilidades de seguridad serán tratadas con prontitud.
+Si descubres una vulnerabilidad de seguridad dentro del API, enviamos un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com). Todas las vulnerabilidades de seguridad serán tratadas con prontitud.
 
 ## Licencia
 
