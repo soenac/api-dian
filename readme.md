@@ -47,7 +47,7 @@ Desarrollada de forma que pueda integrarse con cualquier lenguaje de programaci√
 ##### Instalaci√≥n con [composer](http://getcomposer.org).
 
 ```sh
-composer create-project --prefer-dist soenac/api-dian
+composer create-project --prefer-dist soenac/api-dian:1.0-beta
 ```
 
 Permisos de directorio
@@ -75,7 +75,7 @@ Acceda a la url [http://localhost:8000](http://localhost:8000).
 ##### [Docker](https://www.docker.com/).
 
 ```sh
-composer create-project --prefer-dist soenac/api-dian
+composer create-project --prefer-dist soenac/api-dian:1.0-beta
 ```
 
 Permisos de directorio
