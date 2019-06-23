@@ -1,72 +1,60 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+    <img src="https://soenac.com/wp-content/uploads/2019/06/logo-soenac.png">
 </p>
 
-## About Laravel
+## Acerca SOENAC S.A.S
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+SOENAC es un equipo de profesionales diseñado para atender cada una de sus necesidades y transformarlas en soluciones de acuerdo a la idea de negocio:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##### Software
+- [Facturación electrónica.](https://soenac.com/servicio-y-productos/)
+- [Implementación de factura electrónica.](https://soenac.com/servicio-y-productos/)
+- [Administración de servidores.](https://soenac.com/servicio-y-productos/)
+- [Mantenimiento y soporte.](https://soenac.com/servicio-y-productos/)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+##### Asesoría Contable y Fiscal
+- [Revisoria Fiscal.](https://soenac.com/servicio-y-productos/)
+- [Implementación de NIIF.](https://soenac.com/servicio-y-productos/)
+- [Auditoría de Sistemas y contable.](https://soenac.com/servicio-y-productos/)
+- [Asesoria contable.](https://soenac.com/servicio-y-productos/)
 
-## Learning Laravel
+## Acerca del API
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Desarrollada para poder integrarse con cualquier lenguaje de programación documentada con [Swagger UI](https://swagger.io/tools/swagger-ui/).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+##### Configuraciones
+- Empresa (Configuración de la empresa a facturar).
+- Software (Configuración del software en habilitación o producción).
+- Certificado (Configuración del certificado digital .p12).
+- Resoluciones (Configuración de resoluciones).
 
-## Laravel Sponsors
+##### Documentos soportados
+- Factura de Venta Nacional (Habilitación).
+- Factura de Venta Nacional (Producción).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+##### Consultas
+- Estado del ZIP (ALL).
+- Estado del documentos (ALL).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+##### Documentación oficial
+[https://api.soenac.com/api/ubl2.1/documentation](https://api.soenac.com/api/ubl2.1/documentation)
 
-## Contributing
+##### Parametros IDS
+[https://api.soenac.com/listings](https://api.soenac.com/listings)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Soporte
 
-## Security Vulnerabilities
+Si tienes dudas sobre el API o requieres soporte puedes escribirnos un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com) o nos puedes escribir a nuestra pagina de Facebook [https://www.facebook.com/soenacinfo](https://www.facebook.com/soenacinfo).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Vulnerabilidades de seguridad
 
-## License
+Si descubre una vulnerabilidad de seguridad dentro del API, envíe un correo electrónico a Frank Aguirre a través de [faguirre@soenac.com](mailto:faguirre@soenac.com). Todas las vulnerabilidades de seguridad serán tratadas con prontitud.
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Licencia
+
+El marco del API es un software de código abierto con [licencia MIT](https://opensource.org/licenses/MIT).
+
+## Donación
+Si este proyecto te ayuda a reducir el tiempo de tu desarrollo, puedes regalarnos una taza de café :smiley:.
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/stenfrank/1?locale.x=es_XC)
