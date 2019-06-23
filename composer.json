@@ -1,10 +1,16 @@
 {
-    "name": "laravel/laravel",
+    "name": "soenac/api-dian",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "API Electronic Invoicing Pre-Validation UBL 2.1.",
     "keywords": [
-        "framework",
-        "laravel"
+        "laravel",
+        "soenac",
+        "soap dian",
+        "web service",
+        "dian",
+        "xml",
+        "ubl",
+        "api"
     ],
     "license": "MIT",
     "require": {
