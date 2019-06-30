@@ -2,11 +2,10 @@
 
 namespace App\Http\Requests\Api;
 
-use App\Resolution;
 use App\Rules\ResolutionSetting;
 use Illuminate\Foundation\Http\FormRequest;
 
-class InvoiceRequest extends FormRequest
+class CreditNoteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,13 +28,19 @@ class InvoiceRequest extends FormRequest
             // Document
             'type_document_id' => [
                 'required',
-                'in:1',
+                'in:4',
                 'exists:type_documents,id',
                 new ResolutionSetting
             ],
             
             // Consecutive
             'number' => 'required|integer|between:'.optional($this->resolution)->from.','.optional($this->resolution)->to,
+            
+            // Billing Reference
+            'billing_reference' => 'required|array',
+            'billing_reference.number' => 'required|string',
+            'billing_reference.uuid' => 'required|string|size:96',
+            'billing_reference.issue_date' => 'required|date_format:Y-m-d',
             
             // Customer
             'customer' => 'required|array',
@@ -89,32 +94,32 @@ class InvoiceRequest extends FormRequest
             'legal_monetary_totals.charge_total_amount' => 'required|numeric',
             'legal_monetary_totals.payable_amount' => 'required|numeric',
             
-            // Invoice lines
-            'invoice_lines' => 'required|array',
-            'invoice_lines.*.unit_measure_id' => 'required|exists:unit_measures,id',
-            'invoice_lines.*.invoiced_quantity' => 'required|numeric',
-            'invoice_lines.*.line_extension_amount' => 'required|numeric',
-            'invoice_lines.*.free_of_charge_indicator' => 'required|boolean',
-            'invoice_lines.*.reference_price_id' => 'nullable|required_if:invoice_lines.*.free_of_charge_indicator,true|exists:reference_prices,id',
-            'invoice_lines.*.allowance_charges' => 'nullable|array',
-            'invoice_lines.*.allowance_charges.*.charge_indicator' => 'nullable|required_with:invoice_lines.*.allowance_charges|boolean',
-            'invoice_lines.*.allowance_charges.*.allowance_charge_reason' => 'nullable|required_with:invoice_lines.*.allowance_charges|string',
-            'invoice_lines.*.allowance_charges.*.amount' => 'nullable|required_with:invoice_lines.*.allowance_charges|numeric',
-            'invoice_lines.*.allowance_charges.*.base_amount' => 'nullable|required_if:invoice_lines.*.allowance_charges.*.charge_indicator,false|numeric',
-            'invoice_lines.*.allowance_charges.*.multiplier_factor_numeric' => 'nullable|required_if:invoice_lines.*.allowance_charges.*.charge_indicator,true|numeric',
-            'invoice_lines.*.tax_totals' => 'nullable|array',
-            'invoice_lines.*.tax_totals.*.tax_id' => 'nullable|required_with:invoice_lines.*.tax_totals|exists:taxes,id',
-            'invoice_lines.*.tax_totals.*.tax_amount' => 'nullable|required_with:invoice_lines.*.tax_totals|numeric',
-            'invoice_lines.*.tax_totals.*.taxable_amount' => 'nullable|required_with:invoice_lines.*.tax_totals|numeric',
-            'invoice_lines.*.tax_totals.*.percent' => 'nullable|required_unless:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.tax_totals.*.unit_measure_id' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|exists:unit_measures,id',
-            'invoice_lines.*.tax_totals.*.per_unit_amount' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.tax_totals.*.base_unit_measure' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.description' => 'required|string',
-            'invoice_lines.*.code' => 'required|string',
-            'invoice_lines.*.type_item_identification_id' => 'required|exists:type_item_identifications,id',
-            'invoice_lines.*.price_amount' => 'required|numeric',
-            'invoice_lines.*.base_quantity' => 'required|numeric'
+            // Credit note lines
+            'credit_note_lines' => 'required|array',
+            'credit_note_lines.*.unit_measure_id' => 'required|exists:unit_measures,id',
+            'credit_note_lines.*.invoiced_quantity' => 'required|numeric',
+            'credit_note_lines.*.line_extension_amount' => 'required|numeric',
+            'credit_note_lines.*.free_of_charge_indicator' => 'required|boolean',
+            'credit_note_lines.*.reference_price_id' => 'nullable|required_if:credit_note_lines.*.free_of_charge_indicator,true|exists:reference_prices,id',
+            'credit_note_lines.*.allowance_charges' => 'nullable|array',
+            'credit_note_lines.*.allowance_charges.*.charge_indicator' => 'nullable|required_with:credit_note_lines.*.allowance_charges|boolean',
+            'credit_note_lines.*.allowance_charges.*.allowance_charge_reason' => 'nullable|required_with:credit_note_lines.*.allowance_charges|string',
+            'credit_note_lines.*.allowance_charges.*.amount' => 'nullable|required_with:credit_note_lines.*.allowance_charges|numeric',
+            'credit_note_lines.*.allowance_charges.*.base_amount' => 'nullable|required_if:credit_note_lines.*.allowance_charges.*.charge_indicator,false|numeric',
+            'credit_note_lines.*.allowance_charges.*.multiplier_factor_numeric' => 'nullable|required_if:credit_note_lines.*.allowance_charges.*.charge_indicator,true|numeric',
+            'credit_note_lines.*.tax_totals' => 'nullable|array',
+            'credit_note_lines.*.tax_totals.*.tax_id' => 'nullable|required_with:credit_note_lines.*.tax_totals|exists:taxes,id',
+            'credit_note_lines.*.tax_totals.*.tax_amount' => 'nullable|required_with:credit_note_lines.*.tax_totals|numeric',
+            'credit_note_lines.*.tax_totals.*.taxable_amount' => 'nullable|required_with:credit_note_lines.*.tax_totals|numeric',
+            'credit_note_lines.*.tax_totals.*.percent' => 'nullable|required_unless:credit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'credit_note_lines.*.tax_totals.*.unit_measure_id' => 'nullable|required_if:credit_note_lines.*.tax_totals.*.tax_id,10|exists:unit_measures,id',
+            'credit_note_lines.*.tax_totals.*.per_unit_amount' => 'nullable|required_if:credit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'credit_note_lines.*.tax_totals.*.base_unit_measure' => 'nullable|required_if:credit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'credit_note_lines.*.description' => 'required|string',
+            'credit_note_lines.*.code' => 'required|string',
+            'credit_note_lines.*.type_item_identification_id' => 'required|exists:type_item_identifications,id',
+            'credit_note_lines.*.price_amount' => 'required|numeric',
+            'credit_note_lines.*.base_quantity' => 'required|numeric'
         ];
     }
 }

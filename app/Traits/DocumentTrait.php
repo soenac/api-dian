@@ -8,13 +8,22 @@ use Storage,
     ZipArchive,
     DOMDocument,
     InvalidArgumentException;
-use Stenfrank\UBL21dian\XAdESDIAN;
+use Stenfrank\UBL21dian\Sign;
 
 /**
  * Document trait
  */
 trait DocumentTrait
 {
+    /**
+     * Payment form default
+     * @var array
+     */
+    private $paymentFormDefault = [
+        'payment_form_id' => 1,
+        'payment_method_id' => 10
+    ];
+    
     /**
      * Create xml
      * @param  array  $data
@@ -40,11 +49,11 @@ trait DocumentTrait
     /**
      * Zip base64
      * @param  \App\Resolution $resolution
-     * @param  Stenfrank\UBL21dian\XAdESDIAN  $xadesDIAN
+     * @param  \Stenfrank\UBL21dian\Sign  $sign
      * @return string
      */
-    protected function zipBase64(Resolution $resolution, XAdESDIAN $xadesDIAN) {
-        Storage::put("xml/{$resolution->company_id}/{$resolution->next_consecutive}.xml", $xadesDIAN->xml);
+    protected function zipBase64(Resolution $resolution, Sign $sign) {
+        Storage::put("xml/{$resolution->company_id}/{$resolution->next_consecutive}.xml", $sign->xml);
         
         if (!Storage::has("zip/{$resolution->company_id}")) Storage::makeDirectory("zip/{$resolution->company_id}");
         

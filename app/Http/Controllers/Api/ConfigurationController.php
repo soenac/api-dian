@@ -46,7 +46,7 @@ class ConfigurationController extends Controller
                 'language_id' => $request->language_id ?? 79,
                 'tax_id' => $request->tax_id ?? 1,
                 'type_environment_id' => $request->type_environment_id ?? 2,
-                'type_operation_id' =>  $request->type_operation_id ?? 1,
+                'type_operation_id' =>  $request->type_operation_id ?? 10,
                 'type_document_identification_id' => $request->type_document_identification_id,
                 'country_id' => $request->country_id ?? 46,
                 'type_currency_id' => $request->type_currency_id ?? 35,

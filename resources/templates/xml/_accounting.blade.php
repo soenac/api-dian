@@ -1,16 +1,14 @@
 <cac:{{$node}}>
     <cbc:AdditionalAccountID>{{$user->company->type_organization->code}}</cbc:AdditionalAccountID>
     <cac:Party>
+        @if ($user->company->type_organization->code == 2)
+            <cac:PartyIdentification>
+               <cbc:ID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="{{$user->company->dv}}" schemeName="{{$user->company->type_document_identification->code}}">{{$user->company->identification_number}}</cbc:ID>
+            </cac:PartyIdentification>
+        @endif
         <cac:PartyName>
             <cbc:Name>{{$user->name}}</cbc:Name>
         </cac:PartyName>
-        {{-- <cac:PartyName>
-            <cbc:Name>Establecimiento Principal</cbc:Name>
-        </cac:PartyName>
-        <cac:PartyName>
-            <cbc:Name>FACTURADOR DE EJEMPLO</cbc:Name>
-        </cac:PartyName> --}}
-        {{-- Optional client --}}
         @isset($supplier)
             <cac:PhysicalLocation>
                 <cac:Address>
@@ -30,7 +28,7 @@
         @endisset
         <cac:PartyTaxScheme>
             <cbc:RegistrationName>{{$user->name}}</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" @if ($user->company->type_document_identification_id == 6) schemeID="{{$user->company->dv}}" @endif schemeName="{{$user->company->type_document_identification->code}}">{{$user->company->identification_number}}</cbc:CompanyID>
+            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="{{$user->company->dv}}" schemeName="{{$user->company->type_document_identification->code}}">{{$user->company->identification_number}}</cbc:CompanyID>
             <cbc:TaxLevelCode listName="{{$user->company->type_regime->code}}">{{$user->company->type_liability->code}}</cbc:TaxLevelCode>
             <cac:RegistrationAddress>
                 <cbc:ID>{{$user->company->municipality->code}}</cbc:ID>
@@ -52,7 +50,7 @@
         </cac:PartyTaxScheme>
         <cac:PartyLegalEntity>
             <cbc:RegistrationName>{{$user->name}}</cbc:RegistrationName>
-            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" @if ($user->company->type_document_identification_id == 6) schemeID="{{$user->company->dv}}" @endif schemeName="{{$user->company->type_document_identification->code}}">{{$user->company->identification_number}}</cbc:CompanyID>
+            <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="{{$user->company->dv}}" schemeName="{{$user->company->type_document_identification->code}}">{{$user->company->identification_number}}</cbc:CompanyID>
             <cac:CorporateRegistrationScheme>
                 @isset($supplier)
                     <cbc:ID>{{$resolution->prefix}}</cbc:ID>

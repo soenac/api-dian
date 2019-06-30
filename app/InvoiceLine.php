@@ -13,6 +13,7 @@ class InvoiceLine extends Model
     protected $with = [
         'unit_measure', 'type_item_identification', 'reference_price',
     ];
+    
     /**
      * The attributes that are mass assignable.
      *

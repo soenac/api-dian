@@ -38,6 +38,12 @@ Route::middleware('auth:api')->group(function() {
             Route::post('/', 'Api\InvoiceController@store');
         });
         
+        // Credit Notes
+        Route::prefix('/credit-note')->group(function() {
+            Route::post('/{testSetId}', 'Api\CreditNoteController@testSetStore');
+            Route::post('/', 'Api\CreditNoteController@store');
+        });
+        
         // Status
         Route::prefix('/status')->group(function() {
             Route::post('/zip/{trackId}', 'Api\StateController@zip');

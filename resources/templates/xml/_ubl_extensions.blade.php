@@ -2,7 +2,9 @@
     <ext:UBLExtension>
         <ext:ExtensionContent>
             <sts:DianExtensions>
-                @includeWhen($resolution->resolution, 'xml._invoice_control')
+                @if ($resolution->type_document_id == 1)
+                    @includeWhen($resolution->resolution, 'xml._invoice_control')
+                @endif
                 <sts:InvoiceSource>
                     <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">{{$company->country->code}}</cbc:IdentificationCode>
                 </sts:InvoiceSource>

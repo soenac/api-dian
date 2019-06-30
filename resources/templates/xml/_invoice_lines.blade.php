@@ -14,12 +14,10 @@
         @endif
         {{-- AllowanceCharges line  --}}
         @include('xml._allowance_charges', ['allowanceCharges' => $invoiceLine->allowance_charges])
+        {{-- TaxTotals line --}}
         @include('xml._tax_totals', ['taxTotals' => $invoiceLine->tax_totals])
         <cac:Item>
             <cbc:Description>{{$invoiceLine->description}}</cbc:Description>
-            {{-- <cac:SellersItemIdentification>
-                <cbc:ID>AOHV84-225</cbc:ID>
-            </cac:SellersItemIdentification> --}}
             <cac:StandardItemIdentification>
                 <cbc:ID schemeID="{{$invoiceLine->type_item_identification->code}}" schemeName="EAN13" schemeAgencyID="{{$invoiceLine->type_item_identification->code_agency}}">{{$invoiceLine->code}}</cbc:ID>
             </cac:StandardItemIdentification>

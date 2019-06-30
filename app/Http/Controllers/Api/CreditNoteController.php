@@ -6,33 +6,34 @@ use App\{
     User,
     Company,
     TaxTotal,
-    InvoiceLine,
     PaymentForm,
     TypeDocument,
     PaymentMethod,
     AllowanceCharge,
-    LegalMonetaryTotal
+    BillingReference,
+    LegalMonetaryTotal,
+    InvoiceLine as CreditNoteLine
 };
 use Illuminate\Http\Request;
 use App\Traits\DocumentTrait;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\InvoiceRequest;
 use Stenfrank\UBL21dian\Templates\SOAP\{
     SendBillAsync,
     SendTestSetAsync
 };
-use Stenfrank\UBL21dian\XAdES\SignInvoice;
+use App\Http\Requests\Api\CreditNoteRequest;
+use Stenfrank\UBL21dian\XAdES\SignCreditNote;
 
-class InvoiceController extends Controller
+class CreditNoteController extends Controller
 {
     use DocumentTrait;
     
     /**
      * Store
-     * @param  \App\Http\Requests\Api\InvoiceRequest $request
+     * @param  \App\Http\Requests\Api\CreditNoteRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(InvoiceRequest $request) {
+    public function store(CreditNoteRequest $request) {
         // User
         $user = auth()->user();
         
@@ -71,22 +72,24 @@ class InvoiceController extends Controller
         // Legal monetary totals
         $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
         
-        // Invoice lines
-        $invoiceLines = collect();
-        foreach ($request->invoice_lines as $invoiceLine) $invoiceLines->push(new InvoiceLine($invoiceLine));
+        // Credit note lines
+        $creditNoteLines = collect();
+        foreach ($request->credit_note_lines as $creditNoteLine) $creditNoteLines->push(new CreditNoteLine($creditNoteLine));
+        
+        // Billing reference
+        $billingReference = new BillingReference($request->billing_reference);
         
         // Create XML
-        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotal'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotal', 'billingReference'));
         
         // Signature XML
-        $signInvoice = new SignInvoice($company->certificate->path, $company->certificate->password);
-        $signInvoice->softwareID = $company->software->identifier;
-        $signInvoice->pin = $company->software->pin;
-        $signInvoice->technicalKey = $resolution->technical_key;
+        $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);
+        $signCreditNote->softwareID = $company->software->identifier;
+        $signCreditNote->pin = $company->software->pin;
         
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendBillAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendBillAsync->contentFile = $this->zipBase64($resolution, $signCreditNote->sign($crediNote));
         
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
@@ -96,12 +99,11 @@ class InvoiceController extends Controller
     }
     
     /**
-     * Test set store
-     * @param  \App\Http\Requests\Api\InvoiceRequest $request
-     * @param  string         $testSetId
+     * Test set store description]
+     * @param  \App\Http\Requests\Api\CreditNoteRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function testSetStore(InvoiceRequest $request, $testSetId) {
+    public function testSetStore(CreditNoteRequest $request, $testSetId) {
         // User
         $user = auth()->user();
         
@@ -140,22 +142,24 @@ class InvoiceController extends Controller
         // Legal monetary totals
         $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
         
-        // Invoice lines
-        $invoiceLines = collect();
-        foreach ($request->invoice_lines as $invoiceLine) $invoiceLines->push(new InvoiceLine($invoiceLine));
+        // Credit note lines
+        $creditNoteLines = collect();
+        foreach ($request->credit_note_lines as $creditNoteLine) $creditNoteLines->push(new CreditNoteLine($creditNoteLine));
+        
+        // Billing reference
+        $billingReference = new BillingReference($request->billing_reference);
         
         // Create XML
-        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotal'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotal', 'billingReference'));
         
         // Signature XML
-        $signInvoice = new SignInvoice($company->certificate->path, $company->certificate->password);
-        $signInvoice->softwareID = $company->software->identifier;
-        $signInvoice->pin = $company->software->pin;
-        $signInvoice->technicalKey = $resolution->technical_key;
+        $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);
+        $signCreditNote->softwareID = $company->software->identifier;
+        $signCreditNote->pin = $company->software->pin;
         
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signCreditNote->sign($crediNote));
         $sendTestSetAsync->testSetId = $testSetId;
         
         return [

@@ -1,9 +1,6 @@
 @foreach ($taxTotals as $key => $taxTotal)
     <cac:TaxTotal>
         <cbc:TaxAmount currencyID="{{$company->type_currency->code}}">{{number_format($taxTotal->tax_amount, 2, '.', '')}}</cbc:TaxAmount>
-        {{-- @if (!$taxTotal->is_fixed_value)
-            <cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
-        @endif --}}
         <cac:TaxSubtotal>
             @if (!$taxTotal->is_fixed_value)
                 <cbc:TaxableAmount currencyID="{{$company->type_currency->code}}">{{number_format($taxTotal->taxable_amount, 2, '.', '')}}</cbc:TaxableAmount>
