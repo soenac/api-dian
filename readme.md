@@ -22,81 +22,8 @@ SOENAC es un equipo de profesionales diseñado para atender cada una de sus nece
 
 Desarrollada de forma que pueda integrarse con cualquier lenguaje de programación, documentada con [Swagger UI](https://swagger.io/tools/swagger-ui/).
 
-##### Configuraciones
-- Empresa (Configuración de la empresa a facturar).
-- Software (Configuración del software en habilitación o producción).
-- Certificado (Configuración del certificado digital .p12).
-- Resoluciones (Configuración de resoluciones).
-
-##### Documentos soportados
-- Factura de Venta Nacional (Habilitación).
-- Factura de Venta Nacional (Producción).
-
-##### Consultas
-- Estado del ZIP (ALL).
-- Estado del documentos (ALL).
-
-##### Documentación oficial
-[https://api.soenac.com/api/ubl2.1/documentation](https://api.soenac.com/api/ubl2.1/documentation)
-
-##### Parametros IDS
-[https://api.soenac.com/listings](https://api.soenac.com/listings)
-
-## Instalación
-
-##### Instalación con [composer](http://getcomposer.org).
-
-```sh
-composer create-project --prefer-dist soenac/api-dian:1.0-beta
-```
-
-Permisos de directorio
-
-```sh
-chmod -Rv 777 storage bootstrap
-```
-
-Configure el archivo .env (DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME y DB_PASSWORD).
-
-Ejecute las migraciones y los sembradoras.
-
-```php
-php artisan migrate --seed
-```
-
-Servidor de desarrollo local.
-
-```php
-php artisan serve
-```
-
-Acceda a la url [http://localhost:8000](http://localhost:8000).
-
-##### [Docker](https://www.docker.com/).
-
-```sh
-composer create-project --prefer-dist soenac/api-dian:1.0-beta
-```
-
-Permisos de directorio
-
-```sh
-chmod -Rv 777 storage bootstrap
-```
-
-Ejecutar docker-composer
-
-```sh
-docker-compose up -d
-```
-
-Ejecute las migraciones y los sembradoras.
-
-```php
-docker exec -ti api-dian_php_1 php artisan migrate --seed
-```
-
-Acceda a la url [http://localhost:8000](http://localhost:8000).
+## Recursos
+* [Documentación](https://soenac.com/api-dian)
 
 ## Soporte
 
