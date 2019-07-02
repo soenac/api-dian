@@ -35,7 +35,7 @@ Si descubres una vulnerabilidad de seguridad dentro del API, enviamos un correo 
 
 ## Licencia
 
-El marco del API es un software de código abierto con [licencia MIT](https://opensource.org/licenses/MIT).
+El marco del API es un software de código abierto con licencia [LGPL](https://www.gnu.org/licenses/lgpl-3.0.html).
 
 ## Donación
 Si este proyecto te ayuda a reducir el tiempo de tu desarrollo, puedes regalarnos una taza de café :smiley:.
