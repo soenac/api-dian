@@ -14,7 +14,7 @@ class Software extends Model
     protected $fillable = [
         'identifier', 'pin', 'url',
     ];
-    
+
     /**
      * The attributes that should be hidden for arrays.
      *

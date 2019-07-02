@@ -3,74 +3,84 @@
 namespace App\Traits;
 
 use App\Resolution;
-use Storage,
-    Exception,
-    ZipArchive,
-    DOMDocument,
-    InvalidArgumentException;
+use Storage;
+use Exception;
+use ZipArchive;
+use DOMDocument;
+use InvalidArgumentException;
 use Stenfrank\UBL21dian\Sign;
 
 /**
- * Document trait
+ * Document trait.
  */
 trait DocumentTrait
 {
     /**
-     * Payment form default
+     * Payment form default.
+     *
      * @var array
      */
     private $paymentFormDefault = [
         'payment_form_id' => 1,
-        'payment_method_id' => 10
+        'payment_method_id' => 10,
     ];
-    
+
     /**
-     * Create xml
-     * @param  array  $data
+     * Create xml.
+     *
+     * @param array $data
+     *
      * @return DOMDocument
      */
-    protected function createXML(array $data) {
+    protected function createXML(array $data)
+    {
         try {
-            $DOMDocumentXML = new DOMDocument;
+            $DOMDocumentXML = new DOMDocument();
             $DOMDocumentXML->preserveWhiteSpace = false;
             $DOMDocumentXML->formatOutput = true;
             $DOMDocumentXML->loadXML(view("xml.{$data['typeDocument']['code']}", $data)->render());
-            
+
             return $DOMDocumentXML;
-        }
-        catch (InvalidArgumentException $e) {
+        } catch (InvalidArgumentException $e) {
             throw new Exception("The API does not support the type of document '{$data['typeDocument']['name']}' Error: {$e->getMessage()}");
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             throw new Exception("Error: {$e->getMessage()}");
         }
     }
-    
+
     /**
-     * Zip base64
-     * @param  \App\Resolution $resolution
-     * @param  \Stenfrank\UBL21dian\Sign  $sign
+     * Zip base64.
+     *
+     * @param \App\Resolution           $resolution
+     * @param \Stenfrank\UBL21dian\Sign $sign
+     *
      * @return string
      */
-    protected function zipBase64(Resolution $resolution, Sign $sign) {
+    protected function zipBase64(Resolution $resolution, Sign $sign)
+    {
         Storage::put("xml/{$resolution->company_id}/{$resolution->next_consecutive}.xml", $sign->xml);
-        
-        if (!Storage::has("zip/{$resolution->company_id}")) Storage::makeDirectory("zip/{$resolution->company_id}");
-        
+
+        if (!Storage::has("zip/{$resolution->company_id}")) {
+            Storage::makeDirectory("zip/{$resolution->company_id}");
+        }
+
         $zip = new ZipArchive();
         $zip->open(storage_path("app/zip/{$resolution->company_id}/{$resolution->next_consecutive}.zip"), ZipArchive::CREATE);
         $zip->addFile(storage_path("app/xml/{$resolution->company_id}/{$resolution->next_consecutive}.xml"), "{$resolution->next_consecutive}.xml");
         $zip->close();
-        
+
         return base64_encode(file_get_contents(storage_path("app/zip/{$resolution->company_id}/{$resolution->next_consecutive}.zip")));
     }
-    
+
     /**
-     * Get ZIP
-     * @param  Resolution $resolution
+     * Get ZIP.
+     *
+     * @param Resolution $resolution
+     *
      * @return string
      */
-    protected function getZIP(Resolution $resolution) {
+    protected function getZIP(Resolution $resolution)
+    {
         return Storage::get("zip/{$resolution->company_id}/{$resolution->next_consecutive}.zip");
     }
 }

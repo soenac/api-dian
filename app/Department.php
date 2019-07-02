@@ -14,7 +14,7 @@ class Department extends Model
     protected $fillable = [
         'country_id', 'name', 'code',
     ];
-    
+
     /**
      * The attributes that should be hidden for arrays.
      *

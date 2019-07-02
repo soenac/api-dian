@@ -11,20 +11,22 @@ class ConfigurationSoftwareRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             'id' => 'required|string',
             'pin' => 'required|numeric|digits:5',
-            'url' => 'nullable|string|url'
+            'url' => 'nullable|string|url',
         ];
     }
 }

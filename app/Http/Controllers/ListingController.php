@@ -2,28 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\{
-    Country,
-    Language,
-    TypeRegime,
-    TypeDocument,
-    TypeCurrency,
-    Municipality,
-    TypeLiability,
-    TypeOperation,
-    TypeEnvironment,
-    TypeOrganization,
-    TypeDocumentIdentification
-};
-use Illuminate\Http\Request;
+use App\Country;
+use App\Language;
+use App\TypeRegime;
+use App\TypeDocument;
+use App\TypeCurrency;
+use App\Municipality;
+use App\TypeLiability;
+use App\TypeOperation;
+use App\TypeEnvironment;
+use App\TypeOrganization;
+use App\TypeDocumentIdentification;
 
 class ListingController extends Controller
 {
     /**
-     * index
+     * index.
+     *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         return [
             'Country' => Country::all()->pluck('name', 'id'),
             'Language' => Language::all()->pluck('name', 'id'),

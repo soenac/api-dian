@@ -11,19 +11,21 @@ class ConfigurationCertificateRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             'certificate' => 'required|string',
-            'password' => 'required|string'
+            'password' => 'required|string',
         ];
     }
 }

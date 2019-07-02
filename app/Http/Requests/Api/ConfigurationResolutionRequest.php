@@ -11,16 +11,18 @@ class ConfigurationResolutionRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             'type_document_id' => 'required|exists:type_documents,id',
             'prefix' => 'nullable|string|max:4',

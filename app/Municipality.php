@@ -8,12 +8,13 @@ class Municipality extends Model
 {
     /**
      * With default model.
+     *
      * @var array
      */
     protected $with = [
         'department',
     ];
-    
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +23,7 @@ class Municipality extends Model
     protected $fillable = [
         'department_id', 'name', 'code',
     ];
-    
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -31,11 +32,12 @@ class Municipality extends Model
     protected $hidden = [
         'department_id',
     ];
-    
+
     /**
      * Get the department identification that owns the department.
      */
-    public function department() {
+    public function department()
+    {
         return $this->belongsTo(Department::class);
     }
 }

@@ -12,36 +12,38 @@ class CreditNoteRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         $this->resolution = auth()->user()->company->resolutions->where('type_document_id', $this->type_document_id)->first();
-        
+
         return [
             // Document
             'type_document_id' => [
                 'required',
                 'in:4',
                 'exists:type_documents,id',
-                new ResolutionSetting
+                new ResolutionSetting(),
             ],
-            
+
             // Consecutive
             'number' => 'required|integer|between:'.optional($this->resolution)->from.','.optional($this->resolution)->to,
-            
+
             // Billing Reference
             'billing_reference' => 'required|array',
             'billing_reference.number' => 'required|string',
             'billing_reference.uuid' => 'required|string|size:96',
             'billing_reference.issue_date' => 'required|date_format:Y-m-d',
-            
+
             // Customer
             'customer' => 'required|array',
             'customer.identification_number' => 'required|numeric|digits_between:1,15',
@@ -59,22 +61,22 @@ class CreditNoteRequest extends FormRequest
             'customer.address' => 'required|string',
             'customer.email' => 'required|string|email',
             'customer.merchant_registration' => 'required|string',
-            
+
             // Payment form
             'payment_form' => 'nullable|array',
             'payment_form.payment_form_id' => 'nullable|exists:payment_forms,id',
             'payment_form.payment_method_id' => 'nullable|exists:payment_methods,id',
             'payment_form.payment_due_date' => 'nullable|required_if:payment_form.payment_form_id,=,2|date_format:Y-m-d',
             'payment_form.duration_measure' => 'nullable|required_if:payment_form.payment_form_id,=,2|numeric|digits_between:1,3',
-            
+
             // Allowance charges
             'allowance_charges' => 'nullable|array',
             'allowance_charges.*.charge_indicator' => 'nullable|required_with:allowance_charges|boolean',
-            'allowance_charges.*.discount_id' => "nullable|required_if:allowance_charges.*.charge_indicator,false|exists:discounts,id",
+            'allowance_charges.*.discount_id' => 'nullable|required_if:allowance_charges.*.charge_indicator,false|exists:discounts,id',
             'allowance_charges.*.allowance_charge_reason' => 'nullable|required_with:allowance_charges|string',
             'allowance_charges.*.amount' => 'nullable|required_with:allowance_charges|numeric',
             'allowance_charges.*.base_amount' => 'nullable|required_with:allowance_charges|numeric',
-            
+
             // Tax totals
             'tax_totals' => 'nullable|array',
             'tax_totals.*.tax_id' => 'nullable|required_with:allowance_charges|exists:taxes,id',
@@ -84,7 +86,7 @@ class CreditNoteRequest extends FormRequest
             'tax_totals.*.unit_measure_id' => 'nullable|required_if:tax_totals.*.tax_id,10|exists:unit_measures,id',
             'tax_totals.*.per_unit_amount' => 'nullable|required_if:tax_totals.*.tax_id,10|numeric',
             'tax_totals.*.base_unit_measure' => 'nullable|required_if:tax_totals.*.tax_id,10|numeric',
-            
+
             // Legal monetary totals
             'legal_monetary_totals' => 'required|array',
             'legal_monetary_totals.line_extension_amount' => 'required|numeric',
@@ -93,7 +95,7 @@ class CreditNoteRequest extends FormRequest
             'legal_monetary_totals.allowance_total_amount' => 'required|numeric',
             'legal_monetary_totals.charge_total_amount' => 'required|numeric',
             'legal_monetary_totals.payable_amount' => 'required|numeric',
-            
+
             // Credit note lines
             'credit_note_lines' => 'required|array',
             'credit_note_lines.*.unit_measure_id' => 'required|exists:unit_measures,id',
@@ -119,7 +121,7 @@ class CreditNoteRequest extends FormRequest
             'credit_note_lines.*.code' => 'required|string',
             'credit_note_lines.*.type_item_identification_id' => 'required|exists:type_item_identifications,id',
             'credit_note_lines.*.price_amount' => 'required|numeric',
-            'credit_note_lines.*.base_quantity' => 'required|numeric'
+            'credit_note_lines.*.base_quantity' => 'required|numeric',
         ];
     }
 }

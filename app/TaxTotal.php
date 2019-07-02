@@ -8,12 +8,13 @@ class TaxTotal extends Model
 {
     /**
      * With default model.
+     *
      * @var array
      */
     protected $with = [
         'tax', 'unit_measure',
     ];
-    
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +23,7 @@ class TaxTotal extends Model
     protected $fillable = [
         'tax_id', 'unit_measure_id', 'percent', 'tax_amount', 'taxable_amount', 'base_unit_measure', 'per_unit_amount',
     ];
-    
+
     /**
      * The accessors to append to the model's array form.
      *
@@ -31,7 +32,7 @@ class TaxTotal extends Model
     protected $appends = [
         'is_fixed_value',
     ];
-    
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -40,27 +41,30 @@ class TaxTotal extends Model
     protected $hidden = [
         'tax', 'unit_measure',
     ];
-    
+
     /**
      * Get the tax that owns the tax total.
      */
-    public function tax() {
+    public function tax()
+    {
         return $this->belongsTo(Tax::class);
     }
-    
+
     /**
      * Get the unit measure that owns the tax total.
      */
-    public function unit_measure() {
+    public function unit_measure()
+    {
         return $this->belongsTo(UnitMeasure::class);
     }
-    
+
     /**
      * Get the allowance charge multiplier factor numeric.
      *
      * @return string
      */
-    public function getIsFixedValueAttribute() {
-        return ($this->tax_id == 10);
+    public function getIsFixedValueAttribute()
+    {
+        return 10 == $this->tax_id;
     }
 }

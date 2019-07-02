@@ -11,32 +11,35 @@ class ConfigurationRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
-    
+
     /**
-     * Get data to be validated from the request. From Route URL
+     * Get data to be validated from the request. From Route URL.
      *
      * @return array
      */
-    protected function validationData() {
+    protected function validationData()
+    {
         if (method_exists($this->route(), 'parameters')) {
             $this->request->add($this->route()->parameters());
             $this->query->add($this->route()->parameters());
-            
+
             return array_merge($this->route()->parameters(), $this->all());
         }
-        
+
         return $this->all();
     }
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             'nit' => 'required|numeric|digits_between:1,15|unique:companies,identification_number',
             'dv' => 'required|numeric|digits:1',
@@ -55,7 +58,7 @@ class ConfigurationRequest extends FormRequest
             'merchant_registration' => 'required|string',
             'address' => 'required|string',
             'phone' => 'required|numeric|digits_between:7,10',
-            'email' => 'required|string|email|unique:users,email'
+            'email' => 'required|string|email|unique:users,email',
         ];
     }
 }
