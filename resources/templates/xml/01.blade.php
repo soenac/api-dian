@@ -34,7 +34,7 @@
     {{-- TaxTotals --}}
     @include('xml._tax_totals')
     {{-- LegalMonetaryTotal --}}
-    @include('xml._legal_monetary_total')
+    @include('xml._legal_monetary_total', ['node' => 'LegalMonetaryTotal'])
     {{-- InvoiceLines --}}
     @include('xml._invoice_lines')
 </Invoice>

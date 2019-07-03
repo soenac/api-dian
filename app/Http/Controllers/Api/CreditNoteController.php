@@ -73,7 +73,7 @@ class CreditNoteController extends Controller
         }
 
         // Legal monetary totals
-        $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
+        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
 
         // Credit note lines
         $creditNoteLines = collect();
@@ -85,7 +85,7 @@ class CreditNoteController extends Controller
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotal', 'billingReference'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotals', 'billingReference'));
 
         // Signature XML
         $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);
@@ -152,7 +152,7 @@ class CreditNoteController extends Controller
         }
 
         // Legal monetary totals
-        $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
+        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
 
         // Credit note lines
         $creditNoteLines = collect();
@@ -164,7 +164,7 @@ class CreditNoteController extends Controller
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotal', 'billingReference'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotals', 'billingReference'));
 
         // Signature XML
         $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);

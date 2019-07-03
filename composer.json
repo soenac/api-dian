@@ -13,6 +13,12 @@
         "api"
     ],
     "license": "LGPL-3.0",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../ubl-21-dian"
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "caouecs/laravel-lang": "~4.0",
@@ -20,7 +26,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "stenfrank/ubl21dian": "1.*"
+        "stenfrank/ubl21dian": "dev-debit_notes"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.2",
@@ -32,7 +38,6 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "dist",
         "sort-packages": true
     },
     "extra": {
