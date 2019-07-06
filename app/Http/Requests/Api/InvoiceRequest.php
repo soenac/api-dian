@@ -38,6 +38,10 @@ class InvoiceRequest extends FormRequest
             // Consecutive
             'number' => 'required|integer|between:'.optional($this->resolution)->from.','.optional($this->resolution)->to,
 
+            // Date time
+            'date' => 'nullable|date_format:Y-m-d',
+            'time' => 'nullable|date_format:H:i:s',
+
             // Customer
             'customer' => 'required|array',
             'customer.identification_number' => 'required|numeric|digits_between:1,15',

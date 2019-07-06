@@ -1585,7 +1585,7 @@
             "dist": {
                 "type": "path",
                 "url": "../ubl-21-dian",
-                "reference": "45249a96f44d4aa276094789f2d3c1779fdd167a"
+                "reference": "860b60e3206f6ef6b12c6b80596040f4fadb971f"
             },
             "require": {
                 "ext-curl": "*",

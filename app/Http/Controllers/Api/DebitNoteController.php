@@ -52,6 +52,10 @@ class DebitNoteController extends Controller
         $request->resolution->number = $request->number;
         $resolution = $request->resolution;
 
+        // Date time
+        $date = $request->date;
+        $time = $request->time;
+
         // Payment form default
         $paymentFormAll = (object) array_merge($this->paymentFormDefault, $request->payment_form ?? []);
         $paymentForm = PaymentForm::findOrFail($paymentFormAll->payment_form_id);
@@ -84,7 +88,7 @@ class DebitNoteController extends Controller
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $debitNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference'));
+        $debitNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference', 'date', 'time'));
 
         // Signature XML
         $signDebitNote = new SignDebitNote($company->certificate->path, $company->certificate->password);
@@ -92,6 +96,7 @@ class DebitNoteController extends Controller
         $signDebitNote->pin = $company->software->pin;
 
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
+        $sendBillAsync->To = $company->software->url;
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
         $sendBillAsync->contentFile = $this->zipBase64($resolution, $signDebitNote->sign($debitNote));
 
@@ -131,6 +136,10 @@ class DebitNoteController extends Controller
         $request->resolution->number = $request->number;
         $resolution = $request->resolution;
 
+        // Date time
+        $date = $request->date;
+        $time = $request->time;
+
         // Payment form default
         $paymentFormAll = (object) array_merge($this->paymentFormDefault, $request->payment_form ?? []);
         $paymentForm = PaymentForm::findOrFail($paymentFormAll->payment_form_id);
@@ -163,7 +172,7 @@ class DebitNoteController extends Controller
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference', 'date', 'time'));
 
         // Signature XML
         $signDebitNote = new SignDebitNote($company->certificate->path, $company->certificate->password);
@@ -171,6 +180,7 @@ class DebitNoteController extends Controller
         $signDebitNote->pin = $company->software->pin;
 
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
+        $sendTestSetAsync->To = $company->software->url;
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
         $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signDebitNote->sign($crediNote));
         $sendTestSetAsync->testSetId = $testSetId;

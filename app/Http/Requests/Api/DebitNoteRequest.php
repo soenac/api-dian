@@ -38,6 +38,10 @@ class DebitNoteRequest extends FormRequest
             // Consecutive
             'number' => 'required|integer|between:'.optional($this->resolution)->from.','.optional($this->resolution)->to,
 
+            // Date time
+            'date' => 'nullable|date_format:Y-m-d',
+            'time' => 'nullable|date_format:H:i:s',
+
             // Billing Reference
             'billing_reference' => 'required|array',
             'billing_reference.number' => 'required|string',

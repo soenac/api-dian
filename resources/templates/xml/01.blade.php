@@ -18,8 +18,8 @@
     <cbc:ProfileExecutionID>{{$company->type_environment->code}}</cbc:ProfileExecutionID>
     <cbc:ID>{{$resolution->next_consecutive}}</cbc:ID>
     <cbc:UUID schemeID="{{$company->type_environment->code}}" schemeName="{{$typeDocument->cufe_algorithm}}"/>
-    <cbc:IssueDate>{{Carbon\Carbon::now()->format('Y-m-d')}}</cbc:IssueDate>
-    <cbc:IssueTime>{{Carbon\Carbon::now()->format('H:i:s')}}-05:00</cbc:IssueTime>
+    <cbc:IssueDate>{{$date ?? Carbon\Carbon::now()->format('Y-m-d')}}</cbc:IssueDate>
+    <cbc:IssueTime>{{$time ?? Carbon\Carbon::now()->format('H:i:s')}}-05:00</cbc:IssueTime>
     <cbc:InvoiceTypeCode>{{$typeDocument->code}}</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>{{$company->type_currency->code}}</cbc:DocumentCurrencyCode>
     <cbc:LineCountNumeric>{{$invoiceLines->count()}}</cbc:LineCountNumeric>
