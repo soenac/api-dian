@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e21200a70913041124df87f32269a60",
+    "content-hash": "f648498d9fe468a8631e8399ab6edde4",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -1581,17 +1581,11 @@
         },
         {
             "name": "stenfrank/ubl21dian",
-            "version": "1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Stenfrank/ubl21dian.git",
-                "reference": "8e433a7940880e1b260aacf99fc94a0e1d04090c"
-            },
+            "version": "dev-debit_notes",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Stenfrank/ubl21dian/zipball/8e433a7940880e1b260aacf99fc94a0e1d04090c",
-                "reference": "8e433a7940880e1b260aacf99fc94a0e1d04090c",
-                "shasum": ""
+                "type": "path",
+                "url": "../ubl-21-dian",
+                "reference": "f98ac0e2086f05589263f97d278c2a293f9c993e"
             },
             "require": {
                 "ext-curl": "*",
@@ -1612,7 +1606,11 @@
                     "Stenfrank\\UBL21dian\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Stenfrank\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "LGPL-3.0"
             ],
@@ -1633,7 +1631,10 @@
                 "web service",
                 "xml"
             ],
-            "time": "2019-07-02T17:23:42+00:00"
+            "support": {
+                "issues": "https://github.com/Stenfrank/ubl21dian/issues",
+                "source": "https://github.com/Stenfrank/ubl21dian"
+            }
         },
         {
             "name": "swagger-api/swagger-ui",
@@ -3406,16 +3407,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33"
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/6fb502c23885701a991b0bba974b1a8eb6673577",
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577",
                 "shasum": ""
             },
             "require": {
@@ -3463,7 +3464,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2019-06-23T09:00:00+00:00"
+            "time": "2019-07-04T09:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -4262,16 +4263,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18"
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c99e3be9d3e85f60646f152f9002d46ed7770d18",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
                 "shasum": ""
             },
             "require": {
@@ -4307,7 +4308,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-10-30T05:52:18+00:00"
+            "time": "2019-07-08T05:24:54+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -5053,7 +5054,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "stenfrank/ubl21dian": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

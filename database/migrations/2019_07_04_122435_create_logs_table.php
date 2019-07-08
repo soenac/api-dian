@@ -4,19 +4,18 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypeDocumentsTable extends Migration
+class CreateLogsTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up()
     {
-        Schema::create('type_documents', function (Blueprint $table) {
+        Schema::create('logs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->char('code')->nullable();
-            $table->char('cufe_algorithm')->nullable();
-            $table->char('prefix')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->json('payload');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ class CreateTypeDocumentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_documents');
+        Schema::dropIfExists('logs');
     }
 }

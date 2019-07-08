@@ -8,30 +8,29 @@ use App\TaxTotal;
 use App\PaymentForm;
 use App\TypeDocument;
 use App\PaymentMethod;
-use App\AllowanceCharge;
 use App\BillingReference;
 use App\LegalMonetaryTotal;
 use Illuminate\Http\Request;
 use App\Traits\DocumentTrait;
 use App\Http\Controllers\Controller;
-use App\InvoiceLine as CreditNoteLine;
-use App\Http\Requests\Api\CreditNoteRequest;
-use Stenfrank\UBL21dian\XAdES\SignCreditNote;
+use App\InvoiceLine as DebitNoteLine;
+use App\Http\Requests\Api\DebitNoteRequest;
+use Stenfrank\UBL21dian\XAdES\SignDebitNote;
 use Stenfrank\UBL21dian\Templates\SOAP\SendBillAsync;
 use Stenfrank\UBL21dian\Templates\SOAP\SendTestSetAsync;
 
-class CreditNoteController extends Controller
+class DebitNoteController extends Controller
 {
     use DocumentTrait;
 
     /**
      * Store.
      *
-     * @param \App\Http\Requests\Api\CreditNoteRequest $request
+     * @param \App\Http\Requests\Api\DebitNoteRequest $request
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(CreditNoteRequest $request)
+    public function store(DebitNoteRequest $request)
     {
         // User
         $user = auth()->user();
@@ -76,30 +75,30 @@ class CreditNoteController extends Controller
             $taxTotals->push(new TaxTotal($taxTotal));
         }
 
-        // Legal monetary totals
-        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
+        // Requested monetary totals
+        $requestedMonetaryTotals = new LegalMonetaryTotal($request->requested_monetary_totals);
 
         // Credit note lines
-        $creditNoteLines = collect();
-        foreach ($request->credit_note_lines as $creditNoteLine) {
-            $creditNoteLines->push(new CreditNoteLine($creditNoteLine));
+        $debitNoteLines = collect();
+        foreach ($request->debit_note_lines as $debitNoteLine) {
+            $debitNoteLines->push(new DebitNoteLine($debitNoteLine));
         }
 
         // Billing reference
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotals', 'billingReference', 'date', 'time'));
+        $debitNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference', 'date', 'time'));
 
         // Signature XML
-        $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);
-        $signCreditNote->softwareID = $company->software->identifier;
-        $signCreditNote->pin = $company->software->pin;
+        $signDebitNote = new SignDebitNote($company->certificate->path, $company->certificate->password);
+        $signDebitNote->softwareID = $company->software->identifier;
+        $signDebitNote->pin = $company->software->pin;
 
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
         $sendBillAsync->To = $company->software->url;
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendBillAsync->contentFile = $this->zipBase64($company, $resolution, $signCreditNote->sign($crediNote));
+        $sendBillAsync->contentFile = $this->zipBase64($company, $resolution, $signDebitNote->sign($debitNote));
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
@@ -109,13 +108,13 @@ class CreditNoteController extends Controller
     }
 
     /**
-     * Test set store description].
+     * Test set store.
      *
-     * @param \App\Http\Requests\Api\CreditNoteRequest $request
+     * @param \App\Http\Requests\Api\DebitNoteRequest $request
      *
      * @return \Illuminate\Http\Response
      */
-    public function testSetStore(CreditNoteRequest $request, $testSetId)
+    public function testSetStore(DebitNoteRequest $request, $testSetId)
     {
         // User
         $user = auth()->user();
@@ -160,30 +159,30 @@ class CreditNoteController extends Controller
             $taxTotals->push(new TaxTotal($taxTotal));
         }
 
-        // Legal monetary totals
-        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
+        // Requested monetary totals
+        $requestedMonetaryTotals = new LegalMonetaryTotal($request->requested_monetary_totals);
 
         // Credit note lines
-        $creditNoteLines = collect();
-        foreach ($request->credit_note_lines as $creditNoteLine) {
-            $creditNoteLines->push(new CreditNoteLine($creditNoteLine));
+        $debitNoteLines = collect();
+        foreach ($request->debit_note_lines as $debitNoteLine) {
+            $debitNoteLines->push(new DebitNoteLine($debitNoteLine));
         }
 
         // Billing reference
         $billingReference = new BillingReference($request->billing_reference);
 
         // Create XML
-        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'creditNoteLines', 'allowanceCharges', 'legalMonetaryTotals', 'billingReference', 'date', 'time'));
+        $crediNote = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'debitNoteLines', 'allowanceCharges', 'requestedMonetaryTotals', 'billingReference', 'date', 'time'));
 
         // Signature XML
-        $signCreditNote = new SignCreditNote($company->certificate->path, $company->certificate->password);
-        $signCreditNote->softwareID = $company->software->identifier;
-        $signCreditNote->pin = $company->software->pin;
+        $signDebitNote = new SignDebitNote($company->certificate->path, $company->certificate->password);
+        $signDebitNote->softwareID = $company->software->identifier;
+        $signDebitNote->pin = $company->software->pin;
 
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
         $sendTestSetAsync->To = $company->software->url;
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendTestSetAsync->contentFile = $this->zipBase64($company, $resolution, $signCreditNote->sign($crediNote));
+        $sendTestSetAsync->contentFile = $this->zipBase64($company, $resolution, $signDebitNote->sign($crediNote));
         $sendTestSetAsync->testSetId = $testSetId;
 
         return [

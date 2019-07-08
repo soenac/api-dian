@@ -52,6 +52,10 @@ class InvoiceController extends Controller
         $request->resolution->number = $request->number;
         $resolution = $request->resolution;
 
+        // Date time
+        $date = $request->date;
+        $time = $request->time;
+
         // Payment form default
         $paymentFormAll = (object) array_merge($this->paymentFormDefault, $request->payment_form ?? []);
         $paymentForm = PaymentForm::findOrFail($paymentFormAll->payment_form_id);
@@ -72,7 +76,7 @@ class InvoiceController extends Controller
         }
 
         // Legal monetary totals
-        $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
+        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
 
         // Invoice lines
         $invoiceLines = collect();
@@ -81,7 +85,7 @@ class InvoiceController extends Controller
         }
 
         // Create XML
-        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotal'));
+        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotals', 'date', 'time'));
 
         // Signature XML
         $signInvoice = new SignInvoice($company->certificate->path, $company->certificate->password);
@@ -90,13 +94,14 @@ class InvoiceController extends Controller
         $signInvoice->technicalKey = $resolution->technical_key;
 
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
+        $sendBillAsync->To = $company->software->url;
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendBillAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendBillAsync->contentFile = $this->zipBase64($company, $resolution, $signInvoice->sign($invoice));
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendBillAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 
@@ -130,6 +135,10 @@ class InvoiceController extends Controller
         $request->resolution->number = $request->number;
         $resolution = $request->resolution;
 
+        // Date time
+        $date = $request->date;
+        $time = $request->time;
+
         // Payment form default
         $paymentFormAll = (object) array_merge($this->paymentFormDefault, $request->payment_form ?? []);
         $paymentForm = PaymentForm::findOrFail($paymentFormAll->payment_form_id);
@@ -150,7 +159,7 @@ class InvoiceController extends Controller
         }
 
         // Legal monetary totals
-        $legalMonetaryTotal = new LegalMonetaryTotal($request->legal_monetary_totals);
+        $legalMonetaryTotals = new LegalMonetaryTotal($request->legal_monetary_totals);
 
         // Invoice lines
         $invoiceLines = collect();
@@ -159,7 +168,7 @@ class InvoiceController extends Controller
         }
 
         // Create XML
-        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotal'));
+        $invoice = $this->createXML(compact('user', 'company', 'customer', 'taxTotals', 'resolution', 'paymentForm', 'typeDocument', 'invoiceLines', 'allowanceCharges', 'legalMonetaryTotals', 'date', 'time'));
 
         // Signature XML
         $signInvoice = new SignInvoice($company->certificate->path, $company->certificate->password);
@@ -168,14 +177,15 @@ class InvoiceController extends Controller
         $signInvoice->technicalKey = $resolution->technical_key;
 
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
+        $sendTestSetAsync->To = $company->software->url;
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendTestSetAsync->contentFile = $this->zipBase64($company, $resolution, $signInvoice->sign($invoice));
         $sendTestSetAsync->testSetId = $testSetId;
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendTestSetAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 }

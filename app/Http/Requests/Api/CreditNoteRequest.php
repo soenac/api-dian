@@ -35,6 +35,10 @@ class CreditNoteRequest extends FormRequest
                 new ResolutionSetting(),
             ],
 
+            // Date time
+            'date' => 'nullable|date_format:Y-m-d',
+            'time' => 'nullable|date_format:H:i:s',
+
             // Consecutive
             'number' => 'required|integer|between:'.optional($this->resolution)->from.','.optional($this->resolution)->to,
 

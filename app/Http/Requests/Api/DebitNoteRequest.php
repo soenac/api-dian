@@ -5,7 +5,7 @@ namespace App\Http\Requests\Api;
 use App\Rules\ResolutionSetting;
 use Illuminate\Foundation\Http\FormRequest;
 
-class InvoiceRequest extends FormRequest
+class DebitNoteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,7 +30,7 @@ class InvoiceRequest extends FormRequest
             // Document
             'type_document_id' => [
                 'required',
-                'in:1',
+                'in:5',
                 'exists:type_documents,id',
                 new ResolutionSetting(),
             ],
@@ -41,6 +41,12 @@ class InvoiceRequest extends FormRequest
             // Date time
             'date' => 'nullable|date_format:Y-m-d',
             'time' => 'nullable|date_format:H:i:s',
+
+            // Billing Reference
+            'billing_reference' => 'required|array',
+            'billing_reference.number' => 'required|string',
+            'billing_reference.uuid' => 'required|string|size:96',
+            'billing_reference.issue_date' => 'required|date_format:Y-m-d',
 
             // Customer
             'customer' => 'required|array',
@@ -85,41 +91,41 @@ class InvoiceRequest extends FormRequest
             'tax_totals.*.per_unit_amount' => 'nullable|required_if:tax_totals.*.tax_id,10|numeric',
             'tax_totals.*.base_unit_measure' => 'nullable|required_if:tax_totals.*.tax_id,10|numeric',
 
-            // Legal monetary totals
-            'legal_monetary_totals' => 'required|array',
-            'legal_monetary_totals.line_extension_amount' => 'required|numeric',
-            'legal_monetary_totals.tax_exclusive_amount' => 'required|numeric',
-            'legal_monetary_totals.tax_inclusive_amount' => 'required|numeric',
-            'legal_monetary_totals.allowance_total_amount' => 'required|numeric',
-            'legal_monetary_totals.charge_total_amount' => 'required|numeric',
-            'legal_monetary_totals.payable_amount' => 'required|numeric',
+            // Requested monetary totals
+            'requested_monetary_totals' => 'required|array',
+            'requested_monetary_totals.line_extension_amount' => 'required|numeric',
+            'requested_monetary_totals.tax_exclusive_amount' => 'required|numeric',
+            'requested_monetary_totals.tax_inclusive_amount' => 'required|numeric',
+            'requested_monetary_totals.allowance_total_amount' => 'required|numeric',
+            'requested_monetary_totals.charge_total_amount' => 'required|numeric',
+            'requested_monetary_totals.payable_amount' => 'required|numeric',
 
-            // Invoice lines
-            'invoice_lines' => 'required|array',
-            'invoice_lines.*.unit_measure_id' => 'required|exists:unit_measures,id',
-            'invoice_lines.*.invoiced_quantity' => 'required|numeric',
-            'invoice_lines.*.line_extension_amount' => 'required|numeric',
-            'invoice_lines.*.free_of_charge_indicator' => 'required|boolean',
-            'invoice_lines.*.reference_price_id' => 'nullable|required_if:invoice_lines.*.free_of_charge_indicator,true|exists:reference_prices,id',
-            'invoice_lines.*.allowance_charges' => 'nullable|array',
-            'invoice_lines.*.allowance_charges.*.charge_indicator' => 'nullable|required_with:invoice_lines.*.allowance_charges|boolean',
-            'invoice_lines.*.allowance_charges.*.allowance_charge_reason' => 'nullable|required_with:invoice_lines.*.allowance_charges|string',
-            'invoice_lines.*.allowance_charges.*.amount' => 'nullable|required_with:invoice_lines.*.allowance_charges|numeric',
-            'invoice_lines.*.allowance_charges.*.base_amount' => 'nullable|required_if:invoice_lines.*.allowance_charges.*.charge_indicator,false|numeric',
-            'invoice_lines.*.allowance_charges.*.multiplier_factor_numeric' => 'nullable|required_if:invoice_lines.*.allowance_charges.*.charge_indicator,true|numeric',
-            'invoice_lines.*.tax_totals' => 'nullable|array',
-            'invoice_lines.*.tax_totals.*.tax_id' => 'nullable|required_with:invoice_lines.*.tax_totals|exists:taxes,id',
-            'invoice_lines.*.tax_totals.*.tax_amount' => 'nullable|required_with:invoice_lines.*.tax_totals|numeric',
-            'invoice_lines.*.tax_totals.*.taxable_amount' => 'nullable|required_with:invoice_lines.*.tax_totals|numeric',
-            'invoice_lines.*.tax_totals.*.percent' => 'nullable|required_unless:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.tax_totals.*.unit_measure_id' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|exists:unit_measures,id',
-            'invoice_lines.*.tax_totals.*.per_unit_amount' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.tax_totals.*.base_unit_measure' => 'nullable|required_if:invoice_lines.*.tax_totals.*.tax_id,10|numeric',
-            'invoice_lines.*.description' => 'required|string',
-            'invoice_lines.*.code' => 'required|string',
-            'invoice_lines.*.type_item_identification_id' => 'required|exists:type_item_identifications,id',
-            'invoice_lines.*.price_amount' => 'required|numeric',
-            'invoice_lines.*.base_quantity' => 'required|numeric',
+            // Debit note lines
+            'debit_note_lines' => 'required|array',
+            'debit_note_lines.*.unit_measure_id' => 'required|exists:unit_measures,id',
+            'debit_note_lines.*.invoiced_quantity' => 'required|numeric',
+            'debit_note_lines.*.line_extension_amount' => 'required|numeric',
+            'debit_note_lines.*.free_of_charge_indicator' => 'required|boolean',
+            'debit_note_lines.*.reference_price_id' => 'nullable|required_if:debit_note_lines.*.free_of_charge_indicator,true|exists:reference_prices,id',
+            'debit_note_lines.*.allowance_charges' => 'nullable|array',
+            'debit_note_lines.*.allowance_charges.*.charge_indicator' => 'nullable|required_with:debit_note_lines.*.allowance_charges|boolean',
+            'debit_note_lines.*.allowance_charges.*.allowance_charge_reason' => 'nullable|required_with:debit_note_lines.*.allowance_charges|string',
+            'debit_note_lines.*.allowance_charges.*.amount' => 'nullable|required_with:debit_note_lines.*.allowance_charges|numeric',
+            'debit_note_lines.*.allowance_charges.*.base_amount' => 'nullable|required_if:debit_note_lines.*.allowance_charges.*.charge_indicator,false|numeric',
+            'debit_note_lines.*.allowance_charges.*.multiplier_factor_numeric' => 'nullable|required_if:debit_note_lines.*.allowance_charges.*.charge_indicator,true|numeric',
+            'debit_note_lines.*.tax_totals' => 'nullable|array',
+            'debit_note_lines.*.tax_totals.*.tax_id' => 'nullable|required_with:debit_note_lines.*.tax_totals|exists:taxes,id',
+            'debit_note_lines.*.tax_totals.*.tax_amount' => 'nullable|required_with:debit_note_lines.*.tax_totals|numeric',
+            'debit_note_lines.*.tax_totals.*.taxable_amount' => 'nullable|required_with:debit_note_lines.*.tax_totals|numeric',
+            'debit_note_lines.*.tax_totals.*.percent' => 'nullable|required_unless:debit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'debit_note_lines.*.tax_totals.*.unit_measure_id' => 'nullable|required_if:debit_note_lines.*.tax_totals.*.tax_id,10|exists:unit_measures,id',
+            'debit_note_lines.*.tax_totals.*.per_unit_amount' => 'nullable|required_if:debit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'debit_note_lines.*.tax_totals.*.base_unit_measure' => 'nullable|required_if:debit_note_lines.*.tax_totals.*.tax_id,10|numeric',
+            'debit_note_lines.*.description' => 'required|string',
+            'debit_note_lines.*.code' => 'required|string',
+            'debit_note_lines.*.type_item_identification_id' => 'required|exists:type_item_identifications,id',
+            'debit_note_lines.*.price_amount' => 'required|numeric',
+            'debit_note_lines.*.base_quantity' => 'required|numeric',
         ];
     }
 }

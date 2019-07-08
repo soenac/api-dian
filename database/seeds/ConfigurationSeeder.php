@@ -9,7 +9,7 @@ class ConfigurationSeeder extends Seeder
      * @var string
      */
     public $prefix = 'csv';
-    
+
     /**
      * Tables
      * @var array
@@ -58,7 +58,7 @@ class ConfigurationSeeder extends Seeder
             'columns' => 'id, name, code, @created_at, @updated_at'
         ],
         'type_documents' => [
-            'columns' => 'id, name, code, cufe_algorithm, @created_at, @updated_at'
+            'columns' => 'id, name, code, cufe_algorithm, prefix, @created_at, @updated_at'
         ],
         'type_item_identifications' => [
             'columns' => 'id, name, code, code_agency, @created_at, @updated_at'
@@ -73,7 +73,7 @@ class ConfigurationSeeder extends Seeder
             'columns' => 'id, name, code, @created_at, @updated_at'
         ],
     ];
-    
+
     /**
      * Run the database seeds.
      *

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Invoice
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
-    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
     xmlns:sts="http://www.dian.gov.co/contratos/facturaelectronica/v1/Structures"
     xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
@@ -16,8 +18,8 @@
     <cbc:ProfileExecutionID>{{$company->type_environment->code}}</cbc:ProfileExecutionID>
     <cbc:ID>{{$resolution->next_consecutive}}</cbc:ID>
     <cbc:UUID schemeID="{{$company->type_environment->code}}" schemeName="{{$typeDocument->cufe_algorithm}}"/>
-    <cbc:IssueDate>{{Carbon\Carbon::now()->format('Y-m-d')}}</cbc:IssueDate>
-    <cbc:IssueTime>{{Carbon\Carbon::now()->format('H:i:s')}}-05:00</cbc:IssueTime>
+    <cbc:IssueDate>{{$date ?? Carbon\Carbon::now()->format('Y-m-d')}}</cbc:IssueDate>
+    <cbc:IssueTime>{{$time ?? Carbon\Carbon::now()->format('H:i:s')}}-05:00</cbc:IssueTime>
     <cbc:InvoiceTypeCode>{{$typeDocument->code}}</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>{{$company->type_currency->code}}</cbc:DocumentCurrencyCode>
     <cbc:LineCountNumeric>{{$invoiceLines->count()}}</cbc:LineCountNumeric>
@@ -34,7 +36,7 @@
     {{-- TaxTotals --}}
     @include('xml._tax_totals')
     {{-- LegalMonetaryTotal --}}
-    @include('xml._legal_monetary_total')
+    @include('xml._legal_monetary_total', ['node' => 'LegalMonetaryTotal'])
     {{-- InvoiceLines --}}
     @include('xml._invoice_lines')
 </Invoice>

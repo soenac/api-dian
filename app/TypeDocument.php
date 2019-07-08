@@ -12,6 +12,6 @@ class TypeDocument extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'code', 'cufe_algorithm',
+        'name', 'code', 'cufe_algorithm', 'prefix',
     ];
 }

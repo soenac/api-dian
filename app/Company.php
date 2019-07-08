@@ -12,7 +12,7 @@ class Company extends Model
      * @var array
      */
     protected $with = [
-        'software', 'certificate', 'resolutions', 'language', 'tax', 'country', 'type_document_identification', 'type_operation', 'type_environment', 'type_currency', 'type_organization', 'municipality', 'type_liability', 'type_regime',
+        'software', 'certificate', 'resolutions', 'language', 'tax', 'country', 'type_document_identification', 'type_operation', 'type_environment', 'type_currency', 'type_organization', 'municipality', 'type_liability', 'type_regime', 'send',
     ];
 
     /**
@@ -185,5 +185,14 @@ class Company extends Model
                 'name' => 'Régimen Simple',
                 'code' => '04',
             ]);
+    }
+
+    /**
+     * Get the send that owns the company.
+     */
+    public function send()
+    {
+        return $this->hasMany(Send::class)
+            ->where('year', now()->format('y'));
     }
 }

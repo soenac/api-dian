@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Resolution extends Model
 {
     /**
+     * With default model.
+     *
+     * @var array
+     */
+    protected $with = [
+        'type_document',
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -61,5 +70,13 @@ class Resolution extends Model
     public function getNextConsecutiveAttribute()
     {
         return "{$this->prefix}{$this->number}";
+    }
+
+    /**
+     * Get the type document that owns the resolution.
+     */
+    public function type_document()
+    {
+        return $this->belongsTo(TypeDocument::class);
     }
 }

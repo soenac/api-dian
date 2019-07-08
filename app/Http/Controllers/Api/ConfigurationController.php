@@ -13,6 +13,7 @@ use App\Http\Requests\Api\ConfigurationRequest;
 use App\Http\Requests\Api\ConfigurationSoftwareRequest;
 use App\Http\Requests\Api\ConfigurationResolutionRequest;
 use App\Http\Requests\Api\ConfigurationCertificateRequest;
+use App\Http\Requests\Api\ConfigurationEnvironmentRequest;
 
 class ConfigurationController extends Controller
 {
@@ -221,5 +222,24 @@ class ConfigurationController extends Controller
                 'payload' => $e->getMessage(),
             ], 500);
         }
+    }
+
+    /**
+     * Store environment.
+     *
+     * @param \App\Http\Requests\Api\ConfigurationEnvironmentRequest $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function storeEnvironment(ConfigurationEnvironmentRequest $request)
+    {
+        auth()->user()->company->update([
+            'type_environment_id' => $request->type_environment_id,
+        ]);
+
+        return [
+            'message' => 'Ambiente actualizado con éxito',
+            'company' => auth()->user()->company,
+        ];
     }
 }
