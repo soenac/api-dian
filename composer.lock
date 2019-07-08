@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f648498d9fe468a8631e8399ab6edde4",
+    "content-hash": "d8b6cddb5be6799b4da4f496cbde6367",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -1581,11 +1581,17 @@
         },
         {
             "name": "stenfrank/ubl21dian",
-            "version": "dev-debit_notes",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stenfrank/ubl21dian.git",
+                "reference": "56170a31dc239f06642ba6aafff1d4701906e1f5"
+            },
             "dist": {
-                "type": "path",
-                "url": "../ubl-21-dian",
-                "reference": "f98ac0e2086f05589263f97d278c2a293f9c993e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stenfrank/ubl21dian/zipball/56170a31dc239f06642ba6aafff1d4701906e1f5",
+                "reference": "56170a31dc239f06642ba6aafff1d4701906e1f5",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -1606,11 +1612,7 @@
                     "Stenfrank\\UBL21dian\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Stenfrank\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0"
             ],
@@ -1631,10 +1633,7 @@
                 "web service",
                 "xml"
             ],
-            "support": {
-                "issues": "https://github.com/Stenfrank/ubl21dian/issues",
-                "source": "https://github.com/Stenfrank/ubl21dian"
-            }
+            "time": "2019-07-08T20:30:47+00:00"
         },
         {
             "name": "swagger-api/swagger-ui",
@@ -5054,9 +5053,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "stenfrank/ubl21dian": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
