@@ -98,12 +98,12 @@ class DebitNoteController extends Controller
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
         $sendBillAsync->To = $company->software->url;
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendBillAsync->contentFile = $this->zipBase64($resolution, $signDebitNote->sign($debitNote));
+        $sendBillAsync->contentFile = $this->zipBase64($company, $resolution, $signDebitNote->sign($debitNote));
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendBillAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 
@@ -182,13 +182,13 @@ class DebitNoteController extends Controller
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
         $sendTestSetAsync->To = $company->software->url;
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signDebitNote->sign($crediNote));
+        $sendTestSetAsync->contentFile = $this->zipBase64($company, $resolution, $signDebitNote->sign($crediNote));
         $sendTestSetAsync->testSetId = $testSetId;
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendTestSetAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 }

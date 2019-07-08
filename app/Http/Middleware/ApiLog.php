@@ -18,8 +18,11 @@ class ApiLog
     public function handle($request, Closure $next)
     {
         Log::create([
+            'payload' => [
+                'body' => $request->toArray(),
+                'uri' => $request->getRequestUri(),
+            ],
             'user_id' => optional(auth()->user())->id,
-            'payload' => $request->toArray(),
         ]);
 
         return $next($request);

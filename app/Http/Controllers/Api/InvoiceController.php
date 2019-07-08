@@ -96,12 +96,12 @@ class InvoiceController extends Controller
         $sendBillAsync = new SendBillAsync($company->certificate->path, $company->certificate->password);
         $sendBillAsync->To = $company->software->url;
         $sendBillAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendBillAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendBillAsync->contentFile = $this->zipBase64($company, $resolution, $signInvoice->sign($invoice));
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendBillAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 
@@ -179,13 +179,13 @@ class InvoiceController extends Controller
         $sendTestSetAsync = new SendTestSetAsync($company->certificate->path, $company->certificate->password);
         $sendTestSetAsync->To = $company->software->url;
         $sendTestSetAsync->fileName = "{$resolution->next_consecutive}.xml";
-        $sendTestSetAsync->contentFile = $this->zipBase64($resolution, $signInvoice->sign($invoice));
+        $sendTestSetAsync->contentFile = $this->zipBase64($company, $resolution, $signInvoice->sign($invoice));
         $sendTestSetAsync->testSetId = $testSetId;
 
         return [
             'message' => "{$typeDocument->name} #{$resolution->next_consecutive} generada con éxito",
             'ResponseDian' => $sendTestSetAsync->signToSend()->getResponseToObject(),
-            'ZipBase64Bytes' => base64_encode($this->getZIP($resolution)),
+            'ZipBase64Bytes' => base64_encode($this->getZIP()),
         ];
     }
 }

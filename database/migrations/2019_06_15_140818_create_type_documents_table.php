@@ -8,25 +8,24 @@ class CreateTypeDocumentsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up() {
-        Schema::create('type_documents', function(Blueprint $table) {
+    public function up()
+    {
+        Schema::create('type_documents', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->char('code');
-            $table->char('cufe_algorithm');
+            $table->char('code')->nullable();
+            $table->char('cufe_algorithm')->nullable();
+            $table->char('prefix')->nullable();
             $table->timestamps();
         });
     }
-    
+
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down() {
+    public function down()
+    {
         Schema::dropIfExists('type_documents');
     }
 }
