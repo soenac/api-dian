@@ -1585,12 +1585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Stenfrank/ubl21dian.git",
-                "reference": "56170a31dc239f06642ba6aafff1d4701906e1f5"
+                "reference": "1d6a749b30a0f3565bf7e054a9a63c2e01f8165b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Stenfrank/ubl21dian/zipball/56170a31dc239f06642ba6aafff1d4701906e1f5",
-                "reference": "56170a31dc239f06642ba6aafff1d4701906e1f5",
+                "url": "https://api.github.com/repos/Stenfrank/ubl21dian/zipball/1d6a749b30a0f3565bf7e054a9a63c2e01f8165b",
+                "reference": "1d6a749b30a0f3565bf7e054a9a63c2e01f8165b",
                 "shasum": ""
             },
             "require": {
@@ -1633,7 +1633,7 @@
                 "web service",
                 "xml"
             ],
-            "time": "2019-07-08T20:30:47+00:00"
+            "time": "2019-07-08T21:03:17+00:00"
         },
         {
             "name": "swagger-api/swagger-ui",
